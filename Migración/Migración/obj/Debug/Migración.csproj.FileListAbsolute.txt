@@ -1,0 +1,13 @@
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\Migracion\Migración\Migración\bin\Debug\Migración.exe.config
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\Migracion\Migración\Migración\bin\Debug\Migración.exe
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\Migracion\Migración\Migración\bin\Debug\Migración.pdb
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\Migracion\Migración\Migración\obj\Debug\Migración.csprojAssemblyReference.cache
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\Migracion\Migración\Migración\obj\Debug\Migración.Properties.Resources.resources
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\Migracion\Migración\Migración\obj\Debug\Migración.csproj.GenerateResource.cache
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\Migracion\Migración\Migración\obj\Debug\Migración.exe
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\Migracion\Migración\Migración\obj\Debug\Migración.pdb
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\Migracion\Migración\Migración\obj\Debug\Migración.FrmMenu.resources
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\Migracion\Migración\Migración\obj\Debug\Migración.FrmSolictudes.resources
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\Migracion\Migración\Migración\obj\Debug\Migración.FrnLogin.resources
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\Migracion\Migración\Migración\obj\Debug\Migración.FrmCita.resources
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\Migracion\Migración\Migración\obj\Debug\Migración.FrmVerificacion.resources
