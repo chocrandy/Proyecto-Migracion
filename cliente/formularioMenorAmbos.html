@@ -24,7 +24,8 @@
     <div class="container">
         <br>
         <div class="container text-center">
-            <h2>Formulario para Mayores de Edad</h2>
+            <h2>Formulario para Menores de Edad</h2>
+            <h3>***AMBOS PADRES PRESENTES***</h3>
         </div> 
         <br>
         <div class="row">
@@ -33,11 +34,11 @@
             <div class="col-10 bg-white text-dark border">
                 <br>
                 <div class="container">
-                    <form class="" action="enviarMayor.php" method="POST">
+                    <form class="" action="enviarMenorAmbos.php" method="POST">
                         <div class="form-group row">
-                            <h4>CUI</h4>                
-                            <input class="form-control" type="number" name="CUI" placeholder="Ingrese CUI" required>
-                            <small class="form-text text-muted">*CUI - Código Único de Identificación</small>
+                            <h4>CUI del Menor</h4>                
+                            <input class="form-control" type="number" name="CUI" placeholder="Ingrese CUI del Menor" required>
+                            <small class="form-text text-muted">*CUI - Código Único de Identificación del Menor</small>
                         </div>          
                         <br>          
                         <div class="form-group row">
@@ -53,9 +54,21 @@
                         </div>
                         <br>
                         <div class="form-group row">
-                            <h4>Correo Electrónico</h4>
+                            <h4>CUI del Padre</h4>                
+                            <input class="form-control" type="number" name="CUI_Padre" placeholder="Ingrese CUI del Padre" required>
+                            <small class="form-text text-muted">*CUI - Código Único de Identificación del Padre</small>
+                        </div>          
+                        <br>
+                        <div class="form-group row">
+                            <h4>CUI de la Madre</h4>                
+                            <input class="form-control" type="number" name="CUI_Madre" placeholder="Ingrese CUI de la Madre" required>
+                            <small class="form-text text-muted">*CUI - Código Único de Identificación de la Madre</small>
+                        </div>          
+                        <br>
+                        <div class="form-group row">
+                            <h4>Correo Electrónico de uno de los Padres</h4>
                             <input type="email" class="form-control"  name= "Correo" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com" required>
-                            <small class="form-text text-muted">*Se necesita correo para enviarle la Cita</small>
+                            <small class="form-text text-muted">*Se necesita correo de uno de los Padres para enviarle Fecha y Hora de la Cita</small>
                         </div>
                         <br>
                         <div class="form-group row">
