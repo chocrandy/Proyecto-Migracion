@@ -33,13 +33,13 @@
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.bitacoraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.solicitudesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.citasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.administraciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.personalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.puestoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.citasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bitacoraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -70,24 +70,18 @@
             this.menuToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
             this.menuToolStripMenuItem.Text = "Menu";
             // 
-            // ayudaToolStripMenuItem
-            // 
-            this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
-            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
-            this.ayudaToolStripMenuItem.Text = "Ayuda";
-            // 
-            // bitacoraToolStripMenuItem
-            // 
-            this.bitacoraToolStripMenuItem.Name = "bitacoraToolStripMenuItem";
-            this.bitacoraToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
-            this.bitacoraToolStripMenuItem.Text = "Bitacora";
-            // 
             // solicitudesToolStripMenuItem
             // 
             this.solicitudesToolStripMenuItem.Name = "solicitudesToolStripMenuItem";
-            this.solicitudesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.solicitudesToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
             this.solicitudesToolStripMenuItem.Text = "Solicitudes";
             this.solicitudesToolStripMenuItem.Click += new System.EventHandler(this.solicitudesToolStripMenuItem_Click);
+            // 
+            // citasToolStripMenuItem
+            // 
+            this.citasToolStripMenuItem.Name = "citasToolStripMenuItem";
+            this.citasToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
+            this.citasToolStripMenuItem.Text = "Citas";
             // 
             // administraciónToolStripMenuItem
             // 
@@ -101,20 +95,26 @@
             // personalToolStripMenuItem
             // 
             this.personalToolStripMenuItem.Name = "personalToolStripMenuItem";
-            this.personalToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.personalToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
             this.personalToolStripMenuItem.Text = "Personal";
             // 
             // puestoToolStripMenuItem
             // 
             this.puestoToolStripMenuItem.Name = "puestoToolStripMenuItem";
-            this.puestoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.puestoToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
             this.puestoToolStripMenuItem.Text = "puesto";
             // 
-            // citasToolStripMenuItem
+            // ayudaToolStripMenuItem
             // 
-            this.citasToolStripMenuItem.Name = "citasToolStripMenuItem";
-            this.citasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.citasToolStripMenuItem.Text = "Citas";
+            this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
+            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
+            this.ayudaToolStripMenuItem.Text = "Ayuda";
+            // 
+            // bitacoraToolStripMenuItem
+            // 
+            this.bitacoraToolStripMenuItem.Name = "bitacoraToolStripMenuItem";
+            this.bitacoraToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
+            this.bitacoraToolStripMenuItem.Text = "Bitacora";
             // 
             // FrmMenu
             // 

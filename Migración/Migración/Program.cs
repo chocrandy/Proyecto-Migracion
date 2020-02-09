@@ -16,7 +16,7 @@ namespace Migración
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrnLogin());
+            Application.Run(new FrmLogin());
         }
     }
 }

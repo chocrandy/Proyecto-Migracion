@@ -1,6 +1,6 @@
 ﻿namespace Migración
 {
-    partial class FrnLogin
+    partial class FrmLogin
     {
         /// <summary>
         /// Required designer variable.
@@ -28,19 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrnLogin));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLogin));
             this.directorySearcher1 = new System.DirectoryServices.DirectorySearcher();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.LblUsuario = new System.Windows.Forms.Label();
             this.LblContraseña = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.LblUsuario = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.BtCalcelar = new System.Windows.Forms.Button();
             this.BtIngresar = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
@@ -130,25 +130,13 @@
             this.tableLayoutPanel3.TabIndex = 0;
             this.tableLayoutPanel3.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel3_Paint);
             // 
-            // LblUsuario
-            // 
-            this.LblUsuario.AutoSize = true;
-            this.LblUsuario.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.LblUsuario.Location = new System.Drawing.Point(6, 11);
-            this.LblUsuario.Name = "LblUsuario";
-            this.LblUsuario.Size = new System.Drawing.Size(123, 35);
-            this.LblUsuario.TabIndex = 0;
-            this.LblUsuario.Text = "Usuario";
-            this.LblUsuario.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.LblUsuario.Click += new System.EventHandler(this.LblUsuario_Click);
-            // 
             // LblContraseña
             // 
             this.LblContraseña.AutoSize = true;
             this.LblContraseña.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.LblContraseña.Location = new System.Drawing.Point(6, 49);
+            this.LblContraseña.Location = new System.Drawing.Point(6, 42);
             this.LblContraseña.Name = "LblContraseña";
-            this.LblContraseña.Size = new System.Drawing.Size(123, 59);
+            this.LblContraseña.Size = new System.Drawing.Size(123, 64);
             this.LblContraseña.TabIndex = 1;
             this.LblContraseña.Text = "Contraseña";
             this.LblContraseña.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -157,10 +145,31 @@
             // textBox1
             // 
             this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox1.Location = new System.Drawing.Point(138, 14);
+            this.textBox1.Location = new System.Drawing.Point(138, 17);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(249, 20);
             this.textBox1.TabIndex = 2;
+            // 
+            // LblUsuario
+            // 
+            this.LblUsuario.AutoSize = true;
+            this.LblUsuario.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LblUsuario.Location = new System.Drawing.Point(6, 14);
+            this.LblUsuario.Name = "LblUsuario";
+            this.LblUsuario.Size = new System.Drawing.Size(123, 25);
+            this.LblUsuario.TabIndex = 0;
+            this.LblUsuario.Text = "Usuario";
+            this.LblUsuario.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LblUsuario.Click += new System.EventHandler(this.LblUsuario_Click);
+            // 
+            // textBox2
+            // 
+            this.textBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox2.Location = new System.Drawing.Point(138, 45);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(249, 20);
+            this.textBox2.TabIndex = 3;
+            this.textBox2.UseSystemPasswordChar = true;
             // 
             // tableLayoutPanel4
             // 
@@ -206,23 +215,14 @@
             this.BtIngresar.UseVisualStyleBackColor = false;
             this.BtIngresar.Click += new System.EventHandler(this.BtIngresar_Click);
             // 
-            // textBox2
-            // 
-            this.textBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox2.Location = new System.Drawing.Point(138, 52);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(249, 20);
-            this.textBox2.TabIndex = 3;
-            this.textBox2.UseSystemPasswordChar = true;
-            // 
-            // FrnLogin
+            // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(466, 570);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Name = "FrnLogin";
+            this.Name = "FrmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.tableLayoutPanel1.ResumeLayout(false);

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Migración
 {
-    public partial class FrnLogin : Form
+    public partial class FrmLogin : Form
     {
-        public FrnLogin()
+        public FrmLogin()
         {
             InitializeComponent();
         }
