@@ -26,7 +26,7 @@
     $FechaHoraAux = date("d-m-Y");
 
     //hacemos la sentencia de sql    
-    $sqlS="INSERT INTO solicitudes (`cui`, `fecha_solicitud`, `correo`, `estado`) VALUES('$CUI', '$FechaHora', '$Correo', '1')";
+    $sqlS="INSERT INTO solicitudes (`cui`, `tipo_solicitud`, `fecha_solicitud`, `correo`, `estado`) VALUES('$CUI', 'Menor de Edad', '$FechaHora', '$Correo', '1')";
     $sqlIdS="SELECT MAX(id_solicitud)id FROM solicitudes";    
 
     //ejecutamos la sentencia de sql
@@ -88,7 +88,7 @@
     <div class='row'>
         <div class='col-12'>
             <div class='container'>                            
-                <input class='btn btn-primary btn-lg btn-block' type='submit' value='Volver a INICIO' onclick="location.href='index.html';">                
+                <input class='btn btn-primary btn-lg btn-block' type='submit' value='Volver a INICIO' onclick="location.href='index';">                
             </div>        
         </div>          
     </div>
