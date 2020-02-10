@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Migración
 {
-    public partial class FrmPuesto : Form
+    public partial class FrmPersonal : Form
     {
-        public FrmPuesto()
+        public FrmPersonal()
         {
             InitializeComponent();
-        }
-
-        private void FrmPuesto_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

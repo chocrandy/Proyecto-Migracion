@@ -12,10 +12,14 @@ namespace Migración
 {
     public partial class FrmCorreoRe : Form
     {
+        string correo;
         Correo c = new Correo();
-        public FrmCorreoRe()
+        public FrmCorreoRe(string dato)
         {
             InitializeComponent();
+            correo = dato;
+            TxtReceptor.Text = correo;
+           TxtAsunto.Text = "Notificacion de Migracion sobre solicitud de Pasaporte Rechazada";
         }
 
         private void CorreoRe_Load(object sender, EventArgs e)

@@ -93,11 +93,11 @@
     <Compile Include="Municipalidad.Designer.cs">
       <DependentUpon>Municipalidad.cs</DependentUpon>
     </Compile>
-    <Compile Include="Personal.cs">
+    <Compile Include="Empleado.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Personal.Designer.cs">
-      <DependentUpon>Personal.cs</DependentUpon>
+    <Compile Include="Empleado.Designer.cs">
+      <DependentUpon>Empleado.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -106,12 +106,6 @@
     </Compile>
     <Compile Include="Puesto.Designer.cs">
       <DependentUpon>Puesto.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Renap.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Renap.Designer.cs">
-      <DependentUpon>Renap.cs</DependentUpon>
     </Compile>
     <Compile Include="Solictudes.cs">
       <SubType>Form</SubType>
@@ -146,8 +140,8 @@
     <EmbeddedResource Include="Municipalidad.resx">
       <DependentUpon>Municipalidad.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Personal.resx">
-      <DependentUpon>Personal.cs</DependentUpon>
+    <EmbeddedResource Include="Empleado.resx">
+      <DependentUpon>Empleado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -158,8 +152,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Renap.resx">
-      <DependentUpon>Renap.cs</DependentUpon>
+    <EmbeddedResource Include="Puesto.resx">
+      <DependentUpon>Puesto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Solictudes.resx">
       <DependentUpon>Solictudes.cs</DependentUpon>

@@ -10,8 +10,10 @@ using System.Windows.Forms;
 
 namespace Migración
 {
+   
     public partial class FrmLogin : Form
     {
+        string usuario;
         public FrmLogin()
         {
             InitializeComponent();
@@ -34,14 +36,20 @@ namespace Migración
 
         private void BtIngresar_Click(object sender, EventArgs e)
         {
+            usuario = TxtUsuario.Text ;
             this.Hide();
-            FrmMenu nuevo = new FrmMenu();
+            FrmMenu nuevo = new FrmMenu(usuario);
             nuevo.Show();
         }
 
         private void BtCalcelar_Click(object sender, EventArgs e)
         {
             Application.Exit();
+
+        }
+
+        private void FrmLogin_Load(object sender, EventArgs e)
+        {
 
         }
     }

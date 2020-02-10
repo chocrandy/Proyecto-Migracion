@@ -42,7 +42,7 @@ namespace Migración
             OdbcCommand cod = new OdbcCommand();
             cod.Connection = conn;
             cod.CommandText = ("select id_documento, nombre_documento, no_documento from documentos " +
-                "where estado=1");
+                "where id_solicitud="+ solicitud);
             try
             {
                 OdbcDataAdapter eje = new OdbcDataAdapter();

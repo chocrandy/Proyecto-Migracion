@@ -13,6 +13,6 @@ C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingen
 C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\Migracion\Migración\Migración\obj\Debug\Migración.FrmLogin.resources
 C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\Migracion\Migración\Migración\obj\Debug\Migración.FrmMunicipalidad.resources
 C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\Migracion\Migración\Migración\obj\Debug\Migración.FrmPersonal.resources
-C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\Migracion\Migración\Migración\obj\Debug\Migración.FrmRenap.resources
 C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\Migracion\Migración\Migración\obj\Debug\Migración.FrmUsuario.resources
 C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\Migracion\Migración\Migración\obj\Debug\Migración.FrmCorreoRe.resources
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\Migracion\Migración\Migración\obj\Debug\Migración.FrmPuesto.resources

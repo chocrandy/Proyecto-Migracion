@@ -19,10 +19,15 @@ namespace Migración
         OdbcConnection conn = new OdbcConnection("Dsn=migracion");
         string solicitud;
         string TTramite;
-        public FrmSolictudes()
+        string correo;
+        string user;
+        public FrmSolictudes(string usuario)
         {
             InitializeComponent();
             /*Carga de la tabla solicitudes*/
+            user = usuario;
+
+            LblUsuario.Text = user;
             llenartbl();
               }
 
@@ -87,8 +92,7 @@ namespace Migración
             }
             catch (Exception e)
             {
-              
-
+          
                 MessageBox.Show("!ERROR! El Numero de DPI es Incorecto" );
                 e.ToString();
                 conn.Close();
@@ -122,7 +126,7 @@ namespace Migración
                 TTramite = dataGridView1.CurrentRow.Cells[2].Value.ToString();
                 TxtFecha.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
                 TxtCorreo.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
-
+                correo = dataGridView1.CurrentRow.Cells[4].Value.ToString();
                 llenartblR();
 
               }
@@ -151,7 +155,7 @@ namespace Migración
         private void BtnRecha_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FrmCorreoRe nuevo = new FrmCorreoRe();
+            FrmCorreoRe nuevo = new FrmCorreoRe(correo);
             nuevo.Show();
         }
     }
