@@ -5,9 +5,11 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> 
 <?php
     //conectamos Con el servidor
-    $host ="localhost";
+    //35.203.64.16
+    //HlHNEvdvxPfrC9fK 
+    $host ="35.203.64.16";
     $user ="root";
-    $pass ="";
+    $pass ="HlHNEvdvxPfrC9fK";
     $db="migracion";
 
     //funcion llamada conexion con (dominio,usuarios,contraseña,base_de_datos)
@@ -32,7 +34,7 @@
     while ($row = $ejecutarIdS->fetch_assoc()) {
         $idSolicitud = $row['id'];
     }       
-    $sqlD1="INSERT INTO documentos (`nombre_documento`, `no_documento`, `id_solicitud`, `estado`) VALUES('Boleta Banrural', '$Referencia_Boleto', '$idSolicitud', '1')"; 
+    $sqlD1="INSERT INTO documentos (`nombre_documento`, `no_documento`, `id_solicitud`, `estado`) VALUES('Boleta de Pago', '$Referencia_Boleto', '$idSolicitud', '1')"; 
     $ejecutarD1=mysqli_query($con,$sqlD1);    
 
     //verificamos la ejecucion

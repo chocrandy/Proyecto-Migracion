@@ -4,7 +4,7 @@
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">        
-    <title>Form. Mayor de Edad</title>
+    <title>Form. Menor de Edad</title>
     <!-- 
     <link rel="stylesheet" type="text/css" href="estiloFormulario.css"> -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </head>
-<body>
+<body oncontextmenu="return false">
     <header>
         <br>
         <div class="container">
@@ -54,21 +54,27 @@
                         </div>
                         <br>
                         <div class="form-group row">
-                            <h4>CUI del Encargado</h4>                
-                            <input class="form-control" type="number" name="CUI_Encargado" placeholder="Ingrese CUI de Padre o Madre" required>
-                            <small class="form-text text-muted">*CUI - Código Único de Identificación de Padre o Madre</small>
+                            <h4>CUI del Padre</h4>                
+                            <input class="form-control" type="number" name="CUI_Padre" placeholder="Ingrese CUI del Padre" required>
+                            <small class="form-text text-muted">*CUI - Código Único de Identificación del Padre</small>
+                        </div>          
+                        <br>
+                        <div class="form-group row">
+                            <h4>CUI de la Madre</h4>                
+                            <input class="form-control" type="number" name="CUI_Madre" placeholder="Ingrese CUI de la Madre" required>
+                            <small class="form-text text-muted">*CUI - Código Único de Identificación de la Madre</small>
                         </div>          
                         <br>
                         <div class="form-group row">
                             <h4>Carta Poder</h4>                
                             <input class="form-control" type="number" name="No_Colegiado" placeholder="Ingrese No. de Colegiado" required>
-                            <small class="form-text text-muted">*Ingresar el Número de Colegiado (Ver Carta Poder)</small>
-                        </div>          
+                            <small class="form-text text-muted">*Ingresar el Número de Colegiado de la Carta Poder</small>
+                        </div>
                         <br>
                         <div class="form-group row">
-                            <h4>Correo Electrónico del Encargado</h4>
+                            <h4>Correo Electrónico del Padre de Familia</h4>
                             <input type="email" class="form-control"  name= "Correo" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com" required>
-                            <small class="form-text text-muted">*Se necesita correo del Encargado para enviarle Fecha y Hora de la Cita</small>
+                            <small class="form-text text-muted">*Se necesita correo del Padre de Familia que se va presentar para enviarle Fecha y Hora de la Cita</small>
                         </div>
                         <br>
                         <div class="form-group row">

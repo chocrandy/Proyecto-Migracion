@@ -5,9 +5,11 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> 
 <?php
     //conectamos Con el servidor
-    $host ="localhost";
+    //35.203.64.16
+    //HlHNEvdvxPfrC9fK 
+    $host ="35.203.64.16";
     $user ="root";
-    $pass ="";
+    $pass ="HlHNEvdvxPfrC9fK";
     $db="migracion";
 
     //funcion llamada conexion con (dominio,usuarios,contraseña,base_de_datos)
@@ -18,9 +20,10 @@
     $CUI=$_POST['CUI'];
     $Referencia_Boleto=$_POST['Referencia_Boleto'];
     $Correlativo_Ornato=$_POST['Correlativo_Ornato'];
-    $CUI_Encargado=$_POST['CUI_Encargado'];
-    $No_Colegiado=$_POST['No_Colegiado'];
+    $CUI_Padre=$_POST['CUI_Padre'];
+    $CUI_Madre=$_POST['CUI_Madre'];
     $Correo = $_POST['Correo'];
+    $No_Colegiado=$_POST['No_Colegiado'];
     date_default_timezone_set('America/Guatemala'); 
     $FechaHora = date("Y-m-d H:i:s");
     $FechaHoraAux = date("d-m-Y");
@@ -28,7 +31,7 @@
     //hacemos la sentencia de sql    
     $sqlS="INSERT INTO solicitudes (`cui`, `tipo_solicitud`, `fecha_solicitud`, `correo`, `estado`) VALUES('$CUI', 'Menor de Edad', '$FechaHora', '$Correo', '1')";
     $sqlIdS="SELECT MAX(id_solicitud)id FROM solicitudes";    
-
+    
     //ejecutamos la sentencia de sql
     $ejecutarS=mysqli_query($con,$sqlS);
     $ejecutarIdS=mysqli_query($con,$sqlIdS);
@@ -36,13 +39,15 @@
         $idSolicitud = $row['id'];
     }       
     $sqlD1="INSERT INTO documentos (`nombre_documento`, `no_documento`, `id_solicitud`, `estado`) VALUES('Boleto de Ornato', '$Correlativo_Ornato', '$idSolicitud', '1')";    
-    $sqlD2="INSERT INTO documentos (`nombre_documento`, `no_documento`, `id_solicitud`, `estado`) VALUES('Boleta Banrural', '$Referencia_Boleto', '$idSolicitud', '1')"; 
-    $sqlD3="INSERT INTO documentos (`nombre_documento`, `no_documento`, `id_solicitud`, `estado`) VALUES('CUI del Encargado', '$CUI_Encargado', '$idSolicitud', '1')"; 
-    $sqlD4="INSERT INTO documentos (`nombre_documento`, `no_documento`, `id_solicitud`, `estado`) VALUES('No. de Colegiado', '$No_Colegiado', '$idSolicitud', '1')"; 
+    $sqlD2="INSERT INTO documentos (`nombre_documento`, `no_documento`, `id_solicitud`, `estado`) VALUES('Boleta de Pago', '$Referencia_Boleto', '$idSolicitud', '1')"; 
+    $sqlD3="INSERT INTO documentos (`nombre_documento`, `no_documento`, `id_solicitud`, `estado`) VALUES('CUI Padre', '$CUI_Padre', '$idSolicitud', '1')"; 
+    $sqlD4="INSERT INTO documentos (`nombre_documento`, `no_documento`, `id_solicitud`, `estado`) VALUES('CUI Madre', '$CUI_Madre', '$idSolicitud', '1')"; 
+    $sqlD5="INSERT INTO documentos (`nombre_documento`, `no_documento`, `id_solicitud`, `estado`) VALUES('No. de Colegiado', '$No_Colegiado', '$idSolicitud', '1')"; 
     $ejecutarD1=mysqli_query($con,$sqlD1);    
     $ejecutarD2=mysqli_query($con,$sqlD2);    
     $ejecutarD3=mysqli_query($con,$sqlD3);  
     $ejecutarD4=mysqli_query($con,$sqlD4);  
+    $ejecutarD5=mysqli_query($con,$sqlD5);  
 
     //verificamos la ejecucion
     if(!$ejecutarS){
@@ -64,19 +69,25 @@
                         if (!$ejecutarD4) {
                             echo "Hubo Algun Error al Insertar 4to Documento";
                         } else {
-                            echo "<br><br><div class='container'>
-                                <div class='row'>
-                                    <div class='col-12'>
-                                        <div class='container text-center'>
-                                            <h2> Datos Guardados Correctamente </h2> 
-                                            <br>
-                                            <p> En un plazo de 24 horas recibirá su cita al correo ($Correo). </p>
-                                            <p> Fecha de Solicitud: $FechaHoraAux </p>                                       
-                                            <br>
-                                        </div>        
-                                    </div>                    
-                                </div>
-                            </div>";
+                            if (!$ejecutarD5) {
+                                echo "Hubo Algun Error al Insertar 5to Documento";
+                            }
+                            else
+                            {
+                                echo "<br><br><div class='container'>
+                                    <div class='row'>
+                                        <div class='col-12'>
+                                            <div class='container text-center'>
+                                                <h2> Datos Guardados Correctamente </h2> 
+                                                <br>
+                                                <p> En un plazo de 24 horas recibirá su cita al correo ($Correo). </p>
+                                                <p> Fecha de Solicitud: $FechaHoraAux </p>                                       
+                                                <br>
+                                            </div>        
+                                        </div>                    
+                                    </div>
+                                </div>";
+                            }
                         }                        
                     }                    
                 }                
@@ -88,7 +99,7 @@
     <div class='row'>
         <div class='col-12'>
             <div class='container'>                            
-                <input class='btn btn-primary btn-lg btn-block' type='submit' value='Volver a INICIO' onclick="location.href='index';">
+                <input class='btn btn-primary btn-lg btn-block' type='submit' value='Volver a INICIO' onclick="location.href='index';">                
             </div>        
         </div>          
     </div>

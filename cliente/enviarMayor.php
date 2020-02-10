@@ -1,4 +1,3 @@
-
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
@@ -8,9 +7,9 @@
     //conectamos Con el servidor
     //35.203.64.16
     //HlHNEvdvxPfrC9fK 
-    $host ="localhost";
+    $host ="35.203.64.16";
     $user ="root";
-    $pass ="";
+    $pass ="HlHNEvdvxPfrC9fK";
     $db="migracion";
 
     //funcion llamada conexion con (dominio,usuarios,contraseña,base_de_datos)
@@ -37,7 +36,7 @@
         $idSolicitud = $row['id'];
     }       
     $sqlD1="INSERT INTO documentos (`nombre_documento`, `no_documento`, `id_solicitud`, `estado`) VALUES('Boleto de Ornato', '$Correlativo_Ornato', '$idSolicitud', '1')";    
-    $sqlD2="INSERT INTO documentos (`nombre_documento`, `no_documento`, `id_solicitud`, `estado`) VALUES('Boleta Banrural', '$Referencia_Boleto', '$idSolicitud', '1')"; 
+    $sqlD2="INSERT INTO documentos (`nombre_documento`, `no_documento`, `id_solicitud`, `estado`) VALUES('Boleta de Pago', '$Referencia_Boleto', '$idSolicitud', '1')"; 
     $ejecutarD1=mysqli_query($con,$sqlD1);    
     $ejecutarD2=mysqli_query($con,$sqlD2);    
 
