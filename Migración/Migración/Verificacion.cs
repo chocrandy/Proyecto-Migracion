@@ -23,7 +23,7 @@ namespace Migración
         {
 
             InitializeComponent();
-           solicitud = dato;
+            solicitud = dato;
             llenartbl();
             Tramite = tipo;
             TxtTra.Text = Tramite;
@@ -41,15 +41,14 @@ namespace Migración
             //codigo para llevar el DataGridView
             OdbcCommand cod = new OdbcCommand();
             cod.Connection = conn;
-            cod.CommandText = ("select id_documento, nombre_documento, no_documento from documentos " +
-                "where id_solicitud="+ solicitud);
+            cod.CommandText = ("select  nombre_documento, no_documento from documentos where id_solicitud="+ solicitud);
             try
             {
                 OdbcDataAdapter eje = new OdbcDataAdapter();
                 eje.SelectCommand = cod;
                 DataTable datos = new DataTable();
                 eje.Fill(datos);
-              dataGridView1.DataSource = datos;
+                dataGridView1.DataSource = datos;
                 eje.Update(datos);
                 conn.Close();
 
@@ -67,21 +66,20 @@ namespace Migración
         {
             if (dataGridView1.SelectedRows.Count == 1)
             {
-                TxtNoD.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
-                TxtNombre.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
-                TxtNoDD.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
-                llenarBan();
-                /* if (TxtNombre.Text == "Boleto de Ornato")
-                 {
-                     llenarMun();
-                 }
-                 else if(TxtNombre.Text == "Boleta de Pago") { 
+              
+                TxtNombre.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+                TxtNoDD.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+                //llenarBan();
+                //llenarMun();
+                if (TxtNombre.Text == "Boleto de Ornato")
+                {
+                    llenarMun();
+                }
+                else if (TxtNombre.Text == "Boleto de Pago") {
 
-                     llenarBan(); 
-                 }*/
-
-
-
+                    llenarBan();
+                } else if (TxtNombre.Text == "DPI Padre") { llenarRenapP(); }
+                else if (TxtNombre.Text == "DPI Madre") { llenarRenapM(); }
             }
             else
             {
@@ -94,43 +92,33 @@ namespace Migración
             //codigo para llevar el DataGridView
             OdbcCommand cod = new OdbcCommand();
             cod.Connection = conn;
-            /*  cod.CommandText = ("select Correlativo_ornato,fecha_vencimiento,Monto from municipalidad " +
-                      "where correlativo_ornato =" + TxtNoDD.Text);*/
-            cod.CommandText = ("select referencia_boleto,Fecha_pago,monto from banrural" +
-            "where referencia_boleto =" + TxtNoDD.Text);
+            cod.CommandText = ("select Correlativo_ornato,fecha_vencimiento,Monto from municipalidad where correlativo_ornato =" + TxtNoDD.Text);
+            
             try
             {
                 OdbcDataAdapter eje = new OdbcDataAdapter();
                 eje.SelectCommand = cod;
                 DataTable datos = new DataTable();
                 eje.Fill(datos);
-                dataGridView2.DataSource = datos;
+                dataGridView3.DataSource = datos;
                 eje.Update(datos);
                 conn.Close();
-               /* TxtCuiR.Text = dataGridView2.CurrentRow.Cells[0].Value.ToString();
-                TxtNombres.Text = dataGridView2.CurrentRow.Cells[1].Value.ToString();
-                TxtApellido.Text = dataGridView2.CurrentRow.Cells[2].Value.ToString();
-                TxtFechaN.Text = dataGridView2.CurrentRow.Cells[3].Value.ToString();
-                TxtSexo.Text = dataGridView2.CurrentRow.Cells[4].Value.ToString();
-                TxtLugarN.Text = dataGridView2.CurrentRow.Cells[5].Value.ToString();
-                TxtCuiRP.Text = dataGridView2.CurrentRow.Cells[6].Value.ToString();
-                TxtCuiPM.Text = dataGridView2.CurrentRow.Cells[7].Value.ToString();
-
-                BtnRecha.Enabled = false;
-                BtnSig.Enabled = true;
-                LblProgreso.Text = "Aprobado";*/
+               TxtCoM.Text = dataGridView3.CurrentRow.Cells[0].Value.ToString();
+                TxtfechaEM.Text = dataGridView3.CurrentRow.Cells[1].Value.ToString();
+                TxtMontoB.Text = dataGridView3.CurrentRow.Cells[2].Value.ToString();
+                
+               
+              
 
             }
             catch (Exception e)
             {
 
 
-                MessageBox.Show("!ERROR! El Numero de DPI es Incorecto");
+                MessageBox.Show("!ERROR! No ecxiste boleto de pago ");
                 e.ToString();
                 conn.Close();
-               /* BtnRecha.Enabled = true;
-                BtnSig.Enabled = false;
-                LblProgreso.Text = "Rechazado";*/
+             
             }
         }
 
@@ -139,8 +127,9 @@ namespace Migración
             //codigo para llevar el DataGridView
             OdbcCommand cod = new OdbcCommand();
             cod.Connection = conn;
-            cod.CommandText = ("select referencia_boleto,fecha_pago,monto from banrural" +
-                    "where referencia_boleto =" + TxtNoDD.Text);
+            //int auxi = Int32.Parse(TxtNoDD.Text);
+            //Console.WriteLine("txtnodd= " + TxtNoDD.Text + "\n auxi= " + auxi);
+            cod.CommandText = ("select * from banrural where referencia_boleto =" + TxtNoDD.Text);
             try
             {
                 OdbcDataAdapter eje = new OdbcDataAdapter();
@@ -150,30 +139,19 @@ namespace Migración
                 dataGridView2.DataSource = datos;
                 eje.Update(datos);
                 conn.Close();
-                /* TxtCuiR.Text = dataGridView2.CurrentRow.Cells[0].Value.ToString();
-                 TxtNombres.Text = dataGridView2.CurrentRow.Cells[1].Value.ToString();
-                 TxtApellido.Text = dataGridView2.CurrentRow.Cells[2].Value.ToString();
-                 TxtFechaN.Text = dataGridView2.CurrentRow.Cells[3].Value.ToString();
-                 TxtSexo.Text = dataGridView2.CurrentRow.Cells[4].Value.ToString();
-                 TxtLugarN.Text = dataGridView2.CurrentRow.Cells[5].Value.ToString();
-                 TxtCuiRP.Text = dataGridView2.CurrentRow.Cells[6].Value.ToString();
-                 TxtCuiPM.Text = dataGridView2.CurrentRow.Cells[7].Value.ToString();
-
-                 BtnRecha.Enabled = false;
-                 BtnSig.Enabled = true;
-                 LblProgreso.Text = "Aprobado";*/
-
+                 TxtNoB.Text = dataGridView2.CurrentRow.Cells[0].Value.ToString();
+                 TxtFechaP.Text = dataGridView2.CurrentRow.Cells[1].Value.ToString();
+                 TxtMonto.Text = dataGridView2.CurrentRow.Cells[2].Value.ToString();
+               
             }
             catch (Exception e)
             {
 
 
-                MessageBox.Show("!ERROR! El Numero de DPI es Incorecto");
+                MessageBox.Show("!ERROR!La boleta de pago no existe");
                 e.ToString();
                 conn.Close();
-                /* BtnRecha.Enabled = true;
-                 BtnSig.Enabled = false;
-                 LblProgreso.Text = "Rechazado";*/
+                
             }
         }
         void llenarRenapP()
@@ -189,7 +167,7 @@ namespace Migración
                 eje.SelectCommand = cod;
                 DataTable datos = new DataTable();
                 eje.Fill(datos);
-                dataGridView2.DataSource = datos;
+                dataGridView4.DataSource = datos;
                 eje.Update(datos);
                 conn.Close();
               /*  TxtCuiR.Text = dataGridView2.CurrentRow.Cells[0].Value.ToString();
@@ -231,7 +209,7 @@ namespace Migración
                 eje.SelectCommand = cod;
                 DataTable datos = new DataTable();
                 eje.Fill(datos);
-                dataGridView2.DataSource = datos;
+                dataGridView5.DataSource = datos;
                 eje.Update(datos);
                 conn.Close();
                 /*  TxtCuiR.Text = dataGridView2.CurrentRow.Cells[0].Value.ToString();
