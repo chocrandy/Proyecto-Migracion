@@ -7,17 +7,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Data.Odbc;
+using System.IO;
+using System.Net;
 namespace Migración
 {
     public partial class FrmCorreoRe : Form
     {
+        OdbcConnection conn = new OdbcConnection("Dsn=migracion");
         string correo;
+        string solicitud;
+        string user;
         Correo c = new Correo();
-        public FrmCorreoRe(string dato)
+        public FrmCorreoRe(string dato ,string verifi , string usuario)
         {
             InitializeComponent();
             correo = dato;
+            solicitud = verifi;
+            user = usuario;
             TxtReceptor.Text = correo;
            TxtAsunto.Text = "Notificacion de Migracion sobre solicitud de Pasaporte Rechazada";
         }
@@ -32,6 +39,34 @@ namespace Migración
             string usu = "riskogt6@gmail.com";
             string pass = "Risgt657";
             c.enviarCorreo(usu, pass, TxtMensaje.Text, TxtAsunto.Text, TxtReceptor.Text, TxtRutaArchivo.Text);
+
+
+
+           
+                       
+                string query = "UPDATE solicitudes set estado = 0  where  id_solicitud  =" + solicitud ;
+                conn.Open();
+                OdbcCommand consulta = new OdbcCommand(query, conn);
+                try
+                {
+                    consulta.ExecuteNonQuery();  
+                    MessageBox.Show("La Slolicitud fue calcelada exitosa mente");
+              
+                                   
+                    conn.Close();
+                this.Hide();
+                FrmMenu nuevo = new FrmMenu(user);
+                nuevo.Show();
+            }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("\t Error! \n\n " + ex.ToString());
+                    conn.Close();
+                }
+            
+       
+
+
         }
 
         private void button1_Click(object sender, EventArgs e)

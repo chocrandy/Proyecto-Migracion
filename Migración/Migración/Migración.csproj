@@ -62,6 +62,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bitacora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bitacora.Designer.cs">
+      <DependentUpon>Bitacora.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cita.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +75,12 @@
       <DependentUpon>Cita.cs</DependentUpon>
     </Compile>
     <Compile Include="Correo.cs" />
+    <Compile Include="CorreoCita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CorreoCita.Designer.cs">
+      <DependentUpon>CorreoCita.cs</DependentUpon>
+    </Compile>
     <Compile Include="CorreoRe.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,12 +98,6 @@
     </Compile>
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Municipalidad.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Municipalidad.Designer.cs">
-      <DependentUpon>Municipalidad.cs</DependentUpon>
     </Compile>
     <Compile Include="Empleado.cs">
       <SubType>Form</SubType>
@@ -125,8 +131,14 @@
     <Compile Include="Verificacion.Designer.cs">
       <DependentUpon>Verificacion.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Bitacora.resx">
+      <DependentUpon>Bitacora.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Cita.resx">
       <DependentUpon>Cita.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CorreoCita.resx">
+      <DependentUpon>CorreoCita.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CorreoRe.resx">
       <DependentUpon>CorreoRe.cs</DependentUpon>
@@ -136,9 +148,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Municipalidad.resx">
-      <DependentUpon>Municipalidad.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Empleado.resx">
       <DependentUpon>Empleado.cs</DependentUpon>

@@ -13,6 +13,7 @@ namespace Migración
     public partial class FrmMenu : Form
     {
         string user;
+        string numero;
         public FrmMenu(string usuario)
         {
             InitializeComponent();
@@ -43,16 +44,23 @@ namespace Migración
         private void personalToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FrmPersonal nuevo = new FrmPersonal();
+            FrmEmpleado nuevo = new FrmEmpleado();
             nuevo.Show();
         }
 
         private void citasToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FrmCita nuevo = new FrmCita();
+            FrmCita nuevo = new FrmCita(user,numero);
             nuevo.Show();
 
+        }
+
+        private void bitacoraToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+           FrmBitacora nuevo = new FrmBitacora(user);
+            nuevo.Show();
         }
     }
 }

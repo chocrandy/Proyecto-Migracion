@@ -134,6 +134,7 @@ namespace Migración
             {
                 MessageBox.Show("No hay solicitudes");
                 BtnRecha.Enabled = true;
+
             }
 
            }
@@ -143,7 +144,7 @@ namespace Migración
         private void BtnSig_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FrmVerificacion nuevo = new FrmVerificacion(solicitud ,TTramite );
+            FrmVerificacion nuevo = new FrmVerificacion(solicitud ,TTramite,user,correo);
             nuevo.Show();
         }
 
@@ -155,7 +156,28 @@ namespace Migración
         private void BtnRecha_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FrmCorreoRe nuevo = new FrmCorreoRe(correo);
+            FrmCorreoRe nuevo = new FrmCorreoRe(correo, solicitud,user);
+           nuevo.Show();
+        }
+
+        private void BtnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+           FrmMenu nuevo = new FrmMenu(user);
+            TxtCuiR.Text = "";
+            TxtNombres.Text = "";
+            TxtApellido.Text = "";
+            TxtCuiR.Text = "";
+            TxtFechaN.Text = "";
+            TxtSexo.Text = "";
+            TxtLugarN.Text = "";
+            TxtCuiRP.Text = "";
+            TxtCuiPM.Text = "";
+            TxtSolicitud.Text = "";
+            TxtCui.Text = "";
+            TxtTramite.Text = "";
+            TxtFecha.Text = "";
+            TxtCorreo.Text = "";
             nuevo.Show();
         }
     }

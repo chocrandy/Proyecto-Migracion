@@ -19,21 +19,26 @@ namespace Migración
 
         string solicitud;
         string Tramite;
-        public FrmVerificacion(string dato,string tipo)
+        string user;
+        string correo;
+        public FrmVerificacion(string dato,string tipo,string usuario, string email)
         {
 
             InitializeComponent();
             solicitud = dato;
+            user = usuario;
+            correo = email;
             llenartbl();
             Tramite = tipo;
             TxtTra.Text = Tramite;
+            visualizacion();
 
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FrmCita nuevo = new FrmCita();
+            FrmCita nuevo = new FrmCita(user,solicitud);
             nuevo.Show();
         }
         void llenartbl()
@@ -78,8 +83,8 @@ namespace Migración
                 else if (TxtNombre.Text == "Boleto de Pago") {
 
                     llenarBan();
-                } else if (TxtNombre.Text == "DPI Padre") { llenarRenapP(); }
-                else if (TxtNombre.Text == "DPI Madre") { llenarRenapM(); }
+                } else if (TxtNombre.Text == "DPI Padre" && Tramite == "Menor de Edad") { llenarRenapP(); }
+                else if (TxtNombre.Text == "DPI Madre" && Tramite == "Menor de Edad") { llenarRenapM(); }
             }
             else
             {
@@ -122,6 +127,39 @@ namespace Migración
             }
         }
 
+        void visualizacion()
+        {
+            if (Tramite == "Mayor de Edad")
+            {
+                dataGridView2.Enabled = true;
+                dataGridView3.Enabled = true;
+                dataGridView4.Enabled = false;
+                dataGridView5.Enabled = false;
+
+            }
+            else if (Tramite == "Menor de Edad") 
+            {
+                dataGridView2.Enabled = true;
+                dataGridView3.Enabled = true;
+                dataGridView4.Enabled = true;
+                dataGridView5.Enabled = true;
+            } 
+            else if(Tramite == "Mayor de 60")
+            {
+                dataGridView2.Enabled = true;
+                dataGridView3.Enabled = false;
+                dataGridView4.Enabled = false;
+                dataGridView5.Enabled = false;
+            }
+            else
+            {
+                MessageBox.Show("!ERROR! El tipo de tramite es incorecto");
+
+
+            }
+
+
+        }
         void llenarBan()
         {
             //codigo para llevar el DataGridView
@@ -170,30 +208,21 @@ namespace Migración
                 dataGridView4.DataSource = datos;
                 eje.Update(datos);
                 conn.Close();
-              /*  TxtCuiR.Text = dataGridView2.CurrentRow.Cells[0].Value.ToString();
-                TxtNombres.Text = dataGridView2.CurrentRow.Cells[1].Value.ToString();
-                TxtApellido.Text = dataGridView2.CurrentRow.Cells[2].Value.ToString();
-                TxtFechaN.Text = dataGridView2.CurrentRow.Cells[3].Value.ToString();
-                TxtSexo.Text = dataGridView2.CurrentRow.Cells[4].Value.ToString();
-                TxtLugarN.Text = dataGridView2.CurrentRow.Cells[5].Value.ToString();
-                TxtCuiRP.Text = dataGridView2.CurrentRow.Cells[6].Value.ToString();
-                TxtCuiPM.Text = dataGridView2.CurrentRow.Cells[7].Value.ToString();
-
-                BtnRecha.Enabled = false;
-                BtnSig.Enabled = true;
-                LblProgreso.Text = "Aprobado";*/
+               TxtCuiP.Text = dataGridView4.CurrentRow.Cells[0].Value.ToString();
+                TxtNombreP.Text = dataGridView4.CurrentRow.Cells[1].Value.ToString();
+                TxtApellidoP.Text = dataGridView4.CurrentRow.Cells[2].Value.ToString();
+                TxtCuiPA.Text = dataGridView4.CurrentRow.Cells[3].Value.ToString();
+                                
 
             }
             catch (Exception e)
             {
 
 
-                MessageBox.Show("!ERROR! El Numero de DPI es Incorecto");
+                MessageBox.Show("!ERROR! El Numero de DPI del Padre es Incorecto");
                 e.ToString();
                 conn.Close();
-               /* BtnRecha.Enabled = true;
-                BtnSig.Enabled = false;
-                LblProgreso.Text = "Rechazado";*/
+             
             }
         }
         void llenarRenapM()
@@ -212,40 +241,39 @@ namespace Migración
                 dataGridView5.DataSource = datos;
                 eje.Update(datos);
                 conn.Close();
-                /*  TxtCuiR.Text = dataGridView2.CurrentRow.Cells[0].Value.ToString();
-                  TxtNombres.Text = dataGridView2.CurrentRow.Cells[1].Value.ToString();
-                  TxtApellido.Text = dataGridView2.CurrentRow.Cells[2].Value.ToString();
-                  TxtFechaN.Text = dataGridView2.CurrentRow.Cells[3].Value.ToString();
-                  TxtSexo.Text = dataGridView2.CurrentRow.Cells[4].Value.ToString();
-                  TxtLugarN.Text = dataGridView2.CurrentRow.Cells[5].Value.ToString();
-                  TxtCuiRP.Text = dataGridView2.CurrentRow.Cells[6].Value.ToString();
-                  TxtCuiPM.Text = dataGridView2.CurrentRow.Cells[7].Value.ToString();
-
-                  BtnRecha.Enabled = false;
-                  BtnSig.Enabled = true;
-                  LblProgreso.Text = "Aprobado";*/
+                 TxtCuiMA.Text = dataGridView5.CurrentRow.Cells[0].Value.ToString();
+                  TxtNombreMA.Text = dataGridView5.CurrentRow.Cells[1].Value.ToString();
+                  TxtApellidoMA.Text = dataGridView5.CurrentRow.Cells[2].Value.ToString();
+                  TxtCuiMAA.Text = dataGridView5.CurrentRow.Cells[3].Value.ToString();
+                 
 
             }
             catch (Exception e)
             {
 
 
-                MessageBox.Show("!ERROR! El Numero de DPI es Incorecto");
+                MessageBox.Show("!ERROR! El Numero de DPI de la Madre es Incorecto");
                 e.ToString();
                 conn.Close();
-                /* BtnRecha.Enabled = true;
-                 BtnSig.Enabled = false;
-                 LblProgreso.Text = "Rechazado";*/
+               
             }
-        }
-        private void label2_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void FrmVerificacion_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmCorreoRe nuevo = new FrmCorreoRe(correo, solicitud, user);
+            nuevo.Show();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            
         }
     }
 }

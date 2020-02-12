@@ -265,6 +265,7 @@
             this.BtnCancelar.TabIndex = 9;
             this.BtnCancelar.Text = "Cancelar";
             this.BtnCancelar.UseVisualStyleBackColor = true;
+            this.BtnCancelar.Click += new System.EventHandler(this.BtnCancelar_Click);
             // 
             // LblProgreso
             // 
@@ -396,7 +397,7 @@
             this.BtnSig.Name = "BtnSig";
             this.BtnSig.Size = new System.Drawing.Size(243, 69);
             this.BtnSig.TabIndex = 0;
-            this.BtnSig.Text = "Sigiente";
+            this.BtnSig.Text = "Siguiente";
             this.BtnSig.UseVisualStyleBackColor = true;
             this.BtnSig.Click += new System.EventHandler(this.BtnSig_Click);
             // 

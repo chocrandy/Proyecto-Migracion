@@ -12,9 +12,23 @@ namespace Migración
 {
     public partial class FrmCita : Form
     {
-        public FrmCita()
+        string user;
+        string solicitud;
+        public FrmCita(string usuario, string numero)
         {
             InitializeComponent();
+            user = usuario;
+            solicitud = numero;
+        }
+
+        private void tableLayoutPanel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void FrmCita_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
