@@ -74,6 +74,12 @@
     <Compile Include="Cita.Designer.cs">
       <DependentUpon>Cita.cs</DependentUpon>
     </Compile>
+    <Compile Include="CitasV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CitasV.Designer.cs">
+      <DependentUpon>CitasV.cs</DependentUpon>
+    </Compile>
     <Compile Include="Correo.cs" />
     <Compile Include="CorreoCita.cs">
       <SubType>Form</SubType>
@@ -136,6 +142,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Cita.resx">
       <DependentUpon>Cita.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CitasV.resx">
+      <DependentUpon>CitasV.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CorreoCita.resx">
       <DependentUpon>CorreoCita.cs</DependentUpon>

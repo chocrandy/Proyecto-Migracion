@@ -21,6 +21,7 @@ namespace Migración
         string TTramite;
         string correo;
         string user;
+        string Cui;
         public FrmSolictudes(string usuario)
         {
             InitializeComponent();
@@ -122,6 +123,7 @@ namespace Migración
                 TxtSolicitud.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
                 solicitud= dataGridView1.CurrentRow.Cells[0].Value.ToString();
                 TxtCui.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+                Cui = dataGridView1.CurrentRow.Cells[1].Value.ToString();
                 TxtTramite.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
                 TTramite = dataGridView1.CurrentRow.Cells[2].Value.ToString();
                 TxtFecha.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
@@ -144,7 +146,7 @@ namespace Migración
         private void BtnSig_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FrmVerificacion nuevo = new FrmVerificacion(solicitud ,TTramite,user,correo);
+            FrmVerificacion nuevo = new FrmVerificacion(solicitud ,TTramite,user,correo,Cui);
             nuevo.Show();
         }
 

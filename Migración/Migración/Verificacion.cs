@@ -21,12 +21,14 @@ namespace Migración
         string Tramite;
         string user;
         string correo;
-        public FrmVerificacion(string dato,string tipo,string usuario, string email)
+        string Cui;
+        public FrmVerificacion(string dato,string tipo,string usuario, string email,string cui)
         {
 
             InitializeComponent();
             solicitud = dato;
             user = usuario;
+            Cui = cui;
             correo = email;
             llenartbl();
             Tramite = tipo;
@@ -38,7 +40,7 @@ namespace Migración
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FrmCita nuevo = new FrmCita(user,solicitud);
+            FrmCita nuevo = new FrmCita(user,solicitud,Cui);
             nuevo.Show();
         }
         void llenartbl()
@@ -80,7 +82,7 @@ namespace Migración
                 {
                     llenarMun();
                 }
-                else if (TxtNombre.Text == "Boleto de Pago") {
+                else if (TxtNombre.Text == "Boleta de Pago") {
 
                     llenarBan();
                 } else if (TxtNombre.Text == "DPI Padre" && Tramite == "Menor de Edad") { llenarRenapP(); }
@@ -273,7 +275,9 @@ namespace Migración
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            
+            this.Hide();
+            FrmCita nuevo = new FrmCita(user, solicitud,Cui);
+            nuevo.Show();
         }
     }
 }

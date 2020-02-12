@@ -13,10 +13,17 @@ namespace Migración
     public partial class CorreoCita : Form
     {
         string correo;
+        string solicitud;
+        string user;
         Correo c = new Correo();
-        public CorreoCita()
+        public CorreoCita(string dato, string verifi, string usuario)
         {
             InitializeComponent();
+            correo = dato;
+            solicitud = verifi;
+            user = usuario;
+            TxtReceptor.Text = correo;
+            TxtAsunto.Text = "Notificacion de Migracion sobre solicitud de Pasaporte Aprobada";
         }
 
         private void button2_Click(object sender, EventArgs e)

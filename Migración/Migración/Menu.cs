@@ -14,6 +14,7 @@ namespace Migración
     {
         string user;
         string numero;
+        string Cui;
         public FrmMenu(string usuario)
         {
             InitializeComponent();
@@ -51,7 +52,7 @@ namespace Migración
         private void citasToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FrmCita nuevo = new FrmCita(user,numero);
+            FrmCitasV nuevo = new FrmCitasV();
             nuevo.Show();
 
         }

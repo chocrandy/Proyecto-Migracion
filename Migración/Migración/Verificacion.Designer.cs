@@ -326,7 +326,7 @@
             this.tableLayoutPanel8.ColumnCount = 3;
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4.619565F));
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 95.38043F));
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 13F));
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 16F));
             this.tableLayoutPanel8.Controls.Add(this.dataGridView3, 1, 1);
             this.tableLayoutPanel8.Controls.Add(this.label7, 1, 0);
             this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -347,7 +347,7 @@
             this.dataGridView3.GridColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridView3.Location = new System.Drawing.Point(19, 46);
             this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.Size = new System.Drawing.Size(344, 75);
+            this.dataGridView3.Size = new System.Drawing.Size(342, 75);
             this.dataGridView3.TabIndex = 1;
             // 
             // label7
@@ -356,7 +356,7 @@
             this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label7.Location = new System.Drawing.Point(19, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(344, 43);
+            this.label7.Size = new System.Drawing.Size(342, 43);
             this.label7.TabIndex = 2;
             this.label7.Text = "Web S.  Municipalidad";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -553,7 +553,7 @@
             this.tableLayoutPanel13.ColumnCount = 3;
             this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.75309F));
             this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80.24691F));
-            this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 110F));
+            this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 112F));
             this.tableLayoutPanel13.Controls.Add(this.dataGridView4, 1, 0);
             this.tableLayoutPanel13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel13.Location = new System.Drawing.Point(3, 3);
@@ -569,9 +569,9 @@
             this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView4.GridColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dataGridView4.Location = new System.Drawing.Point(115, 3);
+            this.dataGridView4.Location = new System.Drawing.Point(114, 3);
             this.dataGridView4.Name = "dataGridView4";
-            this.dataGridView4.Size = new System.Drawing.Size(448, 91);
+            this.dataGridView4.Size = new System.Drawing.Size(447, 91);
             this.dataGridView4.TabIndex = 0;
             // 
             // tableLayoutPanel16
@@ -690,7 +690,7 @@
             this.tableLayoutPanel14.ColumnCount = 3;
             this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 21.36602F));
             this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 78.63397F));
-            this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 106F));
+            this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 108F));
             this.tableLayoutPanel14.Controls.Add(this.dataGridView5, 1, 0);
             this.tableLayoutPanel14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel14.Location = new System.Drawing.Point(3, 3);
@@ -708,7 +708,7 @@
             this.dataGridView5.GridColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridView5.Location = new System.Drawing.Point(124, 3);
             this.dataGridView5.Name = "dataGridView5";
-            this.dataGridView5.Size = new System.Drawing.Size(443, 90);
+            this.dataGridView5.Size = new System.Drawing.Size(441, 90);
             this.dataGridView5.TabIndex = 0;
             // 
             // tableLayoutPanel17
