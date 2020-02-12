@@ -88,7 +88,8 @@
             this.tableLayoutPanel15 = new System.Windows.Forms.TableLayoutPanel();
             this.button1 = new System.Windows.Forms.Button();
             this.tableLayoutPanel18 = new System.Windows.Forms.TableLayoutPanel();
-            this.button2 = new System.Windows.Forms.Button();
+            this.BtnRechazar = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -326,7 +327,7 @@
             this.tableLayoutPanel8.ColumnCount = 3;
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4.619565F));
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 95.38043F));
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 16F));
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 19F));
             this.tableLayoutPanel8.Controls.Add(this.dataGridView3, 1, 1);
             this.tableLayoutPanel8.Controls.Add(this.label7, 1, 0);
             this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -347,7 +348,7 @@
             this.dataGridView3.GridColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridView3.Location = new System.Drawing.Point(19, 46);
             this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.Size = new System.Drawing.Size(342, 75);
+            this.dataGridView3.Size = new System.Drawing.Size(339, 75);
             this.dataGridView3.TabIndex = 1;
             // 
             // label7
@@ -356,7 +357,7 @@
             this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label7.Location = new System.Drawing.Point(19, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(342, 43);
+            this.label7.Size = new System.Drawing.Size(339, 43);
             this.label7.TabIndex = 2;
             this.label7.Text = "Web S.  Municipalidad";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -553,7 +554,7 @@
             this.tableLayoutPanel13.ColumnCount = 3;
             this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.75309F));
             this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80.24691F));
-            this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 112F));
+            this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 115F));
             this.tableLayoutPanel13.Controls.Add(this.dataGridView4, 1, 0);
             this.tableLayoutPanel13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel13.Location = new System.Drawing.Point(3, 3);
@@ -571,7 +572,7 @@
             this.dataGridView4.GridColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridView4.Location = new System.Drawing.Point(114, 3);
             this.dataGridView4.Name = "dataGridView4";
-            this.dataGridView4.Size = new System.Drawing.Size(447, 91);
+            this.dataGridView4.Size = new System.Drawing.Size(444, 91);
             this.dataGridView4.TabIndex = 0;
             // 
             // tableLayoutPanel16
@@ -688,9 +689,9 @@
             // tableLayoutPanel14
             // 
             this.tableLayoutPanel14.ColumnCount = 3;
-            this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 21.36602F));
-            this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 78.63397F));
-            this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 108F));
+            this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.96558F));
+            this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80.03442F));
+            this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 95F));
             this.tableLayoutPanel14.Controls.Add(this.dataGridView5, 1, 0);
             this.tableLayoutPanel14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel14.Location = new System.Drawing.Point(3, 3);
@@ -706,9 +707,9 @@
             this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView5.GridColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dataGridView5.Location = new System.Drawing.Point(124, 3);
+            this.dataGridView5.Location = new System.Drawing.Point(119, 3);
             this.dataGridView5.Name = "dataGridView5";
-            this.dataGridView5.Size = new System.Drawing.Size(441, 90);
+            this.dataGridView5.Size = new System.Drawing.Size(459, 90);
             this.dataGridView5.TabIndex = 0;
             // 
             // tableLayoutPanel17
@@ -839,7 +840,8 @@
             this.tableLayoutPanel18.ColumnCount = 2;
             this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel18.Controls.Add(this.button2, 1, 0);
+            this.tableLayoutPanel18.Controls.Add(this.BtnRechazar, 1, 0);
+            this.tableLayoutPanel18.Controls.Add(this.button3, 0, 0);
             this.tableLayoutPanel18.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel18.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel18.Name = "tableLayoutPanel18";
@@ -848,16 +850,28 @@
             this.tableLayoutPanel18.Size = new System.Drawing.Size(467, 68);
             this.tableLayoutPanel18.TabIndex = 1;
             // 
-            // button2
+            // BtnRechazar
             // 
-            this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button2.Location = new System.Drawing.Point(236, 3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(228, 62);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "Rechazar";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.BtnRechazar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BtnRechazar.Enabled = false;
+            this.BtnRechazar.Location = new System.Drawing.Point(236, 3);
+            this.BtnRechazar.Name = "BtnRechazar";
+            this.BtnRechazar.Size = new System.Drawing.Size(228, 62);
+            this.BtnRechazar.TabIndex = 0;
+            this.BtnRechazar.Text = "Rechazar";
+            this.BtnRechazar.UseVisualStyleBackColor = true;
+            this.BtnRechazar.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button3.Location = new System.Drawing.Point(3, 3);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(227, 62);
+            this.button3.TabIndex = 1;
+            this.button3.Text = "Cancelar";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // FrmVerificacion
             // 
@@ -964,6 +978,7 @@
         private System.Windows.Forms.TextBox TxtApellidoMA;
         private System.Windows.Forms.TextBox TxtCuiMAA;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel18;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button BtnRechazar;
+        private System.Windows.Forms.Button button3;
     }
 }

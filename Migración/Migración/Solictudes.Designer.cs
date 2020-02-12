@@ -251,17 +251,17 @@
             this.tableLayoutPanel7.Location = new System.Drawing.Point(136, 288);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             this.tableLayoutPanel7.RowCount = 2;
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 42.51968F));
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 57.48032F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 43.30709F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 56.69291F));
             this.tableLayoutPanel7.Size = new System.Drawing.Size(243, 127);
             this.tableLayoutPanel7.TabIndex = 10;
             // 
             // BtnCancelar
             // 
             this.BtnCancelar.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BtnCancelar.Location = new System.Drawing.Point(3, 56);
+            this.BtnCancelar.Location = new System.Drawing.Point(3, 58);
             this.BtnCancelar.Name = "BtnCancelar";
-            this.BtnCancelar.Size = new System.Drawing.Size(237, 68);
+            this.BtnCancelar.Size = new System.Drawing.Size(237, 66);
             this.BtnCancelar.TabIndex = 9;
             this.BtnCancelar.Text = "Cancelar";
             this.BtnCancelar.UseVisualStyleBackColor = true;
@@ -273,7 +273,7 @@
             this.LblProgreso.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LblProgreso.Location = new System.Drawing.Point(3, 0);
             this.LblProgreso.Name = "LblProgreso";
-            this.LblProgreso.Size = new System.Drawing.Size(237, 53);
+            this.LblProgreso.Size = new System.Drawing.Size(237, 55);
             this.LblProgreso.TabIndex = 10;
             this.LblProgreso.Text = "En Proceso";
             this.LblProgreso.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;

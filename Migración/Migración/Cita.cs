@@ -39,5 +39,13 @@ namespace Migración
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmMenu nuevo = new FrmMenu(user);
+    
+            nuevo.Show();
+        }
     }
 }

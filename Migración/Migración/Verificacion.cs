@@ -12,7 +12,7 @@ using System.IO;
 using System.Net;
 namespace Migración
 {
-    
+
     public partial class FrmVerificacion : Form
     {/*Conexion a la base de datos Google Cloud*/
         OdbcConnection conn = new OdbcConnection("Dsn=migracion");
@@ -22,7 +22,7 @@ namespace Migración
         string user;
         string correo;
         string Cui;
-        public FrmVerificacion(string dato,string tipo,string usuario, string email,string cui)
+        public FrmVerificacion(string dato, string tipo, string usuario, string email, string cui)
         {
 
             InitializeComponent();
@@ -34,13 +34,14 @@ namespace Migración
             Tramite = tipo;
             TxtTra.Text = Tramite;
             visualizacion();
+            BtnRechazar.Enabled = false;
 
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FrmCita nuevo = new FrmCita(user,solicitud,Cui);
+            FrmCita nuevo = new FrmCita(user, solicitud, Cui);
             nuevo.Show();
         }
         void llenartbl()
@@ -48,7 +49,7 @@ namespace Migración
             //codigo para llevar el DataGridView
             OdbcCommand cod = new OdbcCommand();
             cod.Connection = conn;
-            cod.CommandText = ("select  nombre_documento, no_documento from documentos where id_solicitud="+ solicitud);
+            cod.CommandText = ("select  nombre_documento, no_documento from documentos where id_solicitud=" + solicitud);
             try
             {
                 OdbcDataAdapter eje = new OdbcDataAdapter();
@@ -67,13 +68,13 @@ namespace Migración
                 conn.Close();
             }
         }
-        
+
 
         private void dataGridView1_DoubleClick(object sender, EventArgs e)
         {
             if (dataGridView1.SelectedRows.Count == 1)
             {
-              
+
                 TxtNombre.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
                 TxtNoDD.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
                 //llenarBan();
@@ -82,10 +83,12 @@ namespace Migración
                 {
                     llenarMun();
                 }
-                else if (TxtNombre.Text == "Boleta de Pago") {
+                else if (TxtNombre.Text == "Boleta de Pago")
+                {
 
                     llenarBan();
-                } else if (TxtNombre.Text == "DPI Padre" && Tramite == "Menor de Edad") { llenarRenapP(); }
+                }
+                else if (TxtNombre.Text == "DPI Padre" && Tramite == "Menor de Edad") { llenarRenapP(); }
                 else if (TxtNombre.Text == "DPI Madre" && Tramite == "Menor de Edad") { llenarRenapM(); }
             }
             else
@@ -100,7 +103,7 @@ namespace Migración
             OdbcCommand cod = new OdbcCommand();
             cod.Connection = conn;
             cod.CommandText = ("select Correlativo_ornato,fecha_vencimiento,Monto from municipalidad where correlativo_ornato =" + TxtNoDD.Text);
-            
+
             try
             {
                 OdbcDataAdapter eje = new OdbcDataAdapter();
@@ -110,12 +113,12 @@ namespace Migración
                 dataGridView3.DataSource = datos;
                 eje.Update(datos);
                 conn.Close();
-               TxtCoM.Text = dataGridView3.CurrentRow.Cells[0].Value.ToString();
+                TxtCoM.Text = dataGridView3.CurrentRow.Cells[0].Value.ToString();
                 TxtfechaEM.Text = dataGridView3.CurrentRow.Cells[1].Value.ToString();
                 TxtMontoB.Text = dataGridView3.CurrentRow.Cells[2].Value.ToString();
-                
-               
-              
+
+
+
 
             }
             catch (Exception e)
@@ -123,9 +126,10 @@ namespace Migración
 
 
                 MessageBox.Show("!ERROR! No ecxiste boleto de pago ");
+                BtnRechazar.Enabled = true;
                 e.ToString();
                 conn.Close();
-             
+
             }
         }
 
@@ -139,14 +143,14 @@ namespace Migración
                 dataGridView5.Enabled = false;
 
             }
-            else if (Tramite == "Menor de Edad") 
+            else if (Tramite == "Menor de Edad")
             {
                 dataGridView2.Enabled = true;
                 dataGridView3.Enabled = true;
                 dataGridView4.Enabled = true;
                 dataGridView5.Enabled = true;
-            } 
-            else if(Tramite == "Mayor de 60")
+            }
+            else if (Tramite == "Mayor de 60")
             {
                 dataGridView2.Enabled = true;
                 dataGridView3.Enabled = false;
@@ -179,19 +183,20 @@ namespace Migración
                 dataGridView2.DataSource = datos;
                 eje.Update(datos);
                 conn.Close();
-                 TxtNoB.Text = dataGridView2.CurrentRow.Cells[0].Value.ToString();
-                 TxtFechaP.Text = dataGridView2.CurrentRow.Cells[1].Value.ToString();
-                 TxtMonto.Text = dataGridView2.CurrentRow.Cells[2].Value.ToString();
-               
+                TxtNoB.Text = dataGridView2.CurrentRow.Cells[0].Value.ToString();
+                TxtFechaP.Text = dataGridView2.CurrentRow.Cells[1].Value.ToString();
+                TxtMonto.Text = dataGridView2.CurrentRow.Cells[2].Value.ToString();
+
             }
             catch (Exception e)
             {
 
 
                 MessageBox.Show("!ERROR!La boleta de pago no existe");
+                BtnRechazar.Enabled = true;
                 e.ToString();
                 conn.Close();
-                
+
             }
         }
         void llenarRenapP()
@@ -210,11 +215,11 @@ namespace Migración
                 dataGridView4.DataSource = datos;
                 eje.Update(datos);
                 conn.Close();
-               TxtCuiP.Text = dataGridView4.CurrentRow.Cells[0].Value.ToString();
+                TxtCuiP.Text = dataGridView4.CurrentRow.Cells[0].Value.ToString();
                 TxtNombreP.Text = dataGridView4.CurrentRow.Cells[1].Value.ToString();
                 TxtApellidoP.Text = dataGridView4.CurrentRow.Cells[2].Value.ToString();
                 TxtCuiPA.Text = dataGridView4.CurrentRow.Cells[3].Value.ToString();
-                                
+
 
             }
             catch (Exception e)
@@ -222,9 +227,10 @@ namespace Migración
 
 
                 MessageBox.Show("!ERROR! El Numero de DPI del Padre es Incorecto");
+                BtnRechazar.Enabled = true;
                 e.ToString();
                 conn.Close();
-             
+
             }
         }
         void llenarRenapM()
@@ -243,11 +249,11 @@ namespace Migración
                 dataGridView5.DataSource = datos;
                 eje.Update(datos);
                 conn.Close();
-                 TxtCuiMA.Text = dataGridView5.CurrentRow.Cells[0].Value.ToString();
-                  TxtNombreMA.Text = dataGridView5.CurrentRow.Cells[1].Value.ToString();
-                  TxtApellidoMA.Text = dataGridView5.CurrentRow.Cells[2].Value.ToString();
-                  TxtCuiMAA.Text = dataGridView5.CurrentRow.Cells[3].Value.ToString();
-                 
+                TxtCuiMA.Text = dataGridView5.CurrentRow.Cells[0].Value.ToString();
+                TxtNombreMA.Text = dataGridView5.CurrentRow.Cells[1].Value.ToString();
+                TxtApellidoMA.Text = dataGridView5.CurrentRow.Cells[2].Value.ToString();
+                TxtCuiMAA.Text = dataGridView5.CurrentRow.Cells[3].Value.ToString();
+
 
             }
             catch (Exception e)
@@ -255,9 +261,10 @@ namespace Migración
 
 
                 MessageBox.Show("!ERROR! El Numero de DPI de la Madre es Incorecto");
+                BtnRechazar.Enabled = true;
                 e.ToString();
                 conn.Close();
-               
+
             }
         }
 
@@ -273,11 +280,74 @@ namespace Migración
             nuevo.Show();
         }
 
+       
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void button1_Click_1(object sender, EventArgs e)
         {
-            this.Hide();
-            FrmCita nuevo = new FrmCita(user, solicitud,Cui);
-            nuevo.Show();
+            if (Tramite == "Mayor de Edad")
+            {
+                
+                    if (TxtNoB.Text != "" && TxtCoM.Text != "")
+                    {
+
+                        this.Hide();
+                        FrmCita nuevo = new FrmCita(user, solicitud, Cui);
+                        nuevo.Show();
+
+                    }
+                    else
+                    {
+                        MessageBox.Show("!ERROR! Falta seleccionar Documentos y/o Verificar la documentación");
+                        BtnRechazar.Enabled = true;
+
+                    }
+
+                }
+            else if (Tramite == "Menor de Edad")
+            {
+                if (TxtNoB.Text != "" && TxtCoM.Text != "" && TxtCuiP.Text != "" && TxtCuiMA.Text != "")
+                {
+
+                    this.Hide();
+                    FrmCita nuevo = new FrmCita(user, solicitud, Cui);
+                    nuevo.Show();
+
+                }
+                else
+                {
+                    MessageBox.Show("!ERROR! Falta seleccionar Documentos y/o Verificar la documentación");
+                    BtnRechazar.Enabled = true;
+
+                }
+            }
+            else if (Tramite == "Mayor de 60")
+            {
+                if (TxtNoB.Text != "")
+                {
+
+                    this.Hide();
+                    FrmCita nuevo = new FrmCita(user, solicitud, Cui);
+                    nuevo.Show();
+
+                }
+                else
+                {
+                    MessageBox.Show("!ERROR! Falta seleccionar Documentos y/o Verificar la documentación");
+                    BtnRechazar.Enabled = true;
+
+                }
+            }
+            else
+            {
+                MessageBox.Show("!ERROR! El tipo de tramite es incorecto");
+
+
+            }
+
         }
     }
 }
