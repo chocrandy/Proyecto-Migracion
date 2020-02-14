@@ -7,19 +7,27 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.Odbc;
+using System.IO;
+using System.Net;
 
 namespace Migración
 {
     public partial class FrmMenu : Form
     {
+        OdbcConnection conn = new OdbcConnection("Dsn=migracion");
+        DateTime hoy = DateTime.Now;
         string user;
         string numero;
         string Cui;
+        string fechahora;
         public FrmMenu(string usuario)
         {
             InitializeComponent();
             user = usuario;
             LblUsuario.Text = user;
+            fechahora = hoy.ToString("yyyy/MM/dd HH:mm:ss");
+            Bitacora();
         }
         private void solicitudesToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -27,7 +35,33 @@ namespace Migración
             FrmSolictudes nuevo = new  FrmSolictudes(user);
             nuevo.Show();
         }
+        void Bitacora()
+        {
 
+            conn.Close();
+
+            string query = "INSERT INTO `bitacora` (`id_bitacora`, `accion`, `fecha_accion`, `id_usuario`) VALUES (NULL, 'Inicio secion', '" + fechahora + "', '" + user + "');";
+
+            conn.Open();
+            OdbcCommand consulta = new OdbcCommand(query, conn);
+
+            try
+            {
+                consulta.ExecuteNonQuery();
+
+
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("\t Error! \n\n " + ex.ToString());
+                conn.Close();
+            }
+
+
+
+        }
         private void puestosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -62,6 +96,11 @@ namespace Migración
             this.Hide();
            FrmBitacora nuevo = new FrmBitacora(user);
             nuevo.Show();
+        }
+
+        private void FrmMenu_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

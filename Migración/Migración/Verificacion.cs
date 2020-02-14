@@ -17,6 +17,7 @@ namespace Migración
     {/*Conexion a la base de datos Google Cloud*/
         OdbcConnection conn = new OdbcConnection("Dsn=migracion");
         DateTime hoy = DateTime.Now;
+        
         string solicitud;
         string Tramite;
         string user;
@@ -416,5 +417,7 @@ namespace Migración
 
 
         }
+
+       
     }
 }

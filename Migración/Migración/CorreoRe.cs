@@ -10,15 +10,21 @@ using System.Windows.Forms;
 using System.Data.Odbc;
 using System.IO;
 using System.Net;
+using System.Data.Odbc;
+using System.IO;
+using System.Net;
 namespace Migración
 {
     public partial class FrmCorreoRe : Form
     {
         OdbcConnection conn = new OdbcConnection("Dsn=migracion");
+        DateTime hoy = DateTime.Now;
+        string fechahora;
         string correo;
         string solicitud;
         string user;
         Correo c = new Correo();
+
         public FrmCorreoRe(string dato ,string verifi , string usuario)
         {
             InitializeComponent();
@@ -27,13 +33,34 @@ namespace Migración
             user = usuario;
             TxtReceptor.Text = correo;
            TxtAsunto.Text = "Notificacion de Migracion sobre solicitud de Pasaporte Rechazada";
+            fechahora = hoy.ToString("yyyy/MM/dd HH:mm:ss");
         }
 
         private void CorreoRe_Load(object sender, EventArgs e)
         {
 
         }
+        void Bitacora()
+        {
 
+            conn.Close();
+
+            string query = "INSERT INTO `bitacora` (`id_bitacora`, `accion`, `fecha_accion`, `id_usuario`) VALUES (NULL, 'Envio de mensaje de cancelacion', '" + fechahora + "', '" + user + "');";
+
+            conn.Open();
+            OdbcCommand consulta = new OdbcCommand(query, conn);
+
+            try
+            {
+                consulta.ExecuteNonQuery();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("\t Error! \n\n " + ex.ToString());
+                conn.Close();
+            }
+        }
         private void button2_Click(object sender, EventArgs e)
         {
             string usu = "riskogt6@gmail.com";
@@ -51,8 +78,8 @@ namespace Migración
                 {
                     consulta.ExecuteNonQuery();  
                     MessageBox.Show("La Slolicitud fue calcelada exitosa mente");
-              
-                                   
+
+                Bitacora();
                     conn.Close();
                 this.Hide();
                 FrmMenu nuevo = new FrmMenu(user);

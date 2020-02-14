@@ -17,11 +17,14 @@ namespace Migración
     {
         /*Conexion a la base de datos Google Cloud*/
         OdbcConnection conn = new OdbcConnection("Dsn=migracion");
+        DateTime hoy = DateTime.Now;
+        string fechahora;
         string solicitud;
         string TTramite;
         string correo;
         string user;
         string Cui;
+        
         public FrmSolictudes(string usuario)
         {
             InitializeComponent();
@@ -29,6 +32,7 @@ namespace Migración
             user = usuario;
 
             LblUsuario.Text = user;
+            fechahora = hoy.ToString("yyyy/MM/dd HH:mm:ss");
             llenartbl();
               }
 
@@ -146,10 +150,52 @@ namespace Migración
         private void BtnSig_Click(object sender, EventArgs e)
         {
             this.Hide();
+            Bitacora();
             FrmVerificacion nuevo = new FrmVerificacion(solicitud ,TTramite,user,correo,Cui);
             nuevo.Show();
         }
+        void Bitacora()
+        {
 
+            conn.Close();
+
+            string query = "INSERT INTO `bitacora` (`id_bitacora`, `accion`, `fecha_accion`, `id_usuario`) VALUES (NULL, 'verifiacion de DPI de una solicitud ', '"+ fechahora + "', '"+ user + "');";
+
+            conn.Open();
+            OdbcCommand consulta = new OdbcCommand(query, conn);
+
+            try
+            {
+                consulta.ExecuteNonQuery();
+               
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("\t Error! \n\n " + ex.ToString());
+                conn.Close();
+            }
+        }
+        void BitacoraA()
+        {
+
+            conn.Close();
+
+            string query = "INSERT INTO `bitacora` (`id_bitacora`, `accion`, `fecha_accion`, `id_usuario`) VALUES (NULL, 'Canselacion de solicitud', '" + fechahora + "', '" + user + "');";
+
+            conn.Open();
+            OdbcCommand consulta = new OdbcCommand(query, conn);
+
+            try
+            {
+                consulta.ExecuteNonQuery();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("\t Error! \n\n " + ex.ToString());
+                conn.Close();
+            }
+        }
         private void FrmSolictudes_Load(object sender, EventArgs e)
         {
 
@@ -166,6 +212,7 @@ namespace Migración
         {
             this.Hide();
            FrmMenu nuevo = new FrmMenu(user);
+            BitacoraA();
             TxtCuiR.Text = "";
             TxtNombres.Text = "";
             TxtApellido.Text = "";
@@ -181,6 +228,11 @@ namespace Migración
             TxtFecha.Text = "";
             TxtCorreo.Text = "";
             nuevo.Show();
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

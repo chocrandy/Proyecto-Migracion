@@ -68,6 +68,7 @@
     <Compile Include="Bitacora.Designer.cs">
       <DependentUpon>Bitacora.cs</DependentUpon>
     </Compile>
+    <Compile Include="Bitacorac.cs" />
     <Compile Include="Cita.cs">
       <SubType>Form</SubType>
     </Compile>

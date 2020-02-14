@@ -16,6 +16,8 @@ namespace Migración
     public partial class FrmCita : Form
     {
         OdbcConnection conn = new OdbcConnection("Dsn=migracion");
+        DateTime hoy = DateTime.Now;
+        string fechahora;
         string user;
         string solicitud;
         string Cui;
@@ -27,14 +29,34 @@ namespace Migración
             solicitud = numero;
             Cui = cui;
             TxtCui.Text = Cui;
-            //TxtNumeroV.Text = solicitud;
+            TxtNumeroV.Text = solicitud;
         }
 
         private void tableLayoutPanel5_Paint(object sender, PaintEventArgs e)
         {
 
         }
+        void Bitacora()
+        {
 
+            conn.Close();
+
+            string query = "INSERT INTO `bitacora` (`id_bitacora`, `accion`, `fecha_accion`, `id_usuario`) VALUES (NULL, 'Se genero una cita  ', '" + fechahora + "', '" + user + "');";
+
+            conn.Open();
+            OdbcCommand consulta = new OdbcCommand(query, conn);
+
+            try
+            {
+                consulta.ExecuteNonQuery();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("\t Error! \n\n " + ex.ToString());
+                conn.Close();
+            }
+        }
         private void FrmCita_Load(object sender, EventArgs e)
         {
 
@@ -76,6 +98,11 @@ namespace Migración
             FrmMenu nuevo = new FrmMenu(user);
     
             nuevo.Show();
+        }
+
+        private void tableLayoutPanel4_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
