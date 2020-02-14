@@ -16,12 +16,13 @@ namespace Migración
     public partial class FrmVerificacion : Form
     {/*Conexion a la base de datos Google Cloud*/
         OdbcConnection conn = new OdbcConnection("Dsn=migracion");
-
+        DateTime hoy = DateTime.Now;
         string solicitud;
         string Tramite;
         string user;
         string correo;
         string Cui;
+        string fechahora;
         public FrmVerificacion(string dato, string tipo, string usuario, string email, string cui)
         {
 
@@ -35,6 +36,10 @@ namespace Migración
             TxtTra.Text = Tramite;
             visualizacion();
             BtnRechazar.Enabled = false;
+            fechahora = hoy.ToString("yyyy/MM/dd HH:mm:ss");
+        
+           
+
 
         }
 
@@ -280,21 +285,76 @@ namespace Migración
             nuevo.Show();
         }
 
-       
+        void verificacion()
+        {
+
+
+
+            string query = "INSERT INTO `verificacion` (`id_verificacion`, `cui`, `id_usuario`, `fecha_verificacion`, `id_solicitud`) VALUES (NULL, "+ Cui + ", '" + user + "', '"+ fechahora + "', '"+ solicitud + "'); ";
+           
+            conn.Open();
+            OdbcCommand consulta = new OdbcCommand(query, conn);
+           
+            try
+            {
+                consulta.ExecuteNonQuery();
+                MessageBox.Show("La verificacion ya fue aprobada");
+
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("\t Error! \n\n " + ex.ToString());
+                conn.Close();
+            }
+
+
+
+        }
+        void guardarv()
+        {
+            conn.Close();
+            string query = "UPDATE solicitudes set estado = 2  where  id_solicitud  =" + solicitud;
+            conn.Open();
+            OdbcCommand consulta = new OdbcCommand(query, conn);
+            try
+            {
+                consulta.ExecuteNonQuery();
+                
+
+
+                conn.Close();
+                
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("\t Error! \n\n " + ex.ToString());
+                conn.Close();
+            }
+
+
+        }
         private void button3_Click(object sender, EventArgs e)
         {
 
+            this.Hide();
+            FrmMenu nuevo = new FrmMenu(user);
+            nuevo.Show();
         }
+        
 
         private void button1_Click_1(object sender, EventArgs e)
         {
+     
             if (Tramite == "Mayor de Edad")
             {
                 
                     if (TxtNoB.Text != "" && TxtCoM.Text != "")
                     {
+                  
 
-                        this.Hide();
+                    this.Hide();
                         FrmCita nuevo = new FrmCita(user, solicitud, Cui);
                         nuevo.Show();
 
@@ -305,13 +365,14 @@ namespace Migración
                         BtnRechazar.Enabled = true;
 
                     }
-
-                }
+                verificacion();
+                guardarv();
+            }
             else if (Tramite == "Menor de Edad")
             {
                 if (TxtNoB.Text != "" && TxtCoM.Text != "" && TxtCuiP.Text != "" && TxtCuiMA.Text != "")
                 {
-
+                   
                     this.Hide();
                     FrmCita nuevo = new FrmCita(user, solicitud, Cui);
                     nuevo.Show();
@@ -323,12 +384,14 @@ namespace Migración
                     BtnRechazar.Enabled = true;
 
                 }
+                verificacion();
+                guardarv();
             }
             else if (Tramite == "Mayor de 60")
             {
                 if (TxtNoB.Text != "")
                 {
-
+                  
                     this.Hide();
                     FrmCita nuevo = new FrmCita(user, solicitud, Cui);
                     nuevo.Show();
@@ -340,13 +403,17 @@ namespace Migración
                     BtnRechazar.Enabled = true;
 
                 }
+                verificacion();
+                guardarv();
             }
             else
             {
                 MessageBox.Show("!ERROR! El tipo de tramite es incorecto");
 
-
+    
             }
+
+
 
         }
     }
