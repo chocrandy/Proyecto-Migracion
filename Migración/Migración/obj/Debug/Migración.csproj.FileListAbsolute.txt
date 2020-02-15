@@ -23,7 +23,6 @@ C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingen
 C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\Migracion\Proyecto-Migracion\Migración\Migración\obj\Debug\Migración.csprojAssemblyReference.cache
 C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\Migracion\Proyecto-Migracion\Migración\Migración\obj\Debug\Migración.FrmBitacora.resources
 C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\Migracion\Proyecto-Migracion\Migración\Migración\obj\Debug\Migración.FrmCita.resources
-C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\Migracion\Proyecto-Migracion\Migración\Migración\obj\Debug\Migración.CorreoCita.resources
 C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\Migracion\Proyecto-Migracion\Migración\Migración\obj\Debug\Migración.FrmCorreoRe.resources
 C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\Migracion\Proyecto-Migracion\Migración\Migración\obj\Debug\Migración.FrmMenu.resources
 C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\Migracion\Proyecto-Migracion\Migración\Migración\obj\Debug\Migración.FrmLogin.resources
@@ -58,3 +57,4 @@ C:\Users\Randy\Desktop\UMG\9.no Semestre\Ingeniería de Software\Proyecto 1\Prot
 C:\Users\Randy\Desktop\UMG\9.no Semestre\Ingeniería de Software\Proyecto 1\Prototipo\Proyecto-Migracion\Migración\Migración\obj\Debug\Migración.csproj.CoreCompileInputs.cache
 C:\Users\Randy\Desktop\UMG\9.no Semestre\Ingeniería de Software\Proyecto 1\Prototipo\Proyecto-Migracion\Migración\Migración\obj\Debug\Migración.exe
 C:\Users\Randy\Desktop\UMG\9.no Semestre\Ingeniería de Software\Proyecto 1\Prototipo\Proyecto-Migracion\Migración\Migración\obj\Debug\Migración.pdb
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\Migracion\Proyecto-Migracion\Migración\Migración\obj\Debug\Migración.FrmCorreoCita.resources

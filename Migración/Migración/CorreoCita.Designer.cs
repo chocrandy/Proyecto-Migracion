@@ -1,6 +1,6 @@
 ﻿namespace Migración
 {
-    partial class CorreoCita
+    partial class FrmCorreoCita
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CorreoCita));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCorreoCita));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
@@ -266,13 +266,13 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // CorreoCita
+            // FrmCorreoCita
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1007, 557);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Name = "CorreoCita";
+            this.Name = "FrmCorreoCita";
             this.Text = "CorreoCita";
             this.Load += new System.EventHandler(this.CorreoCita_Load);
             this.tableLayoutPanel1.ResumeLayout(false);

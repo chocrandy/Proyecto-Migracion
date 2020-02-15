@@ -21,15 +21,22 @@ namespace Migración
         string user;
         string solicitud;
         string Cui;
+        string correo;
         string Idveri;
-        public FrmCita(string usuario, string numero,string cui)
+        public FrmCita(string usuario, string numero,string cui,string email)
         {
             InitializeComponent();
             user = usuario;
             solicitud = numero;
+            TxtNumeroV.Text = solicitud;
+            correo = email;
             Cui = cui;
             TxtCui.Text = Cui;
-            TxtNumeroV.Text = solicitud;
+            fechahora = hoy.ToString("yyyy/MM/dd HH:mm:ss");
+            TxtFecha.Text = fechahora;
+          
+
+
         }
 
         private void tableLayoutPanel5_Paint(object sender, PaintEventArgs e)
@@ -57,13 +64,36 @@ namespace Migración
                 conn.Close();
             }
         }
+
+        void Generarcita()
+        {
+
+            conn.Close();
+
+            string query = "INSERT INTO `citas` (`id_cita`, `id_verificacion`, `cui`, `fecha_cita`, `estado`) VALUES (NULL, '"+ Idveri + "', '"+Cui+"', '" + fechahora + "', '1');";
+              
+
+            conn.Open();
+            OdbcCommand consulta = new OdbcCommand(query, conn);
+
+            try
+            {
+                consulta.ExecuteNonQuery();
+           
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("\t Error! \n\n " + ex.ToString());
+                conn.Close();
+            }
+        }
         private void FrmCita_Load(object sender, EventArgs e)
         {
 
         }
         void OPcita()
                 {
-            conn.Close();
+       
 
             try
             {
@@ -74,8 +104,11 @@ namespace Migración
                 OdbcDataReader reader = command.ExecuteReader();
                 while (reader.Read())
                 {
-                 
-                    TxtNumeroV.Text = reader.GetValue(0).ToString();
+
+                    Idveri = reader.GetValue(0).ToString();
+                    LblEstado.Text = "Verificacion Validada";
+                    BtnGenerar.Enabled = true;
+                    BtnVerificar.Enabled = false;
                 }
             }
             catch (Exception ex)
@@ -88,19 +121,42 @@ namespace Migración
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            OPcita();
-          
+            Bitacora();
+            Generarcita();
+            this.Hide();
+           FrmCorreoCita nuevo = new FrmCorreoCita(correo ,solicitud, user);
+
+            nuevo.Show();
+
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+           
             this.Hide();
             FrmMenu nuevo = new FrmMenu(user);
-    
+           
             nuevo.Show();
         }
 
         private void tableLayoutPanel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void TxtNumeroV_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            OPcita();
+            
+            
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

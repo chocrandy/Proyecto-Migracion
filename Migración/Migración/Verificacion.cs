@@ -47,7 +47,7 @@ namespace Migración
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FrmCita nuevo = new FrmCita(user, solicitud, Cui);
+            FrmCita nuevo = new FrmCita(user, solicitud, Cui, correo);
             nuevo.Show();
         }
         void llenartbl()
@@ -299,9 +299,7 @@ namespace Migración
             try
             {
                 consulta.ExecuteNonQuery();
-                MessageBox.Show("La verificacion ya fue aprobada");
-
-
+             
 
             }
             catch (Exception ex)
@@ -343,8 +341,28 @@ namespace Migración
             FrmMenu nuevo = new FrmMenu(user);
             nuevo.Show();
         }
-        
 
+        void Bitacora()
+        {
+
+            conn.Close();
+
+            string query = "INSERT INTO `bitacora` (`id_bitacora`, `accion`, `fecha_accion`, `id_usuario`) VALUES (NULL, 'Se veridico la Documentacion de unt tramite "+ Tramite + "', '" + fechahora + "', '" + user + "');";
+
+            conn.Open();
+            OdbcCommand consulta = new OdbcCommand(query, conn);
+
+            try
+            {
+                consulta.ExecuteNonQuery();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("\t Error! \n\n " + ex.ToString());
+                conn.Close();
+            }
+        }
         private void button1_Click_1(object sender, EventArgs e)
         {
      
@@ -356,8 +374,9 @@ namespace Migración
                   
 
                     this.Hide();
-                        FrmCita nuevo = new FrmCita(user, solicitud, Cui);
-                        nuevo.Show();
+                    FrmCita nuevo = new FrmCita(user, solicitud, Cui, correo);
+                    nuevo.Show();
+                    Bitacora();
 
                     }
                     else
@@ -375,9 +394,9 @@ namespace Migración
                 {
                    
                     this.Hide();
-                    FrmCita nuevo = new FrmCita(user, solicitud, Cui);
+                    FrmCita nuevo = new FrmCita(user, solicitud, Cui, correo);
                     nuevo.Show();
-
+                   Bitacora();
                 }
                 else
                 {
@@ -392,9 +411,9 @@ namespace Migración
             {
                 if (TxtNoB.Text != "")
                 {
-                  
+                    Bitacora();
                     this.Hide();
-                    FrmCita nuevo = new FrmCita(user, solicitud, Cui);
+                    FrmCita nuevo = new FrmCita(user, solicitud, Cui, correo);
                     nuevo.Show();
 
                 }
