@@ -22,13 +22,16 @@ namespace Migración
         string correo;
         string solicitud;
         string user;
+        string fecha;
+        string mensaje;
         Correo c = new Correo();
-        public FrmCorreoCita(string dato, string verifi, string usuario)
+        public FrmCorreoCita(string dato, string verifi, string usuario ,string Fecha)
         {
             InitializeComponent();
             correo = dato;
             solicitud = verifi;
             user = usuario;
+            fecha = Fecha;
             TxtReceptor.Text = correo;
             TxtAsunto.Text = "Notificacion de Migracion sobre solicitud de Pasaporte Aprobada";
             fechahora = hoy.ToString("yyyy/MM/dd HH:mm:ss");
@@ -39,7 +42,9 @@ namespace Migración
             Bitacora();
             string usu = "riskogt6@gmail.com";
             string pass = "Risgt657";
-           c.enviarCorreo(usu, pass, TxtMensaje.Text, TxtAsunto.Text, TxtReceptor.Text, TxtRutaArchivo.Text);
+            mensaje = "Correo de Aceptacion de solicitud de Cita al sistema de migracion \n\n" + "El Numero de solicitud es :"+solicitud+ "\n\n La Fecha de la cita es :"
+                + fecha + "\n\n Por Favor presentar las copias y Documentos requeridos y que sean necesarios\n\n" + TxtMensaje.Text+ "\n\n\n\nATT: Migracion";
+           c.enviarCorreo(usu, pass, mensaje, TxtAsunto.Text, TxtReceptor.Text, TxtRutaArchivo.Text);
               this.Hide();
             FrmMenu nuevo = new FrmMenu(user);
             nuevo.Show();

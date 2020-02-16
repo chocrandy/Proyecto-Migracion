@@ -97,7 +97,7 @@ namespace Migración
             Bitacora();
             Generarcita();
             this.Hide();
-           FrmCorreoCita nuevo = new FrmCorreoCita(correo ,solicitud, user);
+           FrmCorreoCita nuevo = new FrmCorreoCita(correo ,solicitud, user,TxtFecha.Text);
             nuevo.Show();
         }
 
