@@ -31,26 +31,26 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCorreoCita));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.LblPara = new System.Windows.Forms.Label();
+            this.LblAsunto = new System.Windows.Forms.Label();
+            this.Lblarchivo = new System.Windows.Forms.Label();
             this.TxtReceptor = new System.Windows.Forms.TextBox();
             this.TxtAsunto = new System.Windows.Forms.TextBox();
             this.TxtMensaje = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.LblDetaller = new System.Windows.Forms.Label();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.TxtRutaArchivo = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.BtnEnviar = new System.Windows.Forms.Button();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.Piclogo = new System.Windows.Forms.PictureBox();
+            this.LblTitulo = new System.Windows.Forms.Label();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Piclogo)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -82,15 +82,15 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 26.16492F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.183338F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 59.56134F));
-            this.tableLayoutPanel2.Controls.Add(this.label2, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.label3, 1, 2);
-            this.tableLayoutPanel2.Controls.Add(this.label4, 1, 4);
+            this.tableLayoutPanel2.Controls.Add(this.LblPara, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.LblAsunto, 1, 2);
+            this.tableLayoutPanel2.Controls.Add(this.Lblarchivo, 1, 4);
             this.tableLayoutPanel2.Controls.Add(this.TxtReceptor, 3, 0);
             this.tableLayoutPanel2.Controls.Add(this.TxtAsunto, 3, 2);
             this.tableLayoutPanel2.Controls.Add(this.TxtMensaje, 3, 6);
-            this.tableLayoutPanel2.Controls.Add(this.label5, 1, 6);
+            this.tableLayoutPanel2.Controls.Add(this.LblDetaller, 1, 6);
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel4, 3, 4);
-            this.tableLayoutPanel2.Controls.Add(this.button2, 3, 7);
+            this.tableLayoutPanel2.Controls.Add(this.BtnEnviar, 3, 7);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(11, 169);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -106,38 +106,38 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(975, 375);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
-            // label2
+            // LblPara
             // 
-            this.label2.AutoSize = true;
-            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(130, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(249, 60);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Para:";
+            this.LblPara.AutoSize = true;
+            this.LblPara.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LblPara.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblPara.Location = new System.Drawing.Point(130, 0);
+            this.LblPara.Name = "LblPara";
+            this.LblPara.Size = new System.Drawing.Size(249, 60);
+            this.LblPara.TabIndex = 0;
+            this.LblPara.Text = "Para:";
             // 
-            // label3
+            // LblAsunto
             // 
-            this.label3.AutoSize = true;
-            this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label3.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(130, 66);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(249, 60);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Asunto:";
+            this.LblAsunto.AutoSize = true;
+            this.LblAsunto.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LblAsunto.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblAsunto.Location = new System.Drawing.Point(130, 66);
+            this.LblAsunto.Name = "LblAsunto";
+            this.LblAsunto.Size = new System.Drawing.Size(249, 60);
+            this.LblAsunto.TabIndex = 1;
+            this.LblAsunto.Text = "Asunto:";
             // 
-            // label4
+            // Lblarchivo
             // 
-            this.label4.AutoSize = true;
-            this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label4.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(130, 132);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(249, 60);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Archivo";
+            this.Lblarchivo.AutoSize = true;
+            this.Lblarchivo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Lblarchivo.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lblarchivo.Location = new System.Drawing.Point(130, 132);
+            this.Lblarchivo.Name = "Lblarchivo";
+            this.Lblarchivo.Size = new System.Drawing.Size(249, 60);
+            this.Lblarchivo.TabIndex = 2;
+            this.Lblarchivo.Text = "Archivo";
             // 
             // TxtReceptor
             // 
@@ -166,16 +166,16 @@
             this.TxtMensaje.Size = new System.Drawing.Size(576, 119);
             this.TxtMensaje.TabIndex = 6;
             // 
-            // label5
+            // LblDetaller
             // 
-            this.label5.AutoSize = true;
-            this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label5.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(130, 198);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(249, 125);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "Detalle";
+            this.LblDetaller.AutoSize = true;
+            this.LblDetaller.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LblDetaller.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblDetaller.Location = new System.Drawing.Point(130, 198);
+            this.LblDetaller.Name = "LblDetaller";
+            this.LblDetaller.Size = new System.Drawing.Size(249, 125);
+            this.LblDetaller.TabIndex = 7;
+            this.LblDetaller.Text = "Detalle";
             // 
             // tableLayoutPanel4
             // 
@@ -212,24 +212,24 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // BtnEnviar
             // 
-            this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button2.Location = new System.Drawing.Point(396, 326);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(576, 46);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "Enviar";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.BtnEnviar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BtnEnviar.Location = new System.Drawing.Point(396, 326);
+            this.BtnEnviar.Name = "BtnEnviar";
+            this.BtnEnviar.Size = new System.Drawing.Size(576, 46);
+            this.BtnEnviar.TabIndex = 9;
+            this.BtnEnviar.Text = "Enviar";
+            this.BtnEnviar.UseVisualStyleBackColor = true;
+            this.BtnEnviar.Click += new System.EventHandler(this.button2_Click);
             // 
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.ColumnCount = 2;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.84211F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.15789F));
-            this.tableLayoutPanel3.Controls.Add(this.pictureBox1, 0, 0);
-            this.tableLayoutPanel3.Controls.Add(this.label1, 1, 0);
+            this.tableLayoutPanel3.Controls.Add(this.Piclogo, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.LblTitulo, 1, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(11, 10);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
@@ -238,29 +238,29 @@
             this.tableLayoutPanel3.Size = new System.Drawing.Size(975, 146);
             this.tableLayoutPanel3.TabIndex = 1;
             // 
-            // pictureBox1
+            // Piclogo
             // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(353, 140);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.Piclogo.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Piclogo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Piclogo.BackgroundImage")));
+            this.Piclogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.Piclogo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Piclogo.Location = new System.Drawing.Point(3, 3);
+            this.Piclogo.Name = "Piclogo";
+            this.Piclogo.Size = new System.Drawing.Size(353, 140);
+            this.Piclogo.TabIndex = 1;
+            this.Piclogo.TabStop = false;
             // 
-            // label1
+            // LblTitulo
             // 
-            this.label1.AutoSize = true;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("Arial Narrow", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(362, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(610, 146);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Correo de Citas";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LblTitulo.AutoSize = true;
+            this.LblTitulo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LblTitulo.Font = new System.Drawing.Font("Arial Narrow", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblTitulo.Location = new System.Drawing.Point(362, 0);
+            this.LblTitulo.Name = "LblTitulo";
+            this.LblTitulo.Size = new System.Drawing.Size(610, 146);
+            this.LblTitulo.TabIndex = 2;
+            this.LblTitulo.Text = "Correo de Citas";
+            this.LblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // openFileDialog1
             // 
@@ -274,7 +274,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "FrmCorreoCita";
             this.Text = "CorreoCita";
-            this.Load += new System.EventHandler(this.CorreoCita_Load);
+            this.Load += new System.EventHandler(this.FrmCorreoCita_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
@@ -282,7 +282,7 @@
             this.tableLayoutPanel4.PerformLayout();
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Piclogo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -291,20 +291,20 @@
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label LblPara;
+        private System.Windows.Forms.Label LblAsunto;
+        private System.Windows.Forms.Label Lblarchivo;
         private System.Windows.Forms.TextBox TxtReceptor;
         private System.Windows.Forms.TextBox TxtAsunto;
         private System.Windows.Forms.TextBox TxtMensaje;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label LblDetaller;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.TextBox TxtRutaArchivo;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button BtnEnviar;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox Piclogo;
+        private System.Windows.Forms.Label LblTitulo;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }

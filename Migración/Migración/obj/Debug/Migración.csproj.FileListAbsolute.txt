@@ -28,10 +28,8 @@ C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingen
 C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\Migracion\Proyecto-Migracion\Migración\Migración\obj\Debug\Migración.FrmLogin.resources
 C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\Migracion\Proyecto-Migracion\Migración\Migración\obj\Debug\Migración.FrmEmpleado.resources
 C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\Migracion\Proyecto-Migracion\Migración\Migración\obj\Debug\Migración.Properties.Resources.resources
-C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\Migracion\Proyecto-Migracion\Migración\Migración\obj\Debug\Migración.FrmPuesto.resources
 C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\Migracion\Proyecto-Migracion\Migración\Migración\obj\Debug\Migración.FrmSolictudes.resources
 C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\Migracion\Proyecto-Migracion\Migración\Migración\obj\Debug\Migración.FrmUsuario.resources
-C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\Migracion\Proyecto-Migracion\Migración\Migración\obj\Debug\Migración.FrmVerificacion.resources
 C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\Migracion\Proyecto-Migracion\Migración\Migración\obj\Debug\Migración.csproj.GenerateResource.cache
 C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\Migracion\Proyecto-Migracion\Migración\Migración\obj\Debug\Migración.exe
 C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\Migracion\Proyecto-Migracion\Migración\Migración\obj\Debug\Migración.pdb
@@ -58,3 +56,4 @@ C:\Users\Randy\Desktop\UMG\9.no Semestre\Ingeniería de Software\Proyecto 1\Prot
 C:\Users\Randy\Desktop\UMG\9.no Semestre\Ingeniería de Software\Proyecto 1\Prototipo\Proyecto-Migracion\Migración\Migración\obj\Debug\Migración.exe
 C:\Users\Randy\Desktop\UMG\9.no Semestre\Ingeniería de Software\Proyecto 1\Prototipo\Proyecto-Migracion\Migración\Migración\obj\Debug\Migración.pdb
 C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\Migracion\Proyecto-Migracion\Migración\Migración\obj\Debug\Migración.FrmCorreoCita.resources
+C:\Users\juan_\Desktop\Universidad UMG Juan Jose Gamez Blanco\9No Semestre\Ingenieria de software\Migracion\Proyecto-Migracion\Migración\Migración\obj\Debug\Migración.LblCuipP.resources

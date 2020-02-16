@@ -36,12 +36,12 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.LblEST = new System.Windows.Forms.Label();
+            this.LblVerificacion = new System.Windows.Forms.Label();
             this.TxtNumeroV = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.LblCui = new System.Windows.Forms.Label();
             this.TxtCui = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.LbLFecha = new System.Windows.Forms.Label();
             this.TxtFecha = new System.Windows.Forms.TextBox();
             this.LblEstado = new System.Windows.Forms.Label();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
@@ -73,7 +73,6 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70.94972F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(570, 358);
             this.tableLayoutPanel1.TabIndex = 0;
-            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // tableLayoutPanel2
             // 
@@ -108,7 +107,7 @@
             this.tableLayoutPanel8.ColumnCount = 3;
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32.15259F));
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 67.84741F));
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 88F));
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 90F));
             this.tableLayoutPanel8.Controls.Add(this.pictureBox1, 1, 0);
             this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel8.Location = new System.Drawing.Point(106, 3);
@@ -123,9 +122,9 @@
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Location = new System.Drawing.Point(84, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(83, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(164, 80);
+            this.pictureBox1.Size = new System.Drawing.Size(163, 80);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -144,19 +143,18 @@
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 74F));
             this.tableLayoutPanel4.Size = new System.Drawing.Size(510, 248);
             this.tableLayoutPanel4.TabIndex = 1;
-            this.tableLayoutPanel4.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel4_Paint);
             // 
             // tableLayoutPanel5
             // 
             this.tableLayoutPanel5.ColumnCount = 2;
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 44.44444F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 55.55556F));
-            this.tableLayoutPanel5.Controls.Add(this.label1, 0, 3);
-            this.tableLayoutPanel5.Controls.Add(this.label2, 0, 0);
+            this.tableLayoutPanel5.Controls.Add(this.LblEST, 0, 3);
+            this.tableLayoutPanel5.Controls.Add(this.LblVerificacion, 0, 0);
             this.tableLayoutPanel5.Controls.Add(this.TxtNumeroV, 1, 0);
-            this.tableLayoutPanel5.Controls.Add(this.label3, 0, 1);
+            this.tableLayoutPanel5.Controls.Add(this.LblCui, 0, 1);
             this.tableLayoutPanel5.Controls.Add(this.TxtCui, 1, 1);
-            this.tableLayoutPanel5.Controls.Add(this.label4, 0, 2);
+            this.tableLayoutPanel5.Controls.Add(this.LbLFecha, 0, 2);
             this.tableLayoutPanel5.Controls.Add(this.TxtFecha, 1, 2);
             this.tableLayoutPanel5.Controls.Add(this.LblEstado, 1, 3);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -169,27 +167,26 @@
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel5.Size = new System.Drawing.Size(504, 163);
             this.tableLayoutPanel5.TabIndex = 0;
-            this.tableLayoutPanel5.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel5_Paint);
             // 
-            // label1
+            // LblEST
             // 
-            this.label1.AutoSize = true;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Location = new System.Drawing.Point(3, 120);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(217, 43);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Estado de la Verificación";
+            this.LblEST.AutoSize = true;
+            this.LblEST.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LblEST.Location = new System.Drawing.Point(3, 120);
+            this.LblEST.Name = "LblEST";
+            this.LblEST.Size = new System.Drawing.Size(217, 43);
+            this.LblEST.TabIndex = 0;
+            this.LblEST.Text = "Estado de la Verificación";
             // 
-            // label2
+            // LblVerificacion
             // 
-            this.label2.AutoSize = true;
-            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Location = new System.Drawing.Point(3, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(217, 40);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Numero de verificacion";
+            this.LblVerificacion.AutoSize = true;
+            this.LblVerificacion.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LblVerificacion.Location = new System.Drawing.Point(3, 0);
+            this.LblVerificacion.Name = "LblVerificacion";
+            this.LblVerificacion.Size = new System.Drawing.Size(217, 40);
+            this.LblVerificacion.TabIndex = 1;
+            this.LblVerificacion.Text = "Numero de verificacion";
             // 
             // TxtNumeroV
             // 
@@ -199,17 +196,16 @@
             this.TxtNumeroV.Name = "TxtNumeroV";
             this.TxtNumeroV.Size = new System.Drawing.Size(275, 20);
             this.TxtNumeroV.TabIndex = 5;
-            this.TxtNumeroV.TextChanged += new System.EventHandler(this.TxtNumeroV_TextChanged);
             // 
-            // label3
+            // LblCui
             // 
-            this.label3.AutoSize = true;
-            this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label3.Location = new System.Drawing.Point(3, 40);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(217, 40);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Cui";
+            this.LblCui.AutoSize = true;
+            this.LblCui.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LblCui.Location = new System.Drawing.Point(3, 40);
+            this.LblCui.Name = "LblCui";
+            this.LblCui.Size = new System.Drawing.Size(217, 40);
+            this.LblCui.TabIndex = 2;
+            this.LblCui.Text = "Cui";
             // 
             // TxtCui
             // 
@@ -220,15 +216,15 @@
             this.TxtCui.Size = new System.Drawing.Size(275, 20);
             this.TxtCui.TabIndex = 6;
             // 
-            // label4
+            // LbLFecha
             // 
-            this.label4.AutoSize = true;
-            this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label4.Location = new System.Drawing.Point(3, 80);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(217, 40);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Fecha de Cita";
+            this.LbLFecha.AutoSize = true;
+            this.LbLFecha.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LbLFecha.Location = new System.Drawing.Point(3, 80);
+            this.LbLFecha.Name = "LbLFecha";
+            this.LbLFecha.Size = new System.Drawing.Size(217, 40);
+            this.LbLFecha.TabIndex = 3;
+            this.LbLFecha.Text = "Fecha de Cita";
             // 
             // TxtFecha
             // 
@@ -296,7 +292,6 @@
             this.Name = "FrmCita";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cita";
-            this.Load += new System.EventHandler(this.FrmCita_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
@@ -317,10 +312,10 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label LblEST;
+        private System.Windows.Forms.Label LblVerificacion;
+        private System.Windows.Forms.Label LblCui;
+        private System.Windows.Forms.Label LbLFecha;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;

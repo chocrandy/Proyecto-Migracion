@@ -18,8 +18,6 @@ namespace Migración
         OdbcConnection conn = new OdbcConnection("Dsn=migracion");
         DateTime hoy = DateTime.Now;
         string user;
-        string numero;
-        string Cui;
         string fechahora;
         public FrmMenu(string usuario)
         {
@@ -40,7 +38,7 @@ namespace Migración
 
             conn.Close();
 
-            string query = "INSERT INTO `bitacora` (`id_bitacora`, `accion`, `fecha_accion`, `id_usuario`) VALUES (NULL, 'Inicio secion', '" + fechahora + "', '" + user + "');";
+            string query = "INSERT INTO `bitacora` (`id_bitacora`, `accion`, `fecha_accion`, `id_usuario`) VALUES (NULL, 'Ingreso al menu', '" + fechahora + "', '" + user + "');";
 
             conn.Open();
             OdbcCommand consulta = new OdbcCommand(query, conn);
@@ -49,44 +47,32 @@ namespace Migración
             {
                 consulta.ExecuteNonQuery();
 
-
-
-
             }
             catch (Exception ex)
             {
                 MessageBox.Show("\t Error! \n\n " + ex.ToString());
                 conn.Close();
             }
-
-
-
         }
-        private void puestosToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            FrmPuesto nuevo = new FrmPuesto();
-            nuevo.Show();
-        }
-
+    
         private void usuariosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FrmUsuario nuevo = new FrmUsuario();
+            FrmUsuario nuevo = new FrmUsuario(user);
             nuevo.Show();
         }
 
         private void personalToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FrmEmpleado nuevo = new FrmEmpleado();
+            FrmEmpleado nuevo = new FrmEmpleado(user);
             nuevo.Show();
         }
 
         private void citasToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FrmCitasV nuevo = new FrmCitasV();
+            FrmCitasV nuevo = new FrmCitasV(user);
             nuevo.Show();
 
         }

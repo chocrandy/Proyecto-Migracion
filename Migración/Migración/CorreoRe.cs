@@ -10,13 +10,12 @@ using System.Windows.Forms;
 using System.Data.Odbc;
 using System.IO;
 using System.Net;
-using System.Data.Odbc;
-using System.IO;
-using System.Net;
+
 namespace Migración
 {
     public partial class FrmCorreoRe : Form
     {
+        //Conexion a la base de datos google cloud
         OdbcConnection conn = new OdbcConnection("Dsn=migracion");
         DateTime hoy = DateTime.Now;
         string fechahora;
@@ -36,20 +35,13 @@ namespace Migración
             fechahora = hoy.ToString("yyyy/MM/dd HH:mm:ss");
         }
 
-        private void CorreoRe_Load(object sender, EventArgs e)
-        {
-
-        }
+        //Bitacora
         void Bitacora()
         {
-
             conn.Close();
-
             string query = "INSERT INTO `bitacora` (`id_bitacora`, `accion`, `fecha_accion`, `id_usuario`) VALUES (NULL, 'Envio de mensaje de cancelacion', '" + fechahora + "', '" + user + "');";
-
             conn.Open();
             OdbcCommand consulta = new OdbcCommand(query, conn);
-
             try
             {
                 consulta.ExecuteNonQuery();
@@ -61,16 +53,12 @@ namespace Migración
                 conn.Close();
             }
         }
+        //Envio de correo
         private void button2_Click(object sender, EventArgs e)
         {
             string usu = "riskogt6@gmail.com";
             string pass = "Risgt657";
-            c.enviarCorreo(usu, pass, TxtMensaje.Text, TxtAsunto.Text, TxtReceptor.Text, TxtRutaArchivo.Text);
-
-
-
-           
-                       
+            c.enviarCorreo(usu, pass, TxtMensaje.Text, TxtAsunto.Text, TxtReceptor.Text, TxtRutaArchivo.Text);        
                 string query = "UPDATE solicitudes set estado = 0  where  id_solicitud  =" + solicitud ;
                 conn.Open();
                 OdbcCommand consulta = new OdbcCommand(query, conn);
@@ -90,12 +78,8 @@ namespace Migración
                     MessageBox.Show("\t Error! \n\n " + ex.ToString());
                     conn.Close();
                 }
-            
-       
-
-
         }
-
+        //Validacion sobre el archivo a enviar
         private void button1_Click(object sender, EventArgs e)
         {
             try

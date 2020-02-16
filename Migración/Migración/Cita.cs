@@ -14,7 +14,7 @@ using System.Net;
 namespace Migración
 {
     public partial class FrmCita : Form
-    {
+    {//Conexion base de datos
         OdbcConnection conn = new OdbcConnection("Dsn=migracion");
         DateTime hoy = DateTime.Now;
         string fechahora;
@@ -33,30 +33,18 @@ namespace Migración
             Cui = cui;
             TxtCui.Text = Cui;
             fechahora = hoy.ToString("yyyy/MM/dd HH:mm:ss");
-            TxtFecha.Text = fechahora;
-          
-
-
+            TxtFecha.Text = fechahora;      
         }
-
-        private void tableLayoutPanel5_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+        //Bitacora
         void Bitacora()
         {
-
             conn.Close();
-
             string query = "INSERT INTO `bitacora` (`id_bitacora`, `accion`, `fecha_accion`, `id_usuario`) VALUES (NULL, 'Se genero una cita  ', '" + fechahora + "', '" + user + "');";
-
             conn.Open();
             OdbcCommand consulta = new OdbcCommand(query, conn);
-
             try
             {
                 consulta.ExecuteNonQuery();
-
             }
             catch (Exception ex)
             {
@@ -64,22 +52,16 @@ namespace Migración
                 conn.Close();
             }
         }
-
+        //Proceso de genacion de citas
         void Generarcita()
         {
-
-            conn.Close();
-
-            string query = "INSERT INTO `citas` (`id_cita`, `id_verificacion`, `cui`, `fecha_cita`, `estado`) VALUES (NULL, '"+ Idveri + "', '"+Cui+"', '" + fechahora + "', '1');";
-              
-
+           conn.Close();
+            string query = "INSERT INTO `citas` (`id_cita`, `id_verificacion`, `cui`, `fecha_cita`, `estado`) VALUES (NULL, '"+ Idveri + "', '"+Cui+"', '" + fechahora + "', '1');";            
             conn.Open();
             OdbcCommand consulta = new OdbcCommand(query, conn);
-
             try
             {
-                consulta.ExecuteNonQuery();
-           
+                consulta.ExecuteNonQuery();           
             }
             catch (Exception ex)
             {
@@ -87,19 +69,12 @@ namespace Migración
                 conn.Close();
             }
         }
-        private void FrmCita_Load(object sender, EventArgs e)
-        {
-
-        }
+     //Genera el proceso de verficacion de la Cita
         void OPcita()
-                {
-       
-
+        {
             try
             {
-
                 conn.Open();
-
                 OdbcCommand command = new OdbcCommand("select id_verificacion from verificacion where id_solicitud=" + solicitud, conn);
                 OdbcDataReader reader = command.ExecuteReader();
                 while (reader.Read())
@@ -116,8 +91,6 @@ namespace Migración
                 MessageBox.Show(ex.Message);
             }
             conn.Close();
-
-
         }
         private void button1_Click(object sender, EventArgs e)
         {
@@ -125,40 +98,20 @@ namespace Migración
             Generarcita();
             this.Hide();
            FrmCorreoCita nuevo = new FrmCorreoCita(correo ,solicitud, user);
-
             nuevo.Show();
-
         }
 
         private void button2_Click(object sender, EventArgs e)
-        {
-           
+        {          
             this.Hide();
-            FrmMenu nuevo = new FrmMenu(user);
-           
+            FrmMenu nuevo = new FrmMenu(user);         
             nuevo.Show();
-        }
-
-        private void tableLayoutPanel4_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void TxtNumeroV_TextChanged(object sender, EventArgs e)
-        {
-            
         }
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-            OPcita();
-            
-            
+            OPcita();  
         }
 
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
     }
 }

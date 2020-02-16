@@ -15,6 +15,7 @@ namespace Migración
 {
     public partial class FrmCorreoCita : Form
     {
+        //Conexion con base de datos Google
         OdbcConnection conn = new OdbcConnection("Dsn=migracion");
         DateTime hoy = DateTime.Now;
         string fechahora;
@@ -30,29 +31,26 @@ namespace Migración
             user = usuario;
             TxtReceptor.Text = correo;
             TxtAsunto.Text = "Notificacion de Migracion sobre solicitud de Pasaporte Aprobada";
+            fechahora = hoy.ToString("yyyy/MM/dd HH:mm:ss");
         }
-
+        //Proceso de envio
         private void button2_Click(object sender, EventArgs e)
         {
-           string usu = "riskogt6@gmail.com";
+            Bitacora();
+            string usu = "riskogt6@gmail.com";
             string pass = "Risgt657";
            c.enviarCorreo(usu, pass, TxtMensaje.Text, TxtAsunto.Text, TxtReceptor.Text, TxtRutaArchivo.Text);
-            Bitacora();
-            this.Hide();
+              this.Hide();
             FrmMenu nuevo = new FrmMenu(user);
-      
             nuevo.Show();
         }
+        //Bitacora
         void Bitacora()
         {
-
             conn.Close();
-            
-            string query = "INSERT INTO `bitacora` (`id_bitacora`, `accion`, `fecha_accion`, `id_usuario`) VALUES (NULL, 'Se envio un Correo de Notificacion ', '" + fechahora + "', '" + user + "');";
-
+            string query = "INSERT INTO `bitacora` (`id_bitacora`, `accion`, `fecha_accion`, `id_usuario`) VALUES (NULL, 'Se Genero Correo de Citacion', '" + fechahora + "', '" + user + "');";
             conn.Open();
             OdbcCommand consulta = new OdbcCommand(query, conn);
-
             try
             {
                 consulta.ExecuteNonQuery();
@@ -60,10 +58,11 @@ namespace Migración
             }
             catch (Exception ex)
             {
-                MessageBox.Show("\t Error! \n\n " + ex.ToString());
+                MessageBox.Show("\t Error Bitacora! \n\n " + ex.ToString());
                 conn.Close();
             }
         }
+        //Carga de archivo
         private void button1_Click(object sender, EventArgs e)
         {
             try
@@ -72,7 +71,6 @@ namespace Migración
                 if (this.openFileDialog1.FileName.Equals("") == false)
                 {
                     TxtRutaArchivo.Text = this.openFileDialog1.FileName;
-
                 }
             }
             catch (Exception ex)
@@ -80,8 +78,7 @@ namespace Migración
                 MessageBox.Show("Error al cargar la ruta del archivo: " + ex.ToString());
             }
         }
-
-        private void CorreoCita_Load(object sender, EventArgs e)
+        private void FrmCorreoCita_Load(object sender, EventArgs e)
         {
 
         }

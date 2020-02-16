@@ -127,7 +127,6 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.6383F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(397, 107);
             this.tableLayoutPanel3.TabIndex = 0;
-            this.tableLayoutPanel3.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel3_Paint);
             // 
             // LblContraseña
             // 
@@ -140,7 +139,6 @@
             this.LblContraseña.TabIndex = 1;
             this.LblContraseña.Text = "Contraseña";
             this.LblContraseña.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.LblContraseña.Click += new System.EventHandler(this.LblContraseña_Click);
             // 
             // TxtUsuario
             // 
@@ -163,7 +161,6 @@
             this.LblUsuario.TabIndex = 0;
             this.LblUsuario.Text = "Usuario";
             this.LblUsuario.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.LblUsuario.Click += new System.EventHandler(this.LblUsuario_Click);
             // 
             // TxtContraseña
             // 

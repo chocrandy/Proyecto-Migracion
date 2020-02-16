@@ -12,21 +12,19 @@ using System.IO;
 using System.Net;
 namespace Migración
 {
-
-    public partial class FrmVerificacion : Form
+    public partial class LblCuipP : Form
     {/*Conexion a la base de datos Google Cloud*/
         OdbcConnection conn = new OdbcConnection("Dsn=migracion");
+        /*Generador de Fecha*/
         DateTime hoy = DateTime.Now;
-        
+        string fechahora;
         string solicitud;
         string Tramite;
         string user;
         string correo;
         string Cui;
-        string fechahora;
-        public FrmVerificacion(string dato, string tipo, string usuario, string email, string cui)
+        public LblCuipP(string dato, string tipo, string usuario, string email, string cui)
         {
-
             InitializeComponent();
             solicitud = dato;
             user = usuario;
@@ -38,18 +36,16 @@ namespace Migración
             visualizacion();
             BtnRechazar.Enabled = false;
             fechahora = hoy.ToString("yyyy/MM/dd HH:mm:ss");
-        
-           
-
 
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {
+        {/*Control de Citas*/
             this.Hide();
             FrmCita nuevo = new FrmCita(user, solicitud, Cui, correo);
             nuevo.Show();
         }
+        /*Funcion para optener los datos para Verificar*/
         void llenartbl()
         {
             //codigo para llevar el DataGridView
@@ -74,24 +70,22 @@ namespace Migración
                 conn.Close();
             }
         }
-
-
+        /*Funcion que nos permite controlar los datos para la verificacion*/
         private void dataGridView1_DoubleClick(object sender, EventArgs e)
         {
             if (dataGridView1.SelectedRows.Count == 1)
             {
-
                 TxtNombre.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
                 TxtNoDD.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
-                //llenarBan();
-                //llenarMun();
+                
+               
                 if (TxtNombre.Text == "Boleto de Ornato")
-                {
+                { //llenarMun();
                     llenarMun();
                 }
                 else if (TxtNombre.Text == "Boleta de Pago")
                 {
-
+                    //llenarBan();
                     llenarBan();
                 }
                 else if (TxtNombre.Text == "DPI Padre" && Tramite == "Menor de Edad") { llenarRenapP(); }
@@ -100,9 +94,9 @@ namespace Migración
             else
             {
                 MessageBox.Show("No hay solicitudes");
-
             }
         }
+        //opcion para verificar web service Municipalidad
         void llenarMun()
         {
             //codigo para llevar el DataGridView
@@ -122,23 +116,16 @@ namespace Migración
                 TxtCoM.Text = dataGridView3.CurrentRow.Cells[0].Value.ToString();
                 TxtfechaEM.Text = dataGridView3.CurrentRow.Cells[1].Value.ToString();
                 TxtMontoB.Text = dataGridView3.CurrentRow.Cells[2].Value.ToString();
-
-
-
-
             }
             catch (Exception e)
             {
-
-
                 MessageBox.Show("!ERROR! No ecxiste boleto de pago ");
                 BtnRechazar.Enabled = true;
                 e.ToString();
                 conn.Close();
-
             }
         }
-
+        //Validaciones para control de tipo de tramite
         void visualizacion()
         {
             if (Tramite == "Mayor de Edad")
@@ -166,12 +153,9 @@ namespace Migración
             else
             {
                 MessageBox.Show("!ERROR! El tipo de tramite es incorecto");
-
-
             }
-
-
         }
+        //Funcion para el control del web service del banco
         void llenarBan()
         {
             //codigo para llevar el DataGridView
@@ -196,15 +180,13 @@ namespace Migración
             }
             catch (Exception e)
             {
-
-
                 MessageBox.Show("!ERROR!La boleta de pago no existe");
                 BtnRechazar.Enabled = true;
                 e.ToString();
                 conn.Close();
-
             }
         }
+        //Funcion para el web service de renap 
         void llenarRenapP()
         {
             //codigo para llevar el DataGridView
@@ -225,20 +207,16 @@ namespace Migración
                 TxtNombreP.Text = dataGridView4.CurrentRow.Cells[1].Value.ToString();
                 TxtApellidoP.Text = dataGridView4.CurrentRow.Cells[2].Value.ToString();
                 TxtCuiPA.Text = dataGridView4.CurrentRow.Cells[3].Value.ToString();
-
-
             }
             catch (Exception e)
             {
-
-
-                MessageBox.Show("!ERROR! El Numero de DPI del Padre es Incorecto");
+              MessageBox.Show("!ERROR! El Numero de DPI del Padre es Incorecto");
                 BtnRechazar.Enabled = true;
                 e.ToString();
                 conn.Close();
-
             }
         }
+        //Validaciones para optener datos de renap
         void llenarRenapM()
         {
             //codigo para llevar el DataGridView
@@ -259,24 +237,14 @@ namespace Migración
                 TxtNombreMA.Text = dataGridView5.CurrentRow.Cells[1].Value.ToString();
                 TxtApellidoMA.Text = dataGridView5.CurrentRow.Cells[2].Value.ToString();
                 TxtCuiMAA.Text = dataGridView5.CurrentRow.Cells[3].Value.ToString();
-
-
             }
             catch (Exception e)
             {
-
-
                 MessageBox.Show("!ERROR! El Numero de DPI de la Madre es Incorecto");
                 BtnRechazar.Enabled = true;
                 e.ToString();
                 conn.Close();
-
             }
-        }
-
-        private void FrmVerificacion_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -285,12 +253,9 @@ namespace Migración
             FrmCorreoRe nuevo = new FrmCorreoRe(correo, solicitud, user);
             nuevo.Show();
         }
-
+        //Validaciones para verificaciones
         void verificacion()
         {
-
-
-
             string query = "INSERT INTO `verificacion` (`id_verificacion`, `cui`, `id_usuario`, `fecha_verificacion`, `id_solicitud`) VALUES (NULL, "+ Cui + ", '" + user + "', '"+ fechahora + "', '"+ solicitud + "'); ";
            
             conn.Open();
@@ -299,17 +264,12 @@ namespace Migración
             try
             {
                 consulta.ExecuteNonQuery();
-             
-
             }
             catch (Exception ex)
             {
                 MessageBox.Show("\t Error! \n\n " + ex.ToString());
                 conn.Close();
             }
-
-
-
         }
         void guardarv()
         {
@@ -320,42 +280,30 @@ namespace Migración
             try
             {
                 consulta.ExecuteNonQuery();
-                
-
-
-                conn.Close();
-                
+                conn.Close();     
             }
             catch (Exception ex)
             {
                 MessageBox.Show("\t Error! \n\n " + ex.ToString());
                 conn.Close();
             }
-
-
         }
         private void button3_Click(object sender, EventArgs e)
         {
-
             this.Hide();
             FrmMenu nuevo = new FrmMenu(user);
             nuevo.Show();
         }
-
+        //Bitacora para control del sistema 
         void Bitacora()
         {
-
             conn.Close();
-
-            string query = "INSERT INTO `bitacora` (`id_bitacora`, `accion`, `fecha_accion`, `id_usuario`) VALUES (NULL, 'Se veridico la Documentacion de unt tramite "+ Tramite + "', '" + fechahora + "', '" + user + "');";
-
+            string query = "INSERT INTO `bitacora` (`id_bitacora`, `accion`, `fecha_accion`, `id_usuario`) VALUES (NULL, 'Se verifico la Documentacion de unt tramite', '" + fechahora + "', '" + user + "');";
             conn.Open();
             OdbcCommand consulta = new OdbcCommand(query, conn);
-
             try
             {
                 consulta.ExecuteNonQuery();
-
             }
             catch (Exception ex)
             {
@@ -364,19 +312,15 @@ namespace Migración
             }
         }
         private void button1_Click_1(object sender, EventArgs e)
-        {
-     
+        {   
             if (Tramite == "Mayor de Edad")
-            {
-                
+            {        
                     if (TxtNoB.Text != "" && TxtCoM.Text != "")
                     {
-                  
-
                     this.Hide();
                     FrmCita nuevo = new FrmCita(user, solicitud, Cui, correo);
                     nuevo.Show();
-                    Bitacora();
+                 
 
                     }
                     else
@@ -387,25 +331,25 @@ namespace Migración
                     }
                 verificacion();
                 guardarv();
+                Bitacora();
             }
             else if (Tramite == "Menor de Edad")
             {
                 if (TxtNoB.Text != "" && TxtCoM.Text != "" && TxtCuiP.Text != "" && TxtCuiMA.Text != "")
                 {
-                   
-                    this.Hide();
-                    FrmCita nuevo = new FrmCita(user, solicitud, Cui, correo);
-                    nuevo.Show();
-                   Bitacora();
+                   this.Hide();
+                   FrmCita nuevo = new FrmCita(user, solicitud, Cui, correo);
+                   nuevo.Show();
+                 
                 }
                 else
                 {
                     MessageBox.Show("!ERROR! Falta seleccionar Documentos y/o Verificar la documentación");
                     BtnRechazar.Enabled = true;
-
                 }
                 verificacion();
                 guardarv();
+                Bitacora();
             }
             else if (Tramite == "Mayor de 60")
             {
@@ -425,18 +369,17 @@ namespace Migración
                 }
                 verificacion();
                 guardarv();
+                Bitacora();
             }
             else
             {
                 MessageBox.Show("!ERROR! El tipo de tramite es incorecto");
-
-    
             }
-
-
-
         }
 
-       
+        private void LblCuipP_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

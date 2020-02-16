@@ -13,29 +13,18 @@ namespace Migración
 {
    
     public partial class FrmLogin : Form
-    {
+    {       /*Generador de Fecha*/
+        DateTime hoy = DateTime.Now;
+        string fechahora;
         string usuario;
         OdbcConnection conn = new OdbcConnection("Dsn=migracion");
         public FrmLogin()
         {
             InitializeComponent();
+            fechahora = hoy.ToString("yyyy/MM/dd HH:mm:ss");
         }
 
-        private void tableLayoutPanel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void LblContraseña_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void LblUsuario_Click(object sender, EventArgs e)
-        {
-
-        }
-
+     
         private void BtIngresar_Click(object sender, EventArgs e)
         {
             try
@@ -64,6 +53,7 @@ namespace Migración
                         //if (datos.Rows[0][0].ToString() == )                                        
                         FrmMenu nuevo = new FrmMenu(usuario);
                         nuevo.Show();
+                        Bitacora();
                     } //En caso contrario, el usuario y/o contraseña no existe!
                     else
                     {
@@ -75,13 +65,15 @@ namespace Migración
                 {
                     MessageBox.Show("Usuario y/o Contraseña Incorrecta", "DATOS INCORRECTOS", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     //Cerramos la conexión a la BD
+                    ex.ToString();
                     conn.Close();
                 }
 
             }
-            catch (Exception eex)
+            catch (Exception ex)
             {
                 MessageBox.Show("Usuario y/o Contraseña Incorrecta", "DATOS INCORRECTOS", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                ex.ToString();
             }
         }
 
@@ -90,7 +82,23 @@ namespace Migración
             Application.Exit();
 
         }
-
+        //Bitacora para control del sistema 
+        void Bitacora()
+        {
+            conn.Close();
+            string query = "INSERT INTO `bitacora` (`id_bitacora`, `accion`, `fecha_accion`, `id_usuario`) VALUES (NULL, 'Inicio seccion al Sistema', '" + fechahora + "', '" + TxtUsuario.Text + "');";
+            conn.Open();
+            OdbcCommand consulta = new OdbcCommand(query, conn);
+            try
+            {
+                consulta.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("\t Error! \n\n " + ex.ToString());
+                conn.Close();
+            }
+        }
         private void FrmLogin_Load(object sender, EventArgs e)
         {
 

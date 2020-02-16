@@ -43,11 +43,13 @@
             this.TxtNOC = new System.Windows.Forms.TextBox();
             this.TxtNumeroV = new System.Windows.Forms.TextBox();
             this.TxtCui = new System.Windows.Forms.TextBox();
-            this.TxtFecha = new System.Windows.Forms.TextBox();
+            this.DTimerCita = new System.Windows.Forms.DateTimePicker();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -160,7 +162,7 @@
             this.tableLayoutPanel5.Controls.Add(this.TxtNOC, 1, 0);
             this.tableLayoutPanel5.Controls.Add(this.TxtNumeroV, 1, 1);
             this.tableLayoutPanel5.Controls.Add(this.TxtCui, 1, 2);
-            this.tableLayoutPanel5.Controls.Add(this.TxtFecha, 1, 3);
+            this.tableLayoutPanel5.Controls.Add(this.DTimerCita, 1, 3);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
@@ -236,20 +238,21 @@
             this.TxtCui.Size = new System.Drawing.Size(388, 20);
             this.TxtCui.TabIndex = 6;
             // 
-            // TxtFecha
+            // DTimerCita
             // 
-            this.TxtFecha.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TxtFecha.Location = new System.Drawing.Point(317, 129);
-            this.TxtFecha.Name = "TxtFecha";
-            this.TxtFecha.Size = new System.Drawing.Size(388, 20);
-            this.TxtFecha.TabIndex = 7;
+            this.DTimerCita.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DTimerCita.Location = new System.Drawing.Point(317, 129);
+            this.DTimerCita.Name = "DTimerCita";
+            this.DTimerCita.Size = new System.Drawing.Size(388, 20);
+            this.DTimerCita.TabIndex = 7;
+            this.DTimerCita.Value = new System.DateTime(2020, 2, 15, 0, 0, 0, 0);
             // 
             // tableLayoutPanel6
             // 
             this.tableLayoutPanel6.ColumnCount = 3;
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 29.12281F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70.87719F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 114F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 116F));
             this.tableLayoutPanel6.Controls.Add(this.dataGridView1, 1, 0);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel6.Location = new System.Drawing.Point(3, 179);
@@ -265,15 +268,20 @@
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(175, 3);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(415, 177);
+            this.dataGridView1.Size = new System.Drawing.Size(413, 177);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.DoubleClick += new System.EventHandler(this.dataGridView1_DoubleClick);
             // 
             // tableLayoutPanel7
             // 
-            this.tableLayoutPanel7.ColumnCount = 2;
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 73.30508F));
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 26.69492F));
+            this.tableLayoutPanel7.ColumnCount = 4;
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 62.52822F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 37.47178F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 145F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 119F));
             this.tableLayoutPanel7.Controls.Add(this.button1, 1, 0);
+            this.tableLayoutPanel7.Controls.Add(this.button2, 3, 0);
+            this.tableLayoutPanel7.Controls.Add(this.button3, 2, 0);
             this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel7.Location = new System.Drawing.Point(3, 368);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
@@ -285,13 +293,35 @@
             // button1
             // 
             this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button1.Location = new System.Drawing.Point(521, 3);
+            this.button1.Location = new System.Drawing.Point(280, 3);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(184, 63);
+            this.button1.Size = new System.Drawing.Size(160, 63);
             this.button1.TabIndex = 0;
-            this.button1.Text = "Gerenar Cita";
+            this.button1.Text = "Modificar cita";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button2.Location = new System.Drawing.Point(591, 3);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(114, 63);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "Menu";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button3.Location = new System.Drawing.Point(446, 3);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(139, 63);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "Borrar Cita";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // FrmCitasV
             // 
@@ -301,6 +331,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "FrmCitasV";
             this.Text = "CitasV";
+            this.Load += new System.EventHandler(this.FrmCitasV_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
@@ -332,10 +363,12 @@
         private System.Windows.Forms.TextBox TxtNOC;
         private System.Windows.Forms.TextBox TxtNumeroV;
         private System.Windows.Forms.TextBox TxtCui;
-        private System.Windows.Forms.TextBox TxtFecha;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.DateTimePicker DTimerCita;
     }
 }

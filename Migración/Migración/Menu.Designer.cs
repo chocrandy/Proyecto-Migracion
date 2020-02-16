@@ -38,7 +38,6 @@
             this.administraciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.personalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.personalToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.puestosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bitacoraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -82,14 +81,14 @@
             // solicitudesToolStripMenuItem
             // 
             this.solicitudesToolStripMenuItem.Name = "solicitudesToolStripMenuItem";
-            this.solicitudesToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
+            this.solicitudesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.solicitudesToolStripMenuItem.Text = "Solicitudes";
             this.solicitudesToolStripMenuItem.Click += new System.EventHandler(this.solicitudesToolStripMenuItem_Click);
             // 
             // citasToolStripMenuItem
             // 
             this.citasToolStripMenuItem.Name = "citasToolStripMenuItem";
-            this.citasToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
+            this.citasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.citasToolStripMenuItem.Text = "Citas";
             this.citasToolStripMenuItem.Click += new System.EventHandler(this.citasToolStripMenuItem_Click);
             // 
@@ -105,30 +104,22 @@
             // 
             this.personalToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.personalToolStripMenuItem1,
-            this.puestosToolStripMenuItem,
             this.usuariosToolStripMenuItem});
             this.personalToolStripMenuItem.Name = "personalToolStripMenuItem";
-            this.personalToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
+            this.personalToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.personalToolStripMenuItem.Text = "Personal";
             // 
             // personalToolStripMenuItem1
             // 
             this.personalToolStripMenuItem1.Name = "personalToolStripMenuItem1";
-            this.personalToolStripMenuItem1.Size = new System.Drawing.Size(119, 22);
+            this.personalToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.personalToolStripMenuItem1.Text = "Personal";
             this.personalToolStripMenuItem1.Click += new System.EventHandler(this.personalToolStripMenuItem1_Click);
-            // 
-            // puestosToolStripMenuItem
-            // 
-            this.puestosToolStripMenuItem.Name = "puestosToolStripMenuItem";
-            this.puestosToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
-            this.puestosToolStripMenuItem.Text = "Puestos";
-            this.puestosToolStripMenuItem.Click += new System.EventHandler(this.puestosToolStripMenuItem_Click);
             // 
             // usuariosToolStripMenuItem
             // 
             this.usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
-            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
+            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.usuariosToolStripMenuItem.Text = "Usuarios";
             this.usuariosToolStripMenuItem.Click += new System.EventHandler(this.usuariosToolStripMenuItem_Click);
             // 
@@ -241,7 +232,6 @@
         private System.Windows.Forms.ToolStripMenuItem administraciónToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem personalToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem personalToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem puestosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem usuariosToolStripMenuItem;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.PictureBox pictureBox2;

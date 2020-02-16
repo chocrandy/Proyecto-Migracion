@@ -24,19 +24,16 @@ namespace Migración
         string correo;
         string user;
         string Cui;
-        
         public FrmSolictudes(string usuario)
         {
             InitializeComponent();
             /*Carga de la tabla solicitudes*/
             user = usuario;
-
             LblUsuario.Text = user;
             fechahora = hoy.ToString("yyyy/MM/dd HH:mm:ss");
             llenartbl();
               }
 
-        
         /*Funcion para llenar las tablas de solicitudes*/
         void llenartbl()
         {
@@ -61,8 +58,7 @@ namespace Migración
 
                 MessageBox.Show("ERROR" + e.ToString());
                 conn.Close();
-            }
-            
+            } 
         }
         /*llenado y verificación de tabla DPI*/
         void llenartblR()
@@ -82,7 +78,7 @@ namespace Migración
                 eje.Update(datos);
                 conn.Close();
                 TxtCuiR.Text = dataGridView2.CurrentRow.Cells[0].Value.ToString();
-                TxtNombres.Text = dataGridView2.CurrentRow.Cells[1].Value.ToString();
+                PicUser.Text = dataGridView2.CurrentRow.Cells[1].Value.ToString();
                 TxtApellido.Text = dataGridView2.CurrentRow.Cells[2].Value.ToString();
                 TxtFechaN.Text = dataGridView2.CurrentRow.Cells[3].Value.ToString();
                 TxtSexo.Text = dataGridView2.CurrentRow.Cells[4].Value.ToString();
@@ -97,7 +93,6 @@ namespace Migración
             }
             catch (Exception e)
             {
-          
                 MessageBox.Show("!ERROR! El Numero de DPI es Incorecto" );
                 e.ToString();
                 conn.Close();
@@ -106,14 +101,11 @@ namespace Migración
                 LblProgreso.Text = "Rechazado";
             }
         }
-
-
         /*Opcion de seleccion de de solicitudes*/
         private void dataGridView1_DoubleClick(object sender, EventArgs e)
         {
-
             TxtCuiR.Text = "";
-            TxtNombres.Text = "";
+            PicUser.Text = "";
             TxtApellido.Text = "";
             TxtCuiR.Text = "";
             TxtFechaN.Text = "";
@@ -121,7 +113,6 @@ namespace Migración
             TxtLugarN.Text = "";
             TxtCuiRP.Text = "";
             TxtCuiPM.Text = "";
-
             if (dataGridView1.SelectedRows.Count == 1)
             {
                 TxtSolicitud.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
@@ -140,34 +131,25 @@ namespace Migración
             {
                 MessageBox.Show("No hay solicitudes");
                 BtnRecha.Enabled = true;
-
             }
-
            }
-
-     
 
         private void BtnSig_Click(object sender, EventArgs e)
         {
             this.Hide();
             Bitacora();
-            FrmVerificacion nuevo = new FrmVerificacion(solicitud ,TTramite,user,correo,Cui);
+            LblCuipP nuevo = new LblCuipP(solicitud ,TTramite,user,correo,Cui);
             nuevo.Show();
         }
         void Bitacora()
         {
-
             conn.Close();
-
             string query = "INSERT INTO `bitacora` (`id_bitacora`, `accion`, `fecha_accion`, `id_usuario`) VALUES (NULL, 'verifiacion de DPI de una solicitud ', '"+ fechahora + "', '"+ user + "');";
-
             conn.Open();
             OdbcCommand consulta = new OdbcCommand(query, conn);
-
             try
             {
-                consulta.ExecuteNonQuery();
-               
+                consulta.ExecuteNonQuery();              
             }
             catch (Exception ex)
             {
@@ -175,16 +157,13 @@ namespace Migración
                 conn.Close();
             }
         }
+        //Bitacora
         void BitacoraA()
         {
-
             conn.Close();
-
             string query = "INSERT INTO `bitacora` (`id_bitacora`, `accion`, `fecha_accion`, `id_usuario`) VALUES (NULL, 'Canselacion de solicitud', '" + fechahora + "', '" + user + "');";
-
             conn.Open();
             OdbcCommand consulta = new OdbcCommand(query, conn);
-
             try
             {
                 consulta.ExecuteNonQuery();
@@ -196,25 +175,21 @@ namespace Migración
                 conn.Close();
             }
         }
-        private void FrmSolictudes_Load(object sender, EventArgs e)
-        {
-
-        }
-
+     
         private void BtnRecha_Click(object sender, EventArgs e)
         {
             this.Hide();
             FrmCorreoRe nuevo = new FrmCorreoRe(correo, solicitud,user);
            nuevo.Show();
         }
-
+        //Rechazo de solicitud
         private void BtnCancelar_Click(object sender, EventArgs e)
         {
             this.Hide();
            FrmMenu nuevo = new FrmMenu(user);
             BitacoraA();
             TxtCuiR.Text = "";
-            TxtNombres.Text = "";
+            PicUser.Text = "";
             TxtApellido.Text = "";
             TxtCuiR.Text = "";
             TxtFechaN.Text = "";
@@ -228,11 +203,6 @@ namespace Migración
             TxtFecha.Text = "";
             TxtCorreo.Text = "";
             nuevo.Show();
-        }
-
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+        }   
     }
 }

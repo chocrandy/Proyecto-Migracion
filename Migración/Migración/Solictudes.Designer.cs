@@ -60,7 +60,7 @@
             this.LblCuiP = new System.Windows.Forms.Label();
             this.LblCuiM = new System.Windows.Forms.Label();
             this.TxtCuiR = new System.Windows.Forms.TextBox();
-            this.TxtNombres = new System.Windows.Forms.TextBox();
+            this.PicUser = new System.Windows.Forms.TextBox();
             this.TxtApellido = new System.Windows.Forms.TextBox();
             this.TxtFechaN = new System.Windows.Forms.TextBox();
             this.TxtSexo = new System.Windows.Forms.TextBox();
@@ -111,7 +111,6 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2.164502F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1384, 761);
             this.tableLayoutPanel1.TabIndex = 0;
-            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // tableLayoutPanel2
             // 
@@ -358,7 +357,7 @@
             this.tableLayoutPanel6.Controls.Add(this.LblCuiP, 0, 13);
             this.tableLayoutPanel6.Controls.Add(this.LblCuiM, 0, 15);
             this.tableLayoutPanel6.Controls.Add(this.TxtCuiR, 1, 1);
-            this.tableLayoutPanel6.Controls.Add(this.TxtNombres, 1, 3);
+            this.tableLayoutPanel6.Controls.Add(this.PicUser, 1, 3);
             this.tableLayoutPanel6.Controls.Add(this.TxtApellido, 1, 5);
             this.tableLayoutPanel6.Controls.Add(this.TxtFechaN, 1, 7);
             this.tableLayoutPanel6.Controls.Add(this.TxtSexo, 1, 9);
@@ -503,14 +502,14 @@
             this.TxtCuiR.Size = new System.Drawing.Size(243, 20);
             this.TxtCuiR.TabIndex = 10;
             // 
-            // TxtNombres
+            // PicUser
             // 
-            this.TxtNombres.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TxtNombres.Enabled = false;
-            this.TxtNombres.Location = new System.Drawing.Point(136, 52);
-            this.TxtNombres.Name = "TxtNombres";
-            this.TxtNombres.Size = new System.Drawing.Size(243, 20);
-            this.TxtNombres.TabIndex = 11;
+            this.PicUser.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PicUser.Enabled = false;
+            this.PicUser.Location = new System.Drawing.Point(136, 52);
+            this.PicUser.Name = "PicUser";
+            this.PicUser.Size = new System.Drawing.Size(243, 20);
+            this.PicUser.TabIndex = 11;
             // 
             // TxtApellido
             // 
@@ -672,7 +671,6 @@
             this.Name = "FrmSolictudes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Solictudes";
-            this.Load += new System.EventHandler(this.FrmSolictudes_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -728,7 +726,7 @@
         private System.Windows.Forms.Label LblCuiP;
         private System.Windows.Forms.Label LblCuiM;
         private System.Windows.Forms.TextBox TxtCuiR;
-        private System.Windows.Forms.TextBox TxtNombres;
+        private System.Windows.Forms.TextBox PicUser;
         private System.Windows.Forms.TextBox TxtApellido;
         private System.Windows.Forms.TextBox TxtFechaN;
         private System.Windows.Forms.TextBox TxtSexo;
