@@ -105,7 +105,7 @@ namespace Migración
         private void button2_Click(object sender, EventArgs e)
         {          
             this.Hide();
-            FrmMenu nuevo = new FrmMenu(user);         
+            FrmMenuPrincipal nuevo = new FrmMenuPrincipal(user);         
             nuevo.Show();
         }
 
@@ -116,7 +116,7 @@ namespace Migración
 
         private void FrmCita_FormClosing(object sender, FormClosingEventArgs e)
         {
-            FrmMenu entrar = new FrmMenu(user);
+            FrmMenuPrincipal entrar = new FrmMenuPrincipal(user);
             entrar.Visible = true;
             Visible = false;
         }

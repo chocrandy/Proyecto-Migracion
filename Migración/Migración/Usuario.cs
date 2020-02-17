@@ -134,7 +134,7 @@ namespace Migración
 
         private void Button4_Click(object sender, EventArgs e)
         {
-            FrmMenu entrar = new FrmMenu(user);
+            FrmMenuPrincipal entrar = new FrmMenuPrincipal(user);
             entrar.Visible = true;
             Visible = false;
         }
@@ -199,7 +199,7 @@ namespace Migración
 
         private void FrmUsuario_FormClosing(object sender, FormClosingEventArgs e)
         {
-            FrmMenu entrar = new FrmMenu(user);
+            FrmMenuPrincipal entrar = new FrmMenuPrincipal(user);
             entrar.Visible = true;
             Visible = false;
         }

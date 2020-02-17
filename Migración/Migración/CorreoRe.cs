@@ -71,7 +71,7 @@ namespace Migración
                 Bitacora();
                     conn.Close();
                 this.Hide();
-                FrmMenu nuevo = new FrmMenu(user);
+                FrmMenuPrincipal nuevo = new FrmMenuPrincipal(user);
                 nuevo.Show();
             }
                 catch (Exception ex)
@@ -105,7 +105,7 @@ namespace Migración
 
         private void FrmCorreoRe_FormClosing(object sender, FormClosingEventArgs e)
         {
-            FrmMenu entrar = new FrmMenu(user);
+            FrmMenuPrincipal entrar = new FrmMenuPrincipal(user);
             entrar.Visible = true;
             Visible = false;
         }

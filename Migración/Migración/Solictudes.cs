@@ -187,7 +187,7 @@ namespace Migración
         private void BtnCancelar_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FrmMenu nuevo = new FrmMenu(user);
+            FrmMenuPrincipal nuevo = new FrmMenuPrincipal(user);
             BitacoraA();
             TxtCuiR.Text = "";
             PicUser.Text = "";
@@ -208,7 +208,7 @@ namespace Migración
 
         private void FrmSolictudes_FormClosing(object sender, FormClosingEventArgs e)
         {
-            FrmMenu entrar = new FrmMenu(user);
+            FrmMenuPrincipal entrar = new FrmMenuPrincipal(user);
             entrar.Visible = true;
             Visible = false;
         }

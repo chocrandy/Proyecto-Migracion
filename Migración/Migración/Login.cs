@@ -50,7 +50,7 @@ namespace Migración
                     {
                         this.Hide();
                         //if (datos.Rows[0][0].ToString() == )                                        
-                        FrmMenu nuevo = new FrmMenu(usuario);
+                        FrmMenuPrincipal nuevo = new FrmMenuPrincipal(usuario);
                         nuevo.Show();
                         Bitacora();
                     } //En caso contrario, el usuario y/o contraseña no existe!

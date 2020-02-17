@@ -282,6 +282,7 @@
             // DataFecha
             // 
             this.DataFecha.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DataFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.DataFecha.Location = new System.Drawing.Point(283, 141);
             this.DataFecha.Name = "DataFecha";
             this.DataFecha.Size = new System.Drawing.Size(274, 20);
@@ -292,7 +293,7 @@
             this.tableLayoutPanel3.ColumnCount = 3;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 44.98911F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 55.01089F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 304F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 306F));
             this.tableLayoutPanel3.Controls.Add(this.pictureBox1, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel8, 2, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -308,9 +309,9 @@
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Location = new System.Drawing.Point(376, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(375, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(450, 137);
+            this.pictureBox1.Size = new System.Drawing.Size(449, 137);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -322,21 +323,21 @@
             this.tableLayoutPanel8.Controls.Add(this.label11, 1, 0);
             this.tableLayoutPanel8.Controls.Add(this.label12, 1, 1);
             this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel8.Location = new System.Drawing.Point(832, 3);
+            this.tableLayoutPanel8.Location = new System.Drawing.Point(830, 3);
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
             this.tableLayoutPanel8.RowCount = 2;
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel8.Size = new System.Drawing.Size(299, 137);
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(301, 137);
             this.tableLayoutPanel8.TabIndex = 1;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label11.Location = new System.Drawing.Point(176, 0);
+            this.label11.Location = new System.Drawing.Point(177, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(120, 68);
+            this.label11.Size = new System.Drawing.Size(121, 68);
             this.label11.TabIndex = 0;
             this.label11.Text = "Usuario";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -345,9 +346,9 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label12.Location = new System.Drawing.Point(176, 68);
+            this.label12.Location = new System.Drawing.Point(177, 68);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(120, 69);
+            this.label12.Size = new System.Drawing.Size(121, 69);
             this.label12.TabIndex = 1;
             this.label12.Text = "Usuario";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;

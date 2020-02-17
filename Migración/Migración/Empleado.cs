@@ -19,6 +19,7 @@ namespace Migración
         DateTime hoy = DateTime.Now;
         string fechahora;
         string user;
+        string fecha;
         public FrmEmpleado(string usuario)
         {
             InitializeComponent();
@@ -46,13 +47,16 @@ namespace Migración
 
         void Modificar()
         {
-            string query = "UPDATE `empleados` SET `nombres` = '"+TxtNombres.Text+"', `apellidos` = '"+TxtApellidos.Text+ "', `fecha_nacimiento` = '"+DataFecha.Text+ "', `telefono` = '"+TxtTelefono.Text+ "', `correo` = '"+TxtCorreo.Text+ "', `puesto` = '"+TxtPuesto.Text+"' WHERE `empleados`.`id_empleado` = " + TxtNoEM.Text+";" ;
+            fecha = DataFecha.Value.ToString("dd/MM/yyyy");
+            string query = "UPDATE `empleados` SET `nombres` = '"+TxtNombres.Text+"', `apellidos` = '"+TxtApellidos.Text+ "', `fecha_nacimiento` = '1997-04-18', `sexo` = '" + TxtSexo.Text+"', `telefono` = '"+TxtTelefono.Text+"', `correo` = '"+TxtCorreo.Text+"', `puesto` = '"+TxtPuesto.Text+"' WHERE `empleados`.`id_empleado` = "+TxtNoEM.Text+";";
 
             conn.Open();
             OdbcCommand consulta = new OdbcCommand(query, conn);
             try
             {
+                
                 consulta.ExecuteNonQuery();
+                MessageBox.Show("El Registro se modifico correctamente" );
                 llenartbl();
             }
             catch (Exception ex)
@@ -176,12 +180,20 @@ namespace Migración
         private void button5_Click(object sender, EventArgs e)
         {
             Modificar();
+            TxtNoEM.Text = "";
+            TxtNombres.Text = "";
+            TxtApellidos.Text = "";
+            DataFecha.Text = "";
+            TxtSexo.Text = "";
+            TxtTelefono.Text = "";
+            TxtCorreo.Text = "";
+            TxtPuesto.Text = "";
             llenartbl();
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-            FrmMenu entrar = new FrmMenu(user);
+            FrmMenuPrincipal entrar = new FrmMenuPrincipal(user);
             entrar.Visible = true;
             Visible = false;
         }
@@ -208,7 +220,7 @@ namespace Migración
 
         private void FrmEmpleado_FormClosing(object sender, FormClosingEventArgs e)
         {
-            FrmMenu entrar = new FrmMenu(user);
+            FrmMenuPrincipal entrar = new FrmMenuPrincipal(user);
             entrar.Visible = true;
             Visible = false;
         }

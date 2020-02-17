@@ -94,12 +94,6 @@
       <DependentUpon>CorreoRe.cs</DependentUpon>
     </Compile>
     <Compile Include="CRUD.cs" />
-    <Compile Include="Menu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Menu.Designer.cs">
-      <DependentUpon>Menu.cs</DependentUpon>
-    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +105,12 @@
     </Compile>
     <Compile Include="Empleado.Designer.cs">
       <DependentUpon>Empleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuPrincipal.Designer.cs">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -132,6 +132,12 @@
     <Compile Include="Verificacion.Designer.cs">
       <DependentUpon>Verificacion.cs</DependentUpon>
     </Compile>
+    <Compile Include="Verificaciones1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Verificaciones1.Designer.cs">
+      <DependentUpon>Verificaciones1.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Bitacora.resx">
       <DependentUpon>Bitacora.cs</DependentUpon>
     </EmbeddedResource>
@@ -147,14 +153,14 @@
     <EmbeddedResource Include="CorreoRe.resx">
       <DependentUpon>CorreoRe.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Menu.resx">
-      <DependentUpon>Menu.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Empleado.resx">
       <DependentUpon>Empleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuPrincipal.resx">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -173,6 +179,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Verificacion.resx">
       <DependentUpon>Verificacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Verificaciones1.resx">
+      <DependentUpon>Verificaciones1.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

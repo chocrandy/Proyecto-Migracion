@@ -57,14 +57,14 @@ namespace Migración
 
         private void button1_Click(object sender, EventArgs e)
         {
-            FrmMenu entrar = new FrmMenu(user);
+           FrmMenuPrincipal entrar = new FrmMenuPrincipal(user);
             entrar.Visible = true;
             Visible = false;
         }
 
         private void FrmBitacora_FormClosing(object sender, FormClosingEventArgs e)
         {
-            FrmMenu entrar = new FrmMenu(user);
+            FrmMenuPrincipal entrar = new FrmMenuPrincipal(user);
             entrar.Visible = true;
             Visible = false;
         }
