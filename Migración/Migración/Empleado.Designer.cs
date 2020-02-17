@@ -89,6 +89,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1194, 718);
             this.tableLayoutPanel1.TabIndex = 0;
+            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.TableLayoutPanel1_Paint);
             // 
             // tableLayoutPanel2
             // 
@@ -176,6 +177,7 @@
             this.label5.Size = new System.Drawing.Size(274, 50);
             this.label5.TabIndex = 4;
             this.label5.Text = "Sexo";
+            this.label5.Click += new System.EventHandler(this.Label5_Click);
             // 
             // label6
             // 
@@ -290,7 +292,7 @@
             this.tableLayoutPanel3.ColumnCount = 3;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 44.98911F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 55.01089F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 299F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 304F));
             this.tableLayoutPanel3.Controls.Add(this.pictureBox1, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel8, 2, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -306,9 +308,9 @@
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Location = new System.Drawing.Point(378, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(376, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(453, 137);
+            this.pictureBox1.Size = new System.Drawing.Size(450, 137);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -320,21 +322,21 @@
             this.tableLayoutPanel8.Controls.Add(this.label11, 1, 0);
             this.tableLayoutPanel8.Controls.Add(this.label12, 1, 1);
             this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel8.Location = new System.Drawing.Point(837, 3);
+            this.tableLayoutPanel8.Location = new System.Drawing.Point(832, 3);
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
             this.tableLayoutPanel8.RowCount = 2;
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel8.Size = new System.Drawing.Size(294, 137);
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(299, 137);
             this.tableLayoutPanel8.TabIndex = 1;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label11.Location = new System.Drawing.Point(173, 0);
+            this.label11.Location = new System.Drawing.Point(176, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(118, 68);
+            this.label11.Size = new System.Drawing.Size(120, 68);
             this.label11.TabIndex = 0;
             this.label11.Text = "Usuario";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -343,9 +345,9 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label12.Location = new System.Drawing.Point(173, 68);
+            this.label12.Location = new System.Drawing.Point(176, 68);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(118, 69);
+            this.label12.Size = new System.Drawing.Size(120, 69);
             this.label12.TabIndex = 1;
             this.label12.Text = "Usuario";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -373,6 +375,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(1128, 229);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView1_CellContentClick);
             this.dataGridView1.DoubleClick += new System.EventHandler(this.dataGridView1_DoubleClick);
             // 
             // tableLayoutPanel7
@@ -448,6 +451,8 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "FrmEmpleado";
             this.Text = "Empleados";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmEmpleado_FormClosing);
+            this.Load += new System.EventHandler(this.FrmEmpleado_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();

@@ -274,6 +274,8 @@
             this.Name = "FrmCorreoRe";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CorreoRe";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmCorreoRe_FormClosing);
+            this.Load += new System.EventHandler(this.FrmCorreoRe_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();

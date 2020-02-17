@@ -22,6 +22,7 @@ namespace Migración
         public FrmCitasV(string usuario)
         {
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
             user = usuario;
             fechahora = hoy.ToString("yyyy/MM/dd HH:mm:ss");
             llenartbl();
@@ -116,9 +117,9 @@ namespace Migración
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            FrmMenu nuevo = new FrmMenu(user);
-            nuevo.Show();
+            FrmMenu entrar = new FrmMenu(user);
+            entrar.Visible = true;
+            Visible = false;
         }
 
         private void FrmCitasV_Load(object sender, EventArgs e)
@@ -143,14 +144,19 @@ namespace Migración
                TxtNOC.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
                TxtNumeroV.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
                TxtCui.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
-                DTimerCita.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
-
-
+               DTimerCita.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
             }
             else
             {
                 MessageBox.Show("No hay Datos");
             }
+        }
+
+        private void FrmCitasV_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            FrmMenu entrar = new FrmMenu(user);
+            entrar.Visible = true;
+            Visible = false;
         }
     }
 }

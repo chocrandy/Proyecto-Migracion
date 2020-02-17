@@ -274,6 +274,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "FrmCorreoCita";
             this.Text = "CorreoCita";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmCorreoCita_FormClosing);
             this.Load += new System.EventHandler(this.FrmCorreoCita_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);

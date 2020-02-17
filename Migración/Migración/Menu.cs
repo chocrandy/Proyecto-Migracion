@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Data.Odbc;
 using System.IO;
 using System.Net;
+using System.Threading;
 
 namespace Migración
 {
@@ -22,6 +23,7 @@ namespace Migración
         public FrmMenu(string usuario)
         {
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
             user = usuario;
             LblUsuario.Text = user;
             fechahora = hoy.ToString("yyyy/MM/dd HH:mm:ss");
@@ -29,9 +31,9 @@ namespace Migración
         }
         private void solicitudesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            FrmSolictudes nuevo = new  FrmSolictudes(user);
-            nuevo.Show();
+            FrmSolictudes entrar = new FrmSolictudes(user);
+            entrar.Visible = true;
+            Visible = false;
         }
         void Bitacora()
         {
@@ -88,5 +90,13 @@ namespace Migración
         {
 
         }
+
+        private void FrmMenu_FormClosing(object sender, FormClosingEventArgs e)
+        {            
+            FrmLogin entrar = new FrmLogin();            
+            entrar.Visible = true;
+            Visible = false;                 
+        }
     }
 }
+

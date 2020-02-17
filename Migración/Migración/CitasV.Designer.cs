@@ -182,7 +182,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(308, 42);
             this.label1.TabIndex = 0;
-            this.label1.Text = "No. Cita";
+            this.label1.Text = "Número de Cita";
             // 
             // label2
             // 
@@ -192,7 +192,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(308, 42);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Numero de verificacion";
+            this.label2.Text = "Número de Verificación";
             // 
             // label3
             // 
@@ -202,7 +202,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(308, 42);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Cui";
+            this.label3.Text = "CUI";
             // 
             // label4
             // 
@@ -252,7 +252,7 @@
             this.tableLayoutPanel6.ColumnCount = 3;
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 29.12281F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70.87719F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 116F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 121F));
             this.tableLayoutPanel6.Controls.Add(this.dataGridView1, 1, 0);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel6.Location = new System.Drawing.Point(3, 179);
@@ -266,9 +266,9 @@
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(175, 3);
+            this.dataGridView1.Location = new System.Drawing.Point(173, 3);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(413, 177);
+            this.dataGridView1.Size = new System.Drawing.Size(410, 177);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.DoubleClick += new System.EventHandler(this.dataGridView1_DoubleClick);
             // 
@@ -297,7 +297,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(160, 63);
             this.button1.TabIndex = 0;
-            this.button1.Text = "Modificar cita";
+            this.button1.Text = "Modificar Cita";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -331,6 +331,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "FrmCitasV";
             this.Text = "CitasV";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmCitasV_FormClosing);
             this.Load += new System.EventHandler(this.FrmCitasV_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);

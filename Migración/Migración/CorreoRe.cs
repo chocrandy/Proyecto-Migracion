@@ -27,6 +27,7 @@ namespace Migración
         public FrmCorreoRe(string dato ,string verifi , string usuario)
         {
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
             correo = dato;
             solicitud = verifi;
             user = usuario;
@@ -95,6 +96,18 @@ namespace Migración
             {
                 MessageBox.Show("Error al cargar la ruta del archivo: " + ex.ToString());
             }
+        }
+
+        private void FrmCorreoRe_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FrmCorreoRe_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            FrmMenu entrar = new FrmMenu(user);
+            entrar.Visible = true;
+            Visible = false;
         }
     }
 }

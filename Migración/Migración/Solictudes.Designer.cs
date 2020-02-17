@@ -109,7 +109,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.147175F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 57.68725F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2.164502F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1384, 761);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1362, 741);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // tableLayoutPanel2
@@ -126,13 +126,13 @@
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel4, 2, 1);
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel6, 3, 1);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(16, 307);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(16, 299);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 3;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 98F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1350, 433);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1328, 422);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // dataGridView1
@@ -142,7 +142,7 @@
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(3, 7);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(557, 418);
+            this.dataGridView1.Size = new System.Drawing.Size(547, 407);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.DoubleClick += new System.EventHandler(this.dataGridView1_DoubleClick);
             // 
@@ -164,7 +164,7 @@
             this.tableLayoutPanel4.Controls.Add(this.TxtTramite, 1, 5);
             this.tableLayoutPanel4.Controls.Add(this.TxtCorreo, 1, 9);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(572, 7);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(562, 7);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 12;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
@@ -179,7 +179,7 @@
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(382, 418);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(376, 407);
             this.tableLayoutPanel4.TabIndex = 1;
             // 
             // LblSolicitud
@@ -189,7 +189,7 @@
             this.LblSolicitud.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblSolicitud.Location = new System.Drawing.Point(3, 20);
             this.LblSolicitud.Name = "LblSolicitud";
-            this.LblSolicitud.Size = new System.Drawing.Size(127, 41);
+            this.LblSolicitud.Size = new System.Drawing.Size(125, 40);
             this.LblSolicitud.TabIndex = 0;
             this.LblSolicitud.Text = "No.Solicitud";
             // 
@@ -197,16 +197,16 @@
             // 
             this.TxtFecha.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TxtFecha.Enabled = false;
-            this.TxtFecha.Location = new System.Drawing.Point(136, 182);
+            this.TxtFecha.Location = new System.Drawing.Point(134, 179);
             this.TxtFecha.Name = "TxtFecha";
-            this.TxtFecha.Size = new System.Drawing.Size(243, 20);
+            this.TxtFecha.Size = new System.Drawing.Size(239, 20);
             this.TxtFecha.TabIndex = 7;
             // 
             // LblFecha
             // 
             this.LblFecha.AutoSize = true;
             this.LblFecha.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblFecha.Location = new System.Drawing.Point(3, 179);
+            this.LblFecha.Location = new System.Drawing.Point(3, 176);
             this.LblFecha.Name = "LblFecha";
             this.LblFecha.Size = new System.Drawing.Size(101, 20);
             this.LblFecha.TabIndex = 2;
@@ -217,9 +217,9 @@
             this.LblCui.AutoSize = true;
             this.LblCui.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LblCui.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblCui.Location = new System.Drawing.Point(3, 73);
+            this.LblCui.Location = new System.Drawing.Point(3, 72);
             this.LblCui.Name = "LblCui";
-            this.LblCui.Size = new System.Drawing.Size(127, 41);
+            this.LblCui.Size = new System.Drawing.Size(125, 40);
             this.LblCui.TabIndex = 1;
             this.LblCui.Text = "CUI";
             // 
@@ -227,18 +227,18 @@
             // 
             this.TxtSolicitud.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TxtSolicitud.Enabled = false;
-            this.TxtSolicitud.Location = new System.Drawing.Point(136, 23);
+            this.TxtSolicitud.Location = new System.Drawing.Point(134, 23);
             this.TxtSolicitud.Name = "TxtSolicitud";
-            this.TxtSolicitud.Size = new System.Drawing.Size(243, 20);
+            this.TxtSolicitud.Size = new System.Drawing.Size(239, 20);
             this.TxtSolicitud.TabIndex = 5;
             // 
             // TxtCui
             // 
             this.TxtCui.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TxtCui.Enabled = false;
-            this.TxtCui.Location = new System.Drawing.Point(136, 76);
+            this.TxtCui.Location = new System.Drawing.Point(134, 75);
             this.TxtCui.Name = "TxtCui";
-            this.TxtCui.Size = new System.Drawing.Size(243, 20);
+            this.TxtCui.Size = new System.Drawing.Size(239, 20);
             this.TxtCui.TabIndex = 6;
             // 
             // tableLayoutPanel7
@@ -248,20 +248,20 @@
             this.tableLayoutPanel7.Controls.Add(this.BtnCancelar, 0, 1);
             this.tableLayoutPanel7.Controls.Add(this.LblProgreso, 0, 0);
             this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel7.Location = new System.Drawing.Point(136, 288);
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(134, 283);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             this.tableLayoutPanel7.RowCount = 2;
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 43.30709F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 56.69291F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(243, 127);
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(239, 121);
             this.tableLayoutPanel7.TabIndex = 10;
             // 
             // BtnCancelar
             // 
             this.BtnCancelar.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BtnCancelar.Location = new System.Drawing.Point(3, 58);
+            this.BtnCancelar.Location = new System.Drawing.Point(3, 55);
             this.BtnCancelar.Name = "BtnCancelar";
-            this.BtnCancelar.Size = new System.Drawing.Size(237, 66);
+            this.BtnCancelar.Size = new System.Drawing.Size(233, 63);
             this.BtnCancelar.TabIndex = 9;
             this.BtnCancelar.Text = "Cancelar";
             this.BtnCancelar.UseVisualStyleBackColor = true;
@@ -273,7 +273,7 @@
             this.LblProgreso.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LblProgreso.Location = new System.Drawing.Point(3, 0);
             this.LblProgreso.Name = "LblProgreso";
-            this.LblProgreso.Size = new System.Drawing.Size(237, 55);
+            this.LblProgreso.Size = new System.Drawing.Size(233, 52);
             this.LblProgreso.TabIndex = 10;
             this.LblProgreso.Text = "En Proceso";
             this.LblProgreso.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -285,12 +285,12 @@
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel8.Controls.Add(this.LblEstado, 0, 0);
             this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel8.Location = new System.Drawing.Point(3, 288);
+            this.tableLayoutPanel8.Location = new System.Drawing.Point(3, 283);
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
             this.tableLayoutPanel8.RowCount = 2;
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40.94488F));
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 59.05512F));
-            this.tableLayoutPanel8.Size = new System.Drawing.Size(127, 127);
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(125, 121);
             this.tableLayoutPanel8.TabIndex = 11;
             // 
             // LblEstado
@@ -307,7 +307,7 @@
             // 
             this.LblTipoT.AutoSize = true;
             this.LblTipoT.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblTipoT.Location = new System.Drawing.Point(3, 126);
+            this.LblTipoT.Location = new System.Drawing.Point(3, 124);
             this.LblTipoT.Name = "LblTipoT";
             this.LblTipoT.Size = new System.Drawing.Size(102, 20);
             this.LblTipoT.TabIndex = 12;
@@ -317,7 +317,7 @@
             // 
             this.LblCorreo.AutoSize = true;
             this.LblCorreo.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblCorreo.Location = new System.Drawing.Point(3, 232);
+            this.LblCorreo.Location = new System.Drawing.Point(3, 228);
             this.LblCorreo.Name = "LblCorreo";
             this.LblCorreo.Size = new System.Drawing.Size(50, 20);
             this.LblCorreo.TabIndex = 3;
@@ -327,18 +327,18 @@
             // 
             this.TxtTramite.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TxtTramite.Enabled = false;
-            this.TxtTramite.Location = new System.Drawing.Point(136, 129);
+            this.TxtTramite.Location = new System.Drawing.Point(134, 127);
             this.TxtTramite.Name = "TxtTramite";
-            this.TxtTramite.Size = new System.Drawing.Size(243, 20);
+            this.TxtTramite.Size = new System.Drawing.Size(239, 20);
             this.TxtTramite.TabIndex = 13;
             // 
             // TxtCorreo
             // 
             this.TxtCorreo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TxtCorreo.Enabled = false;
-            this.TxtCorreo.Location = new System.Drawing.Point(136, 235);
+            this.TxtCorreo.Location = new System.Drawing.Point(134, 231);
             this.TxtCorreo.Name = "TxtCorreo";
-            this.TxtCorreo.Size = new System.Drawing.Size(243, 20);
+            this.TxtCorreo.Size = new System.Drawing.Size(239, 20);
             this.TxtCorreo.TabIndex = 8;
             // 
             // tableLayoutPanel6
@@ -365,7 +365,7 @@
             this.tableLayoutPanel6.Controls.Add(this.TxtCuiRP, 1, 13);
             this.tableLayoutPanel6.Controls.Add(this.TxtCuiPM, 1, 15);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(960, 7);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(944, 7);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 18;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1.694915F));
@@ -386,16 +386,16 @@
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.474576F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1.694915F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.94915F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(382, 418);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(376, 407);
             this.tableLayoutPanel6.TabIndex = 2;
             // 
             // BtnSig
             // 
             this.BtnSig.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BtnSig.Enabled = false;
-            this.BtnSig.Location = new System.Drawing.Point(136, 346);
+            this.BtnSig.Location = new System.Drawing.Point(134, 329);
             this.BtnSig.Name = "BtnSig";
-            this.BtnSig.Size = new System.Drawing.Size(243, 69);
+            this.BtnSig.Size = new System.Drawing.Size(239, 75);
             this.BtnSig.TabIndex = 0;
             this.BtnSig.Text = "Siguiente";
             this.BtnSig.UseVisualStyleBackColor = true;
@@ -405,9 +405,9 @@
             // 
             this.BtnRecha.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BtnRecha.Enabled = false;
-            this.BtnRecha.Location = new System.Drawing.Point(3, 346);
+            this.BtnRecha.Location = new System.Drawing.Point(3, 329);
             this.BtnRecha.Name = "BtnRecha";
-            this.BtnRecha.Size = new System.Drawing.Size(127, 69);
+            this.BtnRecha.Size = new System.Drawing.Size(125, 75);
             this.BtnRecha.TabIndex = 1;
             this.BtnRecha.Text = "Rechazar";
             this.BtnRecha.UseVisualStyleBackColor = true;
@@ -417,9 +417,9 @@
             // 
             this.LblCuiR.AutoSize = true;
             this.LblCuiR.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.LblCuiR.Location = new System.Drawing.Point(3, 7);
+            this.LblCuiR.Location = new System.Drawing.Point(3, 6);
             this.LblCuiR.Name = "LblCuiR";
-            this.LblCuiR.Size = new System.Drawing.Size(127, 35);
+            this.LblCuiR.Size = new System.Drawing.Size(125, 34);
             this.LblCuiR.TabIndex = 2;
             this.LblCuiR.Text = "Cui";
             // 
@@ -427,9 +427,9 @@
             // 
             this.LblNombre.AutoSize = true;
             this.LblNombre.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.LblNombre.Location = new System.Drawing.Point(3, 49);
+            this.LblNombre.Location = new System.Drawing.Point(3, 46);
             this.LblNombre.Name = "LblNombre";
-            this.LblNombre.Size = new System.Drawing.Size(127, 35);
+            this.LblNombre.Size = new System.Drawing.Size(125, 34);
             this.LblNombre.TabIndex = 3;
             this.LblNombre.Text = "Nombres";
             // 
@@ -437,9 +437,9 @@
             // 
             this.LblApellido.AutoSize = true;
             this.LblApellido.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.LblApellido.Location = new System.Drawing.Point(3, 91);
+            this.LblApellido.Location = new System.Drawing.Point(3, 86);
             this.LblApellido.Name = "LblApellido";
-            this.LblApellido.Size = new System.Drawing.Size(127, 35);
+            this.LblApellido.Size = new System.Drawing.Size(125, 34);
             this.LblApellido.TabIndex = 4;
             this.LblApellido.Text = "Apellidos";
             // 
@@ -447,9 +447,9 @@
             // 
             this.LblFechaN.AutoSize = true;
             this.LblFechaN.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.LblFechaN.Location = new System.Drawing.Point(3, 133);
+            this.LblFechaN.Location = new System.Drawing.Point(3, 126);
             this.LblFechaN.Name = "LblFechaN";
-            this.LblFechaN.Size = new System.Drawing.Size(127, 35);
+            this.LblFechaN.Size = new System.Drawing.Size(125, 34);
             this.LblFechaN.TabIndex = 5;
             this.LblFechaN.Text = "Fecha Nacimiento";
             // 
@@ -457,9 +457,9 @@
             // 
             this.LblSexo.AutoSize = true;
             this.LblSexo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.LblSexo.Location = new System.Drawing.Point(3, 175);
+            this.LblSexo.Location = new System.Drawing.Point(3, 166);
             this.LblSexo.Name = "LblSexo";
-            this.LblSexo.Size = new System.Drawing.Size(127, 35);
+            this.LblSexo.Size = new System.Drawing.Size(125, 34);
             this.LblSexo.TabIndex = 6;
             this.LblSexo.Text = "Sexo";
             // 
@@ -467,9 +467,9 @@
             // 
             this.LblLugrarN.AutoSize = true;
             this.LblLugrarN.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.LblLugrarN.Location = new System.Drawing.Point(3, 217);
+            this.LblLugrarN.Location = new System.Drawing.Point(3, 206);
             this.LblLugrarN.Name = "LblLugrarN";
-            this.LblLugrarN.Size = new System.Drawing.Size(127, 35);
+            this.LblLugrarN.Size = new System.Drawing.Size(125, 34);
             this.LblLugrarN.TabIndex = 7;
             this.LblLugrarN.Text = "Lugar de Nacimiento";
             // 
@@ -477,9 +477,9 @@
             // 
             this.LblCuiP.AutoSize = true;
             this.LblCuiP.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.LblCuiP.Location = new System.Drawing.Point(3, 259);
+            this.LblCuiP.Location = new System.Drawing.Point(3, 246);
             this.LblCuiP.Name = "LblCuiP";
-            this.LblCuiP.Size = new System.Drawing.Size(127, 35);
+            this.LblCuiP.Size = new System.Drawing.Size(125, 34);
             this.LblCuiP.TabIndex = 8;
             this.LblCuiP.Text = "Cui Progenitor";
             // 
@@ -487,9 +487,9 @@
             // 
             this.LblCuiM.AutoSize = true;
             this.LblCuiM.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.LblCuiM.Location = new System.Drawing.Point(3, 301);
+            this.LblCuiM.Location = new System.Drawing.Point(3, 286);
             this.LblCuiM.Name = "LblCuiM";
-            this.LblCuiM.Size = new System.Drawing.Size(127, 35);
+            this.LblCuiM.Size = new System.Drawing.Size(125, 34);
             this.LblCuiM.TabIndex = 9;
             this.LblCuiM.Text = "Cui Progenitora";
             // 
@@ -497,72 +497,72 @@
             // 
             this.TxtCuiR.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TxtCuiR.Enabled = false;
-            this.TxtCuiR.Location = new System.Drawing.Point(136, 10);
+            this.TxtCuiR.Location = new System.Drawing.Point(134, 9);
             this.TxtCuiR.Name = "TxtCuiR";
-            this.TxtCuiR.Size = new System.Drawing.Size(243, 20);
+            this.TxtCuiR.Size = new System.Drawing.Size(239, 20);
             this.TxtCuiR.TabIndex = 10;
             // 
             // PicUser
             // 
             this.PicUser.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PicUser.Enabled = false;
-            this.PicUser.Location = new System.Drawing.Point(136, 52);
+            this.PicUser.Location = new System.Drawing.Point(134, 49);
             this.PicUser.Name = "PicUser";
-            this.PicUser.Size = new System.Drawing.Size(243, 20);
+            this.PicUser.Size = new System.Drawing.Size(239, 20);
             this.PicUser.TabIndex = 11;
             // 
             // TxtApellido
             // 
             this.TxtApellido.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TxtApellido.Enabled = false;
-            this.TxtApellido.Location = new System.Drawing.Point(136, 94);
+            this.TxtApellido.Location = new System.Drawing.Point(134, 89);
             this.TxtApellido.Name = "TxtApellido";
-            this.TxtApellido.Size = new System.Drawing.Size(243, 20);
+            this.TxtApellido.Size = new System.Drawing.Size(239, 20);
             this.TxtApellido.TabIndex = 12;
             // 
             // TxtFechaN
             // 
             this.TxtFechaN.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TxtFechaN.Enabled = false;
-            this.TxtFechaN.Location = new System.Drawing.Point(136, 136);
+            this.TxtFechaN.Location = new System.Drawing.Point(134, 129);
             this.TxtFechaN.Name = "TxtFechaN";
-            this.TxtFechaN.Size = new System.Drawing.Size(243, 20);
+            this.TxtFechaN.Size = new System.Drawing.Size(239, 20);
             this.TxtFechaN.TabIndex = 13;
             // 
             // TxtSexo
             // 
             this.TxtSexo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TxtSexo.Enabled = false;
-            this.TxtSexo.Location = new System.Drawing.Point(136, 178);
+            this.TxtSexo.Location = new System.Drawing.Point(134, 169);
             this.TxtSexo.Name = "TxtSexo";
-            this.TxtSexo.Size = new System.Drawing.Size(243, 20);
+            this.TxtSexo.Size = new System.Drawing.Size(239, 20);
             this.TxtSexo.TabIndex = 14;
             // 
             // TxtLugarN
             // 
             this.TxtLugarN.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TxtLugarN.Enabled = false;
-            this.TxtLugarN.Location = new System.Drawing.Point(136, 220);
+            this.TxtLugarN.Location = new System.Drawing.Point(134, 209);
             this.TxtLugarN.Name = "TxtLugarN";
-            this.TxtLugarN.Size = new System.Drawing.Size(243, 20);
+            this.TxtLugarN.Size = new System.Drawing.Size(239, 20);
             this.TxtLugarN.TabIndex = 15;
             // 
             // TxtCuiRP
             // 
             this.TxtCuiRP.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TxtCuiRP.Enabled = false;
-            this.TxtCuiRP.Location = new System.Drawing.Point(136, 262);
+            this.TxtCuiRP.Location = new System.Drawing.Point(134, 249);
             this.TxtCuiRP.Name = "TxtCuiRP";
-            this.TxtCuiRP.Size = new System.Drawing.Size(243, 20);
+            this.TxtCuiRP.Size = new System.Drawing.Size(239, 20);
             this.TxtCuiRP.TabIndex = 16;
             // 
             // TxtCuiPM
             // 
             this.TxtCuiPM.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TxtCuiPM.Enabled = false;
-            this.TxtCuiPM.Location = new System.Drawing.Point(136, 304);
+            this.TxtCuiPM.Location = new System.Drawing.Point(134, 289);
             this.TxtCuiPM.Name = "TxtCuiPM";
-            this.TxtCuiPM.Size = new System.Drawing.Size(243, 20);
+            this.TxtCuiPM.Size = new System.Drawing.Size(239, 20);
             this.TxtCuiPM.TabIndex = 17;
             // 
             // tableLayoutPanel3
@@ -581,7 +581,7 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 98F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(1350, 220);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(1328, 214);
             this.tableLayoutPanel3.TabIndex = 1;
             // 
             // Pic1
@@ -589,9 +589,9 @@
             this.Pic1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Pic1.BackgroundImage")));
             this.Pic1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Pic1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Pic1.Location = new System.Drawing.Point(481, 5);
+            this.Pic1.Location = new System.Drawing.Point(473, 5);
             this.Pic1.Name = "Pic1";
-            this.Pic1.Size = new System.Drawing.Size(491, 209);
+            this.Pic1.Size = new System.Drawing.Size(483, 203);
             this.Pic1.TabIndex = 0;
             this.Pic1.TabStop = false;
             // 
@@ -604,13 +604,13 @@
             this.tableLayoutPanel9.Controls.Add(this.pictureBox1, 1, 0);
             this.tableLayoutPanel9.Controls.Add(this.LblUsuario, 1, 1);
             this.tableLayoutPanel9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel9.Location = new System.Drawing.Point(978, 5);
+            this.tableLayoutPanel9.Location = new System.Drawing.Point(962, 5);
             this.tableLayoutPanel9.Name = "tableLayoutPanel9";
             this.tableLayoutPanel9.RowCount = 3;
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 76.14679F));
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 23.85321F));
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 99F));
-            this.tableLayoutPanel9.Size = new System.Drawing.Size(369, 209);
+            this.tableLayoutPanel9.Size = new System.Drawing.Size(363, 203);
             this.tableLayoutPanel9.TabIndex = 1;
             // 
             // pictureBox1
@@ -618,9 +618,9 @@
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Location = new System.Drawing.Point(272, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(268, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(94, 77);
+            this.pictureBox1.Size = new System.Drawing.Size(92, 73);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -628,9 +628,9 @@
             // 
             this.LblUsuario.AutoSize = true;
             this.LblUsuario.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.LblUsuario.Location = new System.Drawing.Point(272, 83);
+            this.LblUsuario.Location = new System.Drawing.Point(268, 79);
             this.LblUsuario.Name = "LblUsuario";
-            this.LblUsuario.Size = new System.Drawing.Size(94, 26);
+            this.LblUsuario.Size = new System.Drawing.Size(92, 24);
             this.LblUsuario.TabIndex = 1;
             this.LblUsuario.Text = "Usuario";
             this.LblUsuario.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -643,11 +643,11 @@
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.51852F));
             this.tableLayoutPanel5.Controls.Add(this.dataGridView2, 1, 0);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(16, 245);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(16, 239);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 1;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(1350, 56);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(1328, 54);
             this.tableLayoutPanel5.TabIndex = 2;
             // 
             // dataGridView2
@@ -655,10 +655,10 @@
             this.dataGridView2.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView2.Location = new System.Drawing.Point(248, 3);
+            this.dataGridView2.Location = new System.Drawing.Point(244, 3);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.dataGridView2.Size = new System.Drawing.Size(848, 50);
+            this.dataGridView2.Size = new System.Drawing.Size(834, 48);
             this.dataGridView2.TabIndex = 0;
             // 
             // FrmSolictudes
@@ -666,11 +666,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(1384, 761);
+            this.ClientSize = new System.Drawing.Size(1362, 741);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "FrmSolictudes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Solictudes";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmSolictudes_FormClosing);
+            this.Load += new System.EventHandler(this.FrmSolictudes_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

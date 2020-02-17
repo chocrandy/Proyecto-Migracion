@@ -107,7 +107,7 @@
             this.tableLayoutPanel8.ColumnCount = 3;
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32.15259F));
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 67.84741F));
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 91F));
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 96F));
             this.tableLayoutPanel8.Controls.Add(this.pictureBox1, 1, 0);
             this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel8.Location = new System.Drawing.Point(106, 3);
@@ -122,9 +122,9 @@
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Location = new System.Drawing.Point(83, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(81, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(162, 80);
+            this.pictureBox1.Size = new System.Drawing.Size(159, 80);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -186,7 +186,7 @@
             this.LblVerificacion.Name = "LblVerificacion";
             this.LblVerificacion.Size = new System.Drawing.Size(217, 40);
             this.LblVerificacion.TabIndex = 1;
-            this.LblVerificacion.Text = "Numero de verificacion";
+            this.LblVerificacion.Text = "Número de Verificación";
             // 
             // TxtNumeroV
             // 
@@ -205,7 +205,7 @@
             this.LblCui.Name = "LblCui";
             this.LblCui.Size = new System.Drawing.Size(217, 40);
             this.LblCui.TabIndex = 2;
-            this.LblCui.Text = "Cui";
+            this.LblCui.Text = "CUI";
             // 
             // TxtCui
             // 
@@ -279,7 +279,7 @@
             this.BtnVerificar.Name = "BtnVerificar";
             this.BtnVerificar.Size = new System.Drawing.Size(125, 63);
             this.BtnVerificar.TabIndex = 1;
-            this.BtnVerificar.Text = "Validadr verificacion";
+            this.BtnVerificar.Text = "Validar Verificación";
             this.BtnVerificar.UseVisualStyleBackColor = true;
             this.BtnVerificar.Click += new System.EventHandler(this.button2_Click_1);
             // 
@@ -292,6 +292,8 @@
             this.Name = "FrmCita";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cita";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmCita_FormClosing);
+            this.Load += new System.EventHandler(this.FrmCita_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);

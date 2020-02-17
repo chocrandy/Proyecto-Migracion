@@ -93,6 +93,7 @@
     <Compile Include="CorreoRe.Designer.cs">
       <DependentUpon>CorreoRe.cs</DependentUpon>
     </Compile>
+    <Compile Include="CRUD.cs" />
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -26,6 +26,7 @@ namespace Migración
         public FrmCita(string usuario, string numero,string cui,string email)
         {
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
             user = usuario;
             solicitud = numero;
             TxtNumeroV.Text = solicitud;
@@ -113,5 +114,16 @@ namespace Migración
             OPcita();  
         }
 
+        private void FrmCita_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            FrmMenu entrar = new FrmMenu(user);
+            entrar.Visible = true;
+            Visible = false;
+        }
+
+        private void FrmCita_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

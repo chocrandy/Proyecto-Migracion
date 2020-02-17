@@ -87,5 +87,12 @@ namespace Migración
         {
 
         }
+
+        private void FrmCorreoCita_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            FrmMenu entrar = new FrmMenu(user);
+            entrar.Visible = true;
+            Visible = false;
+        }
     }
 }

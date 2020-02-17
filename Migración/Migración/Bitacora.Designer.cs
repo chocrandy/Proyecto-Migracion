@@ -176,9 +176,9 @@
             this.button1.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button1.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(16, 3);
+            this.button1.Location = new System.Drawing.Point(15, 3);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(161, 96);
+            this.button1.Size = new System.Drawing.Size(162, 96);
             this.button1.TabIndex = 0;
             this.button1.Text = "Menu";
             this.button1.UseVisualStyleBackColor = false;
@@ -192,6 +192,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "FrmBitacora";
             this.Text = "Bitacora";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmBitacora_FormClosing);
             this.Load += new System.EventHandler(this.FrmBitacora_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

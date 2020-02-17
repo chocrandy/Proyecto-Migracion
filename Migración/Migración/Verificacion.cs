@@ -26,6 +26,7 @@ namespace Migración
         public LblCuipP(string dato, string tipo, string usuario, string email, string cui)
         {
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
             solicitud = dato;
             user = usuario;
             Cui = cui;
@@ -380,6 +381,13 @@ namespace Migración
         private void LblCuipP_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void LblCuipP_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            FrmMenu entrar = new FrmMenu(user);
+            entrar.Visible = true;
+            Visible = false;
         }
     }
 }
