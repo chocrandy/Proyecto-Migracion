@@ -407,8 +407,8 @@
             this.tableLayoutPanel4.Location = new System.Drawing.Point(29, 392);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 2;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 78.1457F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 21.85431F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 68.87417F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 31.12583F));
             this.tableLayoutPanel4.Size = new System.Drawing.Size(1134, 302);
             this.tableLayoutPanel4.TabIndex = 2;
             // 
@@ -418,7 +418,7 @@
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(3, 3);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1128, 229);
+            this.dataGridView1.Size = new System.Drawing.Size(1128, 201);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView1_CellContentClick);
             this.dataGridView1.DoubleClick += new System.EventHandler(this.dataGridView1_DoubleClick);
@@ -436,62 +436,74 @@
             this.tableLayoutPanel7.Controls.Add(this.button5, 2, 0);
             this.tableLayoutPanel7.Controls.Add(this.button7, 0, 0);
             this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel7.Location = new System.Drawing.Point(3, 238);
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(3, 210);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             this.tableLayoutPanel7.RowCount = 1;
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(1128, 61);
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(1128, 89);
             this.tableLayoutPanel7.TabIndex = 1;
             // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Location = new System.Drawing.Point(903, 3);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(222, 55);
+            this.button3.Size = new System.Drawing.Size(222, 83);
             this.button3.TabIndex = 0;
             this.button3.Text = "Insertar";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
             this.button4.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
+            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.Location = new System.Drawing.Point(678, 3);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(219, 55);
+            this.button4.Size = new System.Drawing.Size(219, 83);
             this.button4.TabIndex = 1;
             this.button4.Text = "Borrar";
+            this.button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
             this.button5.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
+            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.Location = new System.Drawing.Point(453, 3);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(219, 55);
+            this.button5.Size = new System.Drawing.Size(219, 83);
             this.button5.TabIndex = 2;
             this.button5.Text = "Modificar";
+            this.button5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button7
             // 
             this.button7.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button7.BackgroundImage")));
+            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.Location = new System.Drawing.Point(3, 3);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(219, 55);
+            this.button7.Size = new System.Drawing.Size(219, 83);
             this.button7.TabIndex = 4;
             this.button7.Text = "Cerrar";
+            this.button7.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button7.UseVisualStyleBackColor = false;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 

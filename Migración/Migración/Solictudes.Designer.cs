@@ -262,8 +262,10 @@
             // BtnCancelar
             // 
             this.BtnCancelar.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.BtnCancelar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnCancelar.BackgroundImage")));
+            this.BtnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.BtnCancelar.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BtnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnCancelar.Location = new System.Drawing.Point(3, 47);
             this.BtnCancelar.Name = "BtnCancelar";
             this.BtnCancelar.Size = new System.Drawing.Size(233, 71);
@@ -400,9 +402,11 @@
             // BtnSig
             // 
             this.BtnSig.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.BtnSig.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnSig.BackgroundImage")));
+            this.BtnSig.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.BtnSig.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BtnSig.Enabled = false;
-            this.BtnSig.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSig.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnSig.Location = new System.Drawing.Point(134, 329);
             this.BtnSig.Name = "BtnSig";
             this.BtnSig.Size = new System.Drawing.Size(239, 75);
@@ -414,9 +418,11 @@
             // BtnRecha
             // 
             this.BtnRecha.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.BtnRecha.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnRecha.BackgroundImage")));
+            this.BtnRecha.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.BtnRecha.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BtnRecha.Enabled = false;
-            this.BtnRecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnRecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnRecha.Location = new System.Drawing.Point(3, 329);
             this.BtnRecha.Name = "BtnRecha";
             this.BtnRecha.Size = new System.Drawing.Size(125, 75);
