@@ -108,7 +108,7 @@
             this.tableLayoutPanel8.ColumnCount = 3;
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32.15259F));
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 67.84741F));
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 102F));
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 103F));
             this.tableLayoutPanel8.Controls.Add(this.pictureBox1, 1, 0);
             this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel8.Location = new System.Drawing.Point(106, 3);
@@ -125,7 +125,7 @@
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Location = new System.Drawing.Point(79, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(155, 80);
+            this.pictureBox1.Size = new System.Drawing.Size(154, 80);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -271,6 +271,7 @@
             // 
             // BtnGenerar
             // 
+            this.BtnGenerar.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.BtnGenerar.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BtnGenerar.Enabled = false;
             this.BtnGenerar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -279,11 +280,12 @@
             this.BtnGenerar.Size = new System.Drawing.Size(156, 63);
             this.BtnGenerar.TabIndex = 0;
             this.BtnGenerar.Text = "Generar Cita";
-            this.BtnGenerar.UseVisualStyleBackColor = true;
+            this.BtnGenerar.UseVisualStyleBackColor = false;
             this.BtnGenerar.Click += new System.EventHandler(this.button1_Click);
             // 
             // BtnVerificar
             // 
+            this.BtnVerificar.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.BtnVerificar.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BtnVerificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnVerificar.Location = new System.Drawing.Point(214, 3);
@@ -291,7 +293,7 @@
             this.BtnVerificar.Size = new System.Drawing.Size(125, 63);
             this.BtnVerificar.TabIndex = 1;
             this.BtnVerificar.Text = "Validar Verificación";
-            this.BtnVerificar.UseVisualStyleBackColor = true;
+            this.BtnVerificar.UseVisualStyleBackColor = false;
             this.BtnVerificar.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // FrmCita

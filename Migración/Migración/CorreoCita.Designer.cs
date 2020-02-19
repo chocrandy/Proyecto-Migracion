@@ -207,17 +207,19 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button1.Location = new System.Drawing.Point(552, 3);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(89, 48);
             this.button1.TabIndex = 1;
             this.button1.Text = "...";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // BtnEnviar
             // 
+            this.BtnEnviar.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.BtnEnviar.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BtnEnviar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnEnviar.Location = new System.Drawing.Point(328, 326);
@@ -225,7 +227,7 @@
             this.BtnEnviar.Size = new System.Drawing.Size(644, 46);
             this.BtnEnviar.TabIndex = 9;
             this.BtnEnviar.Text = "Enviar";
-            this.BtnEnviar.UseVisualStyleBackColor = true;
+            this.BtnEnviar.UseVisualStyleBackColor = false;
             this.BtnEnviar.Click += new System.EventHandler(this.button2_Click);
             // 
             // tableLayoutPanel3

@@ -202,24 +202,26 @@
             // 
             // BtnAdjuntar
             // 
+            this.BtnAdjuntar.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.BtnAdjuntar.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BtnAdjuntar.Location = new System.Drawing.Point(459, 3);
             this.BtnAdjuntar.Name = "BtnAdjuntar";
             this.BtnAdjuntar.Size = new System.Drawing.Size(73, 48);
             this.BtnAdjuntar.TabIndex = 1;
             this.BtnAdjuntar.Text = "...";
-            this.BtnAdjuntar.UseVisualStyleBackColor = true;
+            this.BtnAdjuntar.UseVisualStyleBackColor = false;
             this.BtnAdjuntar.Click += new System.EventHandler(this.button1_Click);
             // 
             // BtnEnviar
             // 
+            this.BtnEnviar.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.BtnEnviar.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BtnEnviar.Location = new System.Drawing.Point(368, 327);
             this.BtnEnviar.Name = "BtnEnviar";
             this.BtnEnviar.Size = new System.Drawing.Size(535, 46);
             this.BtnEnviar.TabIndex = 9;
             this.BtnEnviar.Text = "Enviar";
-            this.BtnEnviar.UseVisualStyleBackColor = true;
+            this.BtnEnviar.UseVisualStyleBackColor = false;
             this.BtnEnviar.Click += new System.EventHandler(this.button2_Click);
             // 
             // tableLayoutPanel3

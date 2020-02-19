@@ -261,6 +261,7 @@
             // 
             // BtnCancelar
             // 
+            this.BtnCancelar.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.BtnCancelar.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BtnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnCancelar.Location = new System.Drawing.Point(3, 47);
@@ -268,7 +269,7 @@
             this.BtnCancelar.Size = new System.Drawing.Size(233, 71);
             this.BtnCancelar.TabIndex = 9;
             this.BtnCancelar.Text = "Cancelar";
-            this.BtnCancelar.UseVisualStyleBackColor = true;
+            this.BtnCancelar.UseVisualStyleBackColor = false;
             this.BtnCancelar.Click += new System.EventHandler(this.BtnCancelar_Click);
             // 
             // LblProgreso
@@ -398,6 +399,7 @@
             // 
             // BtnSig
             // 
+            this.BtnSig.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.BtnSig.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BtnSig.Enabled = false;
             this.BtnSig.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -406,11 +408,12 @@
             this.BtnSig.Size = new System.Drawing.Size(239, 75);
             this.BtnSig.TabIndex = 0;
             this.BtnSig.Text = "Siguiente";
-            this.BtnSig.UseVisualStyleBackColor = true;
+            this.BtnSig.UseVisualStyleBackColor = false;
             this.BtnSig.Click += new System.EventHandler(this.BtnSig_Click);
             // 
             // BtnRecha
             // 
+            this.BtnRecha.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.BtnRecha.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BtnRecha.Enabled = false;
             this.BtnRecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -419,7 +422,7 @@
             this.BtnRecha.Size = new System.Drawing.Size(125, 75);
             this.BtnRecha.TabIndex = 1;
             this.BtnRecha.Text = "Rechazar";
-            this.BtnRecha.UseVisualStyleBackColor = true;
+            this.BtnRecha.UseVisualStyleBackColor = false;
             this.BtnRecha.Click += new System.EventHandler(this.BtnRecha_Click);
             // 
             // LblCuiR

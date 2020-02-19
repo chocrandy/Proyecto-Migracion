@@ -326,7 +326,7 @@
             this.tableLayoutPanel3.ColumnCount = 3;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 44.98911F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 55.01089F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 311F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 312F));
             this.tableLayoutPanel3.Controls.Add(this.pictureBox1, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel8, 2, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -342,7 +342,7 @@
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Location = new System.Drawing.Point(373, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(372, 3);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(446, 137);
             this.pictureBox1.TabIndex = 0;
@@ -357,12 +357,12 @@
             this.tableLayoutPanel8.Controls.Add(this.lbUser, 1, 1);
             this.tableLayoutPanel8.Controls.Add(this.txtFaux, 0, 0);
             this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel8.Location = new System.Drawing.Point(825, 3);
+            this.tableLayoutPanel8.Location = new System.Drawing.Point(824, 3);
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
             this.tableLayoutPanel8.RowCount = 2;
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 61.31387F));
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 38.68613F));
-            this.tableLayoutPanel8.Size = new System.Drawing.Size(306, 137);
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(307, 137);
             this.tableLayoutPanel8.TabIndex = 1;
             this.tableLayoutPanel8.Paint += new System.Windows.Forms.PaintEventHandler(this.TableLayoutPanel8_Paint);
             // 
@@ -371,7 +371,7 @@
             this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox2.Location = new System.Drawing.Point(207, 3);
+            this.pictureBox2.Location = new System.Drawing.Point(208, 3);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(96, 78);
             this.pictureBox2.TabIndex = 6;
@@ -382,7 +382,7 @@
             this.lbUser.AutoSize = true;
             this.lbUser.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbUser.Location = new System.Drawing.Point(207, 84);
+            this.lbUser.Location = new System.Drawing.Point(208, 84);
             this.lbUser.Name = "lbUser";
             this.lbUser.Size = new System.Drawing.Size(96, 53);
             this.lbUser.TabIndex = 5;
@@ -445,6 +445,7 @@
             // 
             // button3
             // 
+            this.button3.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Location = new System.Drawing.Point(903, 3);
@@ -452,11 +453,12 @@
             this.button3.Size = new System.Drawing.Size(222, 55);
             this.button3.TabIndex = 0;
             this.button3.Text = "Insertar";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
+            this.button4.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.button4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.Location = new System.Drawing.Point(678, 3);
@@ -464,11 +466,12 @@
             this.button4.Size = new System.Drawing.Size(219, 55);
             this.button4.TabIndex = 1;
             this.button4.Text = "Borrar";
-            this.button4.UseVisualStyleBackColor = true;
+            this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
+            this.button5.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.button5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.Location = new System.Drawing.Point(453, 3);
@@ -476,11 +479,12 @@
             this.button5.Size = new System.Drawing.Size(219, 55);
             this.button5.TabIndex = 2;
             this.button5.Text = "Modificar";
-            this.button5.UseVisualStyleBackColor = true;
+            this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button7
             // 
+            this.button7.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.button7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.Location = new System.Drawing.Point(3, 3);
@@ -488,7 +492,7 @@
             this.button7.Size = new System.Drawing.Size(219, 55);
             this.button7.TabIndex = 4;
             this.button7.Text = "Cerrar";
-            this.button7.UseVisualStyleBackColor = true;
+            this.button7.UseVisualStyleBackColor = false;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // FrmEmpleado
