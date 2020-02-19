@@ -90,29 +90,7 @@ namespace Migración
                 conn.Close();
             }
         }
-        void Modificar()
-        {
-            conn.Close();
-            string query = "UPDATE `citas` SET `fecha_cita` = '"+DTimerCita.Text+"' WHERE `citas`.`id_cita` =" + TxtNOC.Text;
-            conn.Open();
-            OdbcCommand consulta = new OdbcCommand(query, conn);
-            try
-            {
-                consulta.ExecuteNonQuery();
-                conn.Close();
-                llenartbl();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("\t Error! \n\n " + ex.ToString());
-                conn.Close();
-            }
-        }
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Modificar();
-            llenartbl();
-        }
+
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -126,12 +104,13 @@ namespace Migración
 
         private void button3_Click(object sender, EventArgs e)
         {
-            TxtNOC.Text = "";
-            TxtCui.Text = "";
-            TxtNumeroV.Text = "";
             BorrarC();
             Bitacora();
             llenartbl();
+            TxtNOC.Text = "";
+            TxtCui.Text = "";
+            TxtNumeroV.Text = "";
+        
         }
 
         private void dataGridView1_DoubleClick(object sender, EventArgs e)

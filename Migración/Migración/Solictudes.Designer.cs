@@ -696,7 +696,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmSolictudes";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Solictudes";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmSolictudes_FormClosing);
             this.Load += new System.EventHandler(this.FrmSolictudes_Load);

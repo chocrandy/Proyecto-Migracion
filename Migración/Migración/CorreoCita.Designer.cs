@@ -279,6 +279,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmCorreoCita";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Correo Cita";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmCorreoCita_FormClosing);
             this.Load += new System.EventHandler(this.FrmCorreoCita_Load);

@@ -132,12 +132,6 @@
     <Compile Include="Verificacion.Designer.cs">
       <DependentUpon>Verificacion.cs</DependentUpon>
     </Compile>
-    <Compile Include="Verificaciones1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Verificaciones1.Designer.cs">
-      <DependentUpon>Verificaciones1.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="Bitacora.resx">
       <DependentUpon>Bitacora.cs</DependentUpon>
     </EmbeddedResource>
@@ -180,9 +174,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Verificacion.resx">
       <DependentUpon>Verificacion.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Verificaciones1.resx">
-      <DependentUpon>Verificaciones1.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

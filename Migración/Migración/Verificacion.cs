@@ -37,7 +37,7 @@ namespace Migración
             visualizacion();
             BtnRechazar.Enabled = false;
             fechahora = hoy.ToString("yyyy/MM/dd HH:mm:ss");
-
+            LblUsuario.Text = user;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -72,31 +72,7 @@ namespace Migración
             }
         }
         /*Funcion que nos permite controlar los datos para la verificacion*/
-        private void dataGridView1_DoubleClick(object sender, EventArgs e)
-        {
-            if (dataGridView1.SelectedRows.Count == 1)
-            {
-                TxtNombre.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
-                TxtNoDD.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
-                
-               
-                if (TxtNombre.Text == "Boleto de Ornato")
-                { //llenarMun();
-                    llenarMun();
-                }
-                else if (TxtNombre.Text == "Boleta de Pago")
-                {
-                    //llenarBan();
-                    llenarBan();
-                }
-                else if (TxtNombre.Text == "DPI Padre" && Tramite == "Menor de Edad") { llenarRenapP(); }
-                else if (TxtNombre.Text == "DPI Madre" && Tramite == "Menor de Edad") { llenarRenapM(); }
-            }
-            else
-            {
-                MessageBox.Show("No hay solicitudes");
-            }
-        }
+        
         //opcion para verificar web service Municipalidad
         void llenarMun()
         {
@@ -134,7 +110,7 @@ namespace Migración
                 dataGridView2.Enabled = true;
                 dataGridView3.Enabled = true;
                 dataGridView4.Enabled = false;
-                dataGridView5.Enabled = false;
+
 
             }
             else if (Tramite == "Menor de Edad")
@@ -142,14 +118,14 @@ namespace Migración
                 dataGridView2.Enabled = true;
                 dataGridView3.Enabled = true;
                 dataGridView4.Enabled = true;
-                dataGridView5.Enabled = true;
+
             }
             else if (Tramite == "Mayor de 60")
             {
                 dataGridView2.Enabled = true;
                 dataGridView3.Enabled = false;
                 dataGridView4.Enabled = false;
-                dataGridView5.Enabled = false;
+
             }
             else
             {
@@ -193,7 +169,7 @@ namespace Migración
             //codigo para llevar el DataGridView
             OdbcCommand cod = new OdbcCommand();
             cod.Connection = conn;
-            cod.CommandText = ("select Cui,Nombres,Apellidos,Cui_padre from renap " +
+            cod.CommandText = ("select Cui,Nombres,Apellidos,Cui_padre,Cui_Madre from renap " +
                     "where cui_padre=" + TxtNoDD.Text);
             try
             {
@@ -208,45 +184,18 @@ namespace Migración
                 TxtNombreP.Text = dataGridView4.CurrentRow.Cells[1].Value.ToString();
                 TxtApellidoP.Text = dataGridView4.CurrentRow.Cells[2].Value.ToString();
                 TxtCuiPA.Text = dataGridView4.CurrentRow.Cells[3].Value.ToString();
+                TxtCuiMAA.Text = dataGridView4.CurrentRow.Cells[4].Value.ToString();
             }
             catch (Exception e)
             {
-              MessageBox.Show("!ERROR! El Numero de DPI del Padre es Incorecto");
+                MessageBox.Show("!ERROR! El Numero de DPI del Padre es Incorecto");
                 BtnRechazar.Enabled = true;
                 e.ToString();
                 conn.Close();
             }
         }
         //Validaciones para optener datos de renap
-        void llenarRenapM()
-        {
-            //codigo para llevar el DataGridView
-            OdbcCommand cod = new OdbcCommand();
-            cod.Connection = conn;
-            cod.CommandText = ("select Cui,Nombres,Apellidos,Cui_Madre from renap " +
-                    "where cui_madre=" + TxtNoDD.Text);
-            try
-            {
-                OdbcDataAdapter eje = new OdbcDataAdapter();
-                eje.SelectCommand = cod;
-                DataTable datos = new DataTable();
-                eje.Fill(datos);
-                dataGridView5.DataSource = datos;
-                eje.Update(datos);
-                conn.Close();
-                TxtCuiMA.Text = dataGridView5.CurrentRow.Cells[0].Value.ToString();
-                TxtNombreMA.Text = dataGridView5.CurrentRow.Cells[1].Value.ToString();
-                TxtApellidoMA.Text = dataGridView5.CurrentRow.Cells[2].Value.ToString();
-                TxtCuiMAA.Text = dataGridView5.CurrentRow.Cells[3].Value.ToString();
-            }
-            catch (Exception e)
-            {
-                MessageBox.Show("!ERROR! El Numero de DPI de la Madre es Incorecto");
-                BtnRechazar.Enabled = true;
-                e.ToString();
-                conn.Close();
-            }
-        }
+
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -257,11 +206,11 @@ namespace Migración
         //Validaciones para verificaciones
         void verificacion()
         {
-            string query = "INSERT INTO `verificacion` (`id_verificacion`, `cui`, `id_usuario`, `fecha_verificacion`, `id_solicitud`) VALUES (NULL, "+ Cui + ", '" + user + "', '"+ fechahora + "', '"+ solicitud + "'); ";
-           
+            string query = "INSERT INTO `verificacion` (`id_verificacion`, `cui`, `id_usuario`, `fecha_verificacion`, `id_solicitud`) VALUES (NULL, " + Cui + ", '" + user + "', '" + fechahora + "', '" + solicitud + "'); ";
+
             conn.Open();
             OdbcCommand consulta = new OdbcCommand(query, conn);
-           
+
             try
             {
                 consulta.ExecuteNonQuery();
@@ -281,7 +230,7 @@ namespace Migración
             try
             {
                 consulta.ExecuteNonQuery();
-                conn.Close();     
+                conn.Close();
             }
             catch (Exception ex)
             {
@@ -291,7 +240,7 @@ namespace Migración
         }
         private void button3_Click(object sender, EventArgs e)
         {
-            this.Hide();            
+            this.Hide();
         }
         //Bitacora para control del sistema 
         void Bitacora()
@@ -311,35 +260,35 @@ namespace Migración
             }
         }
         private void button1_Click_1(object sender, EventArgs e)
-        {   
+        {
             if (Tramite == "Mayor de Edad")
-            {        
-                    if (TxtNoB.Text != "" && TxtCoM.Text != "")
-                    {
+            {
+                if (TxtNoB.Text != "" && TxtCoM.Text != "")
+                {
                     this.Hide();
                     FrmCita nuevo = new FrmCita(user, solicitud, Cui, correo);
                     nuevo.Show();
-                 
 
-                    }
-                    else
-                    {
-                        MessageBox.Show("!ERROR! Falta seleccionar Documentos y/o Verificar la documentación");
-                        BtnRechazar.Enabled = true;
 
-                    }
+                }
+                else
+                {
+                    MessageBox.Show("!ERROR! Falta seleccionar Documentos y/o Verificar la documentación");
+                    BtnRechazar.Enabled = true;
+
+                }
                 verificacion();
                 guardarv();
                 Bitacora();
             }
             else if (Tramite == "Menor de Edad")
             {
-                if (TxtNoB.Text != "" && TxtCoM.Text != "" && TxtCuiP.Text != "" && TxtCuiMA.Text != "")
+                if (TxtNoB.Text != "" && TxtCoM.Text != "" && TxtCuiP.Text != "" && TxtCuiMAA.Text != "")
                 {
-                   this.Hide();
-                   FrmCita nuevo = new FrmCita(user, solicitud, Cui, correo);
-                   nuevo.Show();
-                 
+                    this.Hide();
+                    FrmCita nuevo = new FrmCita(user, solicitud, Cui, correo);
+                    nuevo.Show();
+
                 }
                 else
                 {
@@ -389,6 +338,110 @@ namespace Migración
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void BtnSig_Click(object sender, EventArgs e)
+        {
+            if (Tramite == "Mayor de Edad")
+            {
+                if (TxtNoB.Text != "" && TxtCoM.Text != "")
+                {
+                    this.Hide();
+                    FrmCita nuevo = new FrmCita(user, solicitud, Cui, correo);
+                    nuevo.Show();
+
+
+                }
+                else
+                {
+                    MessageBox.Show("!ERROR! Falta seleccionar Documentos y/o Verificar la documentación");
+                    BtnRechazar.Enabled = true;
+
+                }
+                verificacion();
+                guardarv();
+                Bitacora();
+            }
+            else if (Tramite == "Menor de Edad")
+            {
+                if (TxtNoB.Text != "" && TxtCoM.Text != "" && TxtCuiP.Text != "" && TxtCuiMAA.Text != "")
+                {
+                    this.Hide();
+                    FrmCita nuevo = new FrmCita(user, solicitud, Cui, correo);
+                    nuevo.Show();
+
+                }
+                else
+                {
+                    MessageBox.Show("!ERROR! Falta seleccionar Documentos y/o Verificar la documentación");
+                    BtnRechazar.Enabled = true;
+                }
+                verificacion();
+                guardarv();
+                Bitacora();
+            }
+            else if (Tramite == "Mayor de 60")
+            {
+                if (TxtNoB.Text != "")
+                {
+                    Bitacora();
+                    this.Hide();
+                    FrmCita nuevo = new FrmCita(user, solicitud, Cui, correo);
+                    nuevo.Show();
+
+                }
+                else
+                {
+                    MessageBox.Show("!ERROR! Falta seleccionar Documentos y/o Verificar la documentación");
+                    BtnRechazar.Enabled = true;
+
+                }
+                verificacion();
+                guardarv();
+                Bitacora();
+            }
+            else
+            {
+                MessageBox.Show("!ERROR! El tipo de tramite es incorecto");
+            }
+        }
+
+        private void BtnRechazar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmCorreoRe nuevo = new FrmCorreoRe(correo, solicitud, user);
+            nuevo.Show();
+        }
+
+        private void BtnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
+
+        private void dataGridView1_DoubleClick(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count == 1)
+            {
+                TxtNombre.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+                TxtNoDD.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+
+
+                if (TxtNombre.Text == "Boleto de Ornato")
+                { //llenarMun();
+                    llenarMun();
+                }
+                else if (TxtNombre.Text == "Boleta de Pago")
+                {
+                    //llenarBan();
+                    llenarBan();
+                }
+                else if (TxtNombre.Text == "DPI Padre" && Tramite == "Menor de Edad") { llenarRenapP(); }
+
+            }
+            else
+            {
+                MessageBox.Show("No hay solicitudes");
+            }
         }
     }
 }

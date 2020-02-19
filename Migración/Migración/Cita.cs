@@ -17,12 +17,16 @@ namespace Migración
     {//Conexion base de datos
         OdbcConnection conn = new OdbcConnection("Dsn=migracion");
         DateTime hoy = DateTime.Now;
+        DateTime fecha = DateTime.Today.AddDays(5);
         string fechahora;
+        string fechahoraC;
         string user;
         string solicitud;
         string Cui;
         string correo;
         string Idveri;
+        string fechahora1;
+        string formato;
         public FrmCita(string usuario, string numero,string cui,string email)
         {
             InitializeComponent();            
@@ -33,13 +37,16 @@ namespace Migración
             Cui = cui;
             TxtCui.Text = Cui;
             fechahora = hoy.ToString("yyyy/MM/dd HH:mm:ss");
-            TxtFecha.Text = fechahora;      
+            fechahora1 = hoy.ToString(" HH:mm:ss");
+            formato = "yyyy/MM/dd";
+            TxtFecha.Text= fecha.ToString(formato) + fechahora1;
+            fechahoraC = fecha.ToString(formato) + fechahora1;
         }
         //Bitacora
         void Bitacora()
         {
             conn.Close();
-            string query = "INSERT INTO `bitacora` (`id_bitacora`, `accion`, `fecha_accion`, `id_usuario`) VALUES (NULL, 'Se genero una cita  ', '" + fechahora + "', '" + user + "');";
+            string query = "INSERT INTO `bitacora` (`id_bitacora`, `accion`, `fecha_accion`, `id_usuario`) VALUES (NULL, 'Se genero una cita  ', '" + fechahoraC + "', '" + user + "');";
             conn.Open();
             OdbcCommand consulta = new OdbcCommand(query, conn);
             try

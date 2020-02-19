@@ -181,7 +181,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmBitacora";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Bitacora";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmBitacora_FormClosing);
             this.Load += new System.EventHandler(this.FrmBitacora_Load);
