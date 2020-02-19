@@ -254,8 +254,8 @@
             this.tableLayoutPanel7.Location = new System.Drawing.Point(134, 283);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             this.tableLayoutPanel7.RowCount = 2;
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 37.19008F));
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 62.80992F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35.53719F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 64.46281F));
             this.tableLayoutPanel7.Size = new System.Drawing.Size(239, 121);
             this.tableLayoutPanel7.TabIndex = 10;
             // 
@@ -263,15 +263,15 @@
             // 
             this.BtnCancelar.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.BtnCancelar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnCancelar.BackgroundImage")));
-            this.BtnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BtnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.BtnCancelar.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BtnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnCancelar.Location = new System.Drawing.Point(3, 47);
+            this.BtnCancelar.Location = new System.Drawing.Point(3, 45);
             this.BtnCancelar.Name = "BtnCancelar";
-            this.BtnCancelar.Size = new System.Drawing.Size(233, 71);
+            this.BtnCancelar.Size = new System.Drawing.Size(233, 73);
             this.BtnCancelar.TabIndex = 9;
             this.BtnCancelar.Text = "Cancelar";
-            this.BtnCancelar.UseVisualStyleBackColor = false;
+            this.BtnCancelar.UseVisualStyleBackColor = true;
             this.BtnCancelar.Click += new System.EventHandler(this.BtnCancelar_Click);
             // 
             // LblProgreso
@@ -281,7 +281,7 @@
             this.LblProgreso.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblProgreso.Location = new System.Drawing.Point(3, 0);
             this.LblProgreso.Name = "LblProgreso";
-            this.LblProgreso.Size = new System.Drawing.Size(233, 44);
+            this.LblProgreso.Size = new System.Drawing.Size(233, 42);
             this.LblProgreso.TabIndex = 10;
             this.LblProgreso.Text = "En Proceso";
             this.LblProgreso.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -296,8 +296,8 @@
             this.tableLayoutPanel8.Location = new System.Drawing.Point(3, 283);
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
             this.tableLayoutPanel8.RowCount = 2;
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40.94488F));
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 59.05512F));
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 37.19008F));
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 62.80992F));
             this.tableLayoutPanel8.Size = new System.Drawing.Size(125, 121);
             this.tableLayoutPanel8.TabIndex = 11;
             // 
@@ -403,7 +403,7 @@
             // 
             this.BtnSig.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.BtnSig.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnSig.BackgroundImage")));
-            this.BtnSig.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BtnSig.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.BtnSig.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BtnSig.Enabled = false;
             this.BtnSig.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -412,14 +412,14 @@
             this.BtnSig.Size = new System.Drawing.Size(239, 75);
             this.BtnSig.TabIndex = 0;
             this.BtnSig.Text = "Siguiente";
-            this.BtnSig.UseVisualStyleBackColor = false;
+            this.BtnSig.UseVisualStyleBackColor = true;
             this.BtnSig.Click += new System.EventHandler(this.BtnSig_Click);
             // 
             // BtnRecha
             // 
             this.BtnRecha.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.BtnRecha.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnRecha.BackgroundImage")));
-            this.BtnRecha.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BtnRecha.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.BtnRecha.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BtnRecha.Enabled = false;
             this.BtnRecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -428,7 +428,7 @@
             this.BtnRecha.Size = new System.Drawing.Size(125, 75);
             this.BtnRecha.TabIndex = 1;
             this.BtnRecha.Text = "Rechazar";
-            this.BtnRecha.UseVisualStyleBackColor = false;
+            this.BtnRecha.UseVisualStyleBackColor = true;
             this.BtnRecha.Click += new System.EventHandler(this.BtnRecha_Click);
             // 
             // LblCuiR
@@ -440,7 +440,7 @@
             this.LblCuiR.Name = "LblCuiR";
             this.LblCuiR.Size = new System.Drawing.Size(125, 34);
             this.LblCuiR.TabIndex = 2;
-            this.LblCuiR.Text = "Cui";
+            this.LblCuiR.Text = "CUI";
             // 
             // LblNombre
             // 

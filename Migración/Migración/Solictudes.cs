@@ -26,8 +26,9 @@ namespace Migración
         string Cui;
         public FrmSolictudes(string usuario)
         {
-            InitializeComponent();            
+            InitializeComponent();
             /*Carga de la tabla solicitudes*/
+            this.WindowState = FormWindowState.Maximized;
             user = usuario;
             LblUsuario.Text = user;
             fechahora = hoy.ToString("yyyy/MM/dd HH:mm:ss");

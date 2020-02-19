@@ -206,5 +206,29 @@
   <ItemGroup>
     <None Include="bin\Debug\IMG\KwahSLS-_400x400.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\IMG\folder.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\IMG\blue pin.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\IMG\boss.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\IMG\male.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\IMG\database.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\IMG\people.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\IMG\exit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\IMG\home.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

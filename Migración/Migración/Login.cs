@@ -51,7 +51,7 @@ namespace Migración
                         this.Hide();
                         //if (datos.Rows[0][0].ToString() == )                              
                         MDI nuevo = new MDI(usuario);
-                        nuevo.Show();
+                        nuevo.Show();                        
                         Bitacora();
                     } //En caso contrario, el usuario y/o contraseña no existe!
                     else
