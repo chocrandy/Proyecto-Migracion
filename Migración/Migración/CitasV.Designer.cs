@@ -178,6 +178,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(308, 42);
@@ -188,6 +189,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(3, 42);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(308, 42);
@@ -198,6 +200,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(3, 84);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(308, 42);
@@ -208,6 +211,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(3, 126);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(308, 44);
@@ -217,33 +221,37 @@
             // TxtNOC
             // 
             this.TxtNOC.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TxtNOC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtNOC.Location = new System.Drawing.Point(317, 3);
             this.TxtNOC.Name = "TxtNOC";
-            this.TxtNOC.Size = new System.Drawing.Size(388, 20);
+            this.TxtNOC.Size = new System.Drawing.Size(388, 26);
             this.TxtNOC.TabIndex = 4;
             // 
             // TxtNumeroV
             // 
             this.TxtNumeroV.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TxtNumeroV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtNumeroV.Location = new System.Drawing.Point(317, 45);
             this.TxtNumeroV.Name = "TxtNumeroV";
-            this.TxtNumeroV.Size = new System.Drawing.Size(388, 20);
+            this.TxtNumeroV.Size = new System.Drawing.Size(388, 26);
             this.TxtNumeroV.TabIndex = 5;
             // 
             // TxtCui
             // 
             this.TxtCui.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TxtCui.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtCui.Location = new System.Drawing.Point(317, 87);
             this.TxtCui.Name = "TxtCui";
-            this.TxtCui.Size = new System.Drawing.Size(388, 20);
+            this.TxtCui.Size = new System.Drawing.Size(388, 26);
             this.TxtCui.TabIndex = 6;
             // 
             // DTimerCita
             // 
             this.DTimerCita.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DTimerCita.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DTimerCita.Location = new System.Drawing.Point(317, 129);
             this.DTimerCita.Name = "DTimerCita";
-            this.DTimerCita.Size = new System.Drawing.Size(388, 20);
+            this.DTimerCita.Size = new System.Drawing.Size(388, 26);
             this.DTimerCita.TabIndex = 7;
             this.DTimerCita.Value = new System.DateTime(2020, 2, 15, 0, 0, 0, 0);
             // 
@@ -252,7 +260,7 @@
             this.tableLayoutPanel6.ColumnCount = 3;
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.72014F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.27986F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 146F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 148F));
             this.tableLayoutPanel6.Controls.Add(this.dataGridView1, 1, 0);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel6.Location = new System.Drawing.Point(3, 179);
@@ -266,9 +274,9 @@
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(209, 3);
+            this.dataGridView1.Location = new System.Drawing.Point(208, 3);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(349, 177);
+            this.dataGridView1.Size = new System.Drawing.Size(348, 177);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.DoubleClick += new System.EventHandler(this.dataGridView1_DoubleClick);
             // 
@@ -293,6 +301,7 @@
             // button1
             // 
             this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(280, 3);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(160, 63);
@@ -304,17 +313,19 @@
             // button2
             // 
             this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(591, 3);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(114, 63);
             this.button2.TabIndex = 1;
-            this.button2.Text = "Menu";
+            this.button2.Text = "Cerrar";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
             this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Location = new System.Drawing.Point(446, 3);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(139, 63);
@@ -329,6 +340,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(814, 551);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmCitasV";
             this.Text = "CitasV";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmCitasV_FormClosing);

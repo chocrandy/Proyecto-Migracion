@@ -21,8 +21,7 @@ namespace Migración
         string user;
         public FrmCitasV(string usuario)
         {
-            InitializeComponent();
-            this.WindowState = FormWindowState.Maximized;
+            InitializeComponent();            
             user = usuario;
             fechahora = hoy.ToString("yyyy/MM/dd HH:mm:ss");
             llenartbl();
@@ -117,9 +116,7 @@ namespace Migración
 
         private void button2_Click(object sender, EventArgs e)
         {
-            FrmMenuPrincipal entrar = new FrmMenuPrincipal(user);
-            entrar.Visible = true;
-            Visible = false;
+            this.Hide();
         }
 
         private void FrmCitasV_Load(object sender, EventArgs e)
@@ -154,9 +151,7 @@ namespace Migración
 
         private void FrmCitasV_FormClosing(object sender, FormClosingEventArgs e)
         {
-            FrmMenuPrincipal entrar = new FrmMenuPrincipal(user);
-            entrar.Visible = true;
-            Visible = false;
+            this.Hide();
         }
     }
 }

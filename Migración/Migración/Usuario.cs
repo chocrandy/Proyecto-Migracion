@@ -134,9 +134,7 @@ namespace Migración
 
         private void Button4_Click(object sender, EventArgs e)
         {
-            FrmMenuPrincipal entrar = new FrmMenuPrincipal(user);
-            entrar.Visible = true;
-            Visible = false;
+            this.Hide();
         }
 
         private void ListEmpleado_SelectedIndexChanged(object sender, EventArgs e)
@@ -199,9 +197,7 @@ namespace Migración
 
         private void FrmUsuario_FormClosing(object sender, FormClosingEventArgs e)
         {
-            FrmMenuPrincipal entrar = new FrmMenuPrincipal(user);
-            entrar.Visible = true;
-            Visible = false;
+            this.Hide();
         }
 
         private void Button3_Click(object sender, EventArgs e)

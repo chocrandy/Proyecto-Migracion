@@ -49,8 +49,8 @@ namespace Migración
                     if (datos.Rows.Count == 1)
                     {
                         this.Hide();
-                        //if (datos.Rows[0][0].ToString() == )                                        
-                        FrmMenuPrincipal nuevo = new FrmMenuPrincipal(usuario);
+                        //if (datos.Rows[0][0].ToString() == )                              
+                        MDI nuevo = new MDI(usuario);
                         nuevo.Show();
                         Bitacora();
                     } //En caso contrario, el usuario y/o contraseña no existe!

@@ -79,9 +79,9 @@
             this.tableLayoutPanel2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.tableLayoutPanel2.ColumnCount = 4;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.0904F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 26.16492F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.183338F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 59.56134F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.58974F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.9230769F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 66.5641F));
             this.tableLayoutPanel2.Controls.Add(this.LblPara, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.LblAsunto, 1, 2);
             this.tableLayoutPanel2.Controls.Add(this.Lblarchivo, 1, 4);
@@ -110,10 +110,10 @@
             // 
             this.LblPara.AutoSize = true;
             this.LblPara.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.LblPara.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblPara.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblPara.Location = new System.Drawing.Point(130, 0);
             this.LblPara.Name = "LblPara";
-            this.LblPara.Size = new System.Drawing.Size(249, 60);
+            this.LblPara.Size = new System.Drawing.Size(184, 60);
             this.LblPara.TabIndex = 0;
             this.LblPara.Text = "Para:";
             // 
@@ -121,10 +121,10 @@
             // 
             this.LblAsunto.AutoSize = true;
             this.LblAsunto.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.LblAsunto.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblAsunto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblAsunto.Location = new System.Drawing.Point(130, 66);
             this.LblAsunto.Name = "LblAsunto";
-            this.LblAsunto.Size = new System.Drawing.Size(249, 60);
+            this.LblAsunto.Size = new System.Drawing.Size(184, 60);
             this.LblAsunto.TabIndex = 1;
             this.LblAsunto.Text = "Asunto:";
             // 
@@ -132,10 +132,10 @@
             // 
             this.Lblarchivo.AutoSize = true;
             this.Lblarchivo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Lblarchivo.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lblarchivo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lblarchivo.Location = new System.Drawing.Point(130, 132);
             this.Lblarchivo.Name = "Lblarchivo";
-            this.Lblarchivo.Size = new System.Drawing.Size(249, 60);
+            this.Lblarchivo.Size = new System.Drawing.Size(184, 60);
             this.Lblarchivo.TabIndex = 2;
             this.Lblarchivo.Text = "Archivo";
             // 
@@ -143,37 +143,40 @@
             // 
             this.TxtReceptor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TxtReceptor.Enabled = false;
-            this.TxtReceptor.Location = new System.Drawing.Point(396, 3);
+            this.TxtReceptor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtReceptor.Location = new System.Drawing.Point(328, 3);
             this.TxtReceptor.Name = "TxtReceptor";
-            this.TxtReceptor.Size = new System.Drawing.Size(576, 20);
+            this.TxtReceptor.Size = new System.Drawing.Size(644, 26);
             this.TxtReceptor.TabIndex = 4;
             // 
             // TxtAsunto
             // 
             this.TxtAsunto.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TxtAsunto.Enabled = false;
-            this.TxtAsunto.Location = new System.Drawing.Point(396, 69);
+            this.TxtAsunto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtAsunto.Location = new System.Drawing.Point(328, 69);
             this.TxtAsunto.Name = "TxtAsunto";
-            this.TxtAsunto.Size = new System.Drawing.Size(576, 20);
+            this.TxtAsunto.Size = new System.Drawing.Size(644, 26);
             this.TxtAsunto.TabIndex = 5;
             // 
             // TxtMensaje
             // 
             this.TxtMensaje.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TxtMensaje.Location = new System.Drawing.Point(396, 201);
+            this.TxtMensaje.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtMensaje.Location = new System.Drawing.Point(328, 201);
             this.TxtMensaje.Multiline = true;
             this.TxtMensaje.Name = "TxtMensaje";
-            this.TxtMensaje.Size = new System.Drawing.Size(576, 119);
+            this.TxtMensaje.Size = new System.Drawing.Size(644, 119);
             this.TxtMensaje.TabIndex = 6;
             // 
             // LblDetaller
             // 
             this.LblDetaller.AutoSize = true;
             this.LblDetaller.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.LblDetaller.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblDetaller.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblDetaller.Location = new System.Drawing.Point(130, 198);
             this.LblDetaller.Name = "LblDetaller";
-            this.LblDetaller.Size = new System.Drawing.Size(249, 125);
+            this.LblDetaller.Size = new System.Drawing.Size(184, 125);
             this.LblDetaller.TabIndex = 7;
             this.LblDetaller.Text = "Detalle";
             // 
@@ -185,28 +188,29 @@
             this.tableLayoutPanel4.Controls.Add(this.TxtRutaArchivo, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.button1, 1, 0);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(396, 135);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(328, 135);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 54F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(576, 54);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(644, 54);
             this.tableLayoutPanel4.TabIndex = 8;
             // 
             // TxtRutaArchivo
             // 
             this.TxtRutaArchivo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TxtRutaArchivo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtRutaArchivo.Location = new System.Drawing.Point(3, 3);
             this.TxtRutaArchivo.Name = "TxtRutaArchivo";
-            this.TxtRutaArchivo.Size = new System.Drawing.Size(485, 20);
+            this.TxtRutaArchivo.Size = new System.Drawing.Size(543, 26);
             this.TxtRutaArchivo.TabIndex = 0;
             // 
             // button1
             // 
             this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button1.Location = new System.Drawing.Point(494, 3);
+            this.button1.Location = new System.Drawing.Point(552, 3);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(79, 48);
+            this.button1.Size = new System.Drawing.Size(89, 48);
             this.button1.TabIndex = 1;
             this.button1.Text = "...";
             this.button1.UseVisualStyleBackColor = true;
@@ -215,9 +219,10 @@
             // BtnEnviar
             // 
             this.BtnEnviar.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BtnEnviar.Location = new System.Drawing.Point(396, 326);
+            this.BtnEnviar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnEnviar.Location = new System.Drawing.Point(328, 326);
             this.BtnEnviar.Name = "BtnEnviar";
-            this.BtnEnviar.Size = new System.Drawing.Size(576, 46);
+            this.BtnEnviar.Size = new System.Drawing.Size(644, 46);
             this.BtnEnviar.TabIndex = 9;
             this.BtnEnviar.Text = "Enviar";
             this.BtnEnviar.UseVisualStyleBackColor = true;
@@ -272,8 +277,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1007, 557);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmCorreoCita";
-            this.Text = "CorreoCita";
+            this.Text = "Correo Cita";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmCorreoCita_FormClosing);
             this.Load += new System.EventHandler(this.FrmCorreoCita_Load);
             this.tableLayoutPanel1.ResumeLayout(false);

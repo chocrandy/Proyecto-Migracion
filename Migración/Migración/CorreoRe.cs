@@ -66,13 +66,11 @@ namespace Migración
                 try
                 {
                     consulta.ExecuteNonQuery();  
-                    MessageBox.Show("La Slolicitud fue calcelada exitosa mente");
+                    MessageBox.Show("La Solicitud fue Cancelada Exitosamente");
 
-                Bitacora();
+                    Bitacora();
                     conn.Close();
-                this.Hide();
-                FrmMenuPrincipal nuevo = new FrmMenuPrincipal(user);
-                nuevo.Show();
+                    this.Hide();
             }
                 catch (Exception ex)
                 {
@@ -105,9 +103,7 @@ namespace Migración
 
         private void FrmCorreoRe_FormClosing(object sender, FormClosingEventArgs e)
         {
-            FrmMenuPrincipal entrar = new FrmMenuPrincipal(user);
-            entrar.Visible = true;
-            Visible = false;
+            this.Hide();
         }
     }
 }

@@ -26,8 +26,7 @@ namespace Migración
         string Cui;
         public FrmSolictudes(string usuario)
         {
-            InitializeComponent();
-            this.WindowState = FormWindowState.Maximized;
+            InitializeComponent();            
             /*Carga de la tabla solicitudes*/
             user = usuario;
             LblUsuario.Text = user;
@@ -185,9 +184,7 @@ namespace Migración
         }
         //Rechazo de solicitud
         private void BtnCancelar_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            FrmMenuPrincipal nuevo = new FrmMenuPrincipal(user);
+        {                        
             BitacoraA();
             TxtCuiR.Text = "";
             PicUser.Text = "";
@@ -203,14 +200,12 @@ namespace Migración
             TxtTramite.Text = "";
             TxtFecha.Text = "";
             TxtCorreo.Text = "";
-            nuevo.Show();
+            this.Hide();
         }
 
         private void FrmSolictudes_FormClosing(object sender, FormClosingEventArgs e)
         {
-            FrmMenuPrincipal entrar = new FrmMenuPrincipal(user);
-            entrar.Visible = true;
-            Visible = false;
+            this.Hide();
         }
 
         private void FrmSolictudes_Load(object sender, EventArgs e)

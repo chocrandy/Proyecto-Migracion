@@ -42,17 +42,18 @@
             this.TxtNoEM = new System.Windows.Forms.TextBox();
             this.TxtNombres = new System.Windows.Forms.TextBox();
             this.TxtApellidos = new System.Windows.Forms.TextBox();
-            this.TxtSexo = new System.Windows.Forms.TextBox();
             this.TxtTelefono = new System.Windows.Forms.TextBox();
             this.TxtCorreo = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
-            this.TxtPuesto = new System.Windows.Forms.TextBox();
             this.DataFecha = new System.Windows.Forms.DateTimePicker();
+            this.comboSexo = new System.Windows.Forms.ComboBox();
+            this.comboPuesto = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.lbUser = new System.Windows.Forms.Label();
+            this.txtFaux = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
@@ -65,6 +66,7 @@
             this.tableLayoutPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tableLayoutPanel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tableLayoutPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tableLayoutPanel7.SuspendLayout();
@@ -110,12 +112,12 @@
             this.tableLayoutPanel2.Controls.Add(this.TxtNoEM, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.TxtNombres, 1, 1);
             this.tableLayoutPanel2.Controls.Add(this.TxtApellidos, 1, 2);
-            this.tableLayoutPanel2.Controls.Add(this.TxtSexo, 1, 4);
             this.tableLayoutPanel2.Controls.Add(this.TxtTelefono, 4, 0);
             this.tableLayoutPanel2.Controls.Add(this.TxtCorreo, 4, 1);
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel6, 4, 4);
-            this.tableLayoutPanel2.Controls.Add(this.TxtPuesto, 4, 2);
             this.tableLayoutPanel2.Controls.Add(this.DataFecha, 1, 3);
+            this.tableLayoutPanel2.Controls.Add(this.comboSexo, 1, 4);
+            this.tableLayoutPanel2.Controls.Add(this.comboPuesto, 4, 2);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(29, 152);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -132,130 +134,143 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(274, 46);
             this.label1.TabIndex = 0;
             this.label1.Text = "No. Empleado";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(3, 46);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(274, 46);
             this.label2.TabIndex = 1;
             this.label2.Text = "Nombres";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(3, 92);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(274, 46);
             this.label3.TabIndex = 2;
             this.label3.Text = "Apellidos";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(3, 138);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(274, 46);
             this.label4.TabIndex = 3;
             this.label4.Text = "Fecha Nacimiento";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(3, 184);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(274, 50);
             this.label5.TabIndex = 4;
             this.label5.Text = "Sexo";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label5.Click += new System.EventHandler(this.Label5_Click);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(574, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(229, 46);
             this.label6.TabIndex = 5;
-            this.label6.Text = "Telefono";
+            this.label6.Text = "Teléfono";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(574, 46);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(229, 46);
             this.label7.TabIndex = 6;
             this.label7.Text = "Correo";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(574, 92);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(229, 46);
             this.label8.TabIndex = 7;
             this.label8.Text = "Puesto";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // TxtNoEM
             // 
             this.TxtNoEM.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TxtNoEM.Enabled = false;
+            this.TxtNoEM.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtNoEM.Location = new System.Drawing.Point(283, 3);
             this.TxtNoEM.Name = "TxtNoEM";
-            this.TxtNoEM.Size = new System.Drawing.Size(274, 20);
+            this.TxtNoEM.Size = new System.Drawing.Size(274, 26);
             this.TxtNoEM.TabIndex = 10;
             // 
             // TxtNombres
             // 
             this.TxtNombres.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TxtNombres.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtNombres.Location = new System.Drawing.Point(283, 49);
             this.TxtNombres.Name = "TxtNombres";
-            this.TxtNombres.Size = new System.Drawing.Size(274, 20);
+            this.TxtNombres.Size = new System.Drawing.Size(274, 26);
             this.TxtNombres.TabIndex = 11;
             // 
             // TxtApellidos
             // 
             this.TxtApellidos.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TxtApellidos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtApellidos.Location = new System.Drawing.Point(283, 95);
             this.TxtApellidos.Name = "TxtApellidos";
-            this.TxtApellidos.Size = new System.Drawing.Size(274, 20);
+            this.TxtApellidos.Size = new System.Drawing.Size(274, 26);
             this.TxtApellidos.TabIndex = 12;
-            // 
-            // TxtSexo
-            // 
-            this.TxtSexo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TxtSexo.Location = new System.Drawing.Point(283, 187);
-            this.TxtSexo.Name = "TxtSexo";
-            this.TxtSexo.Size = new System.Drawing.Size(274, 20);
-            this.TxtSexo.TabIndex = 14;
             // 
             // TxtTelefono
             // 
             this.TxtTelefono.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TxtTelefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtTelefono.Location = new System.Drawing.Point(809, 3);
             this.TxtTelefono.Name = "TxtTelefono";
-            this.TxtTelefono.Size = new System.Drawing.Size(322, 20);
+            this.TxtTelefono.Size = new System.Drawing.Size(322, 26);
             this.TxtTelefono.TabIndex = 15;
             // 
             // TxtCorreo
             // 
             this.TxtCorreo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TxtCorreo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtCorreo.Location = new System.Drawing.Point(809, 49);
             this.TxtCorreo.Name = "TxtCorreo";
-            this.TxtCorreo.Size = new System.Drawing.Size(322, 20);
+            this.TxtCorreo.Size = new System.Drawing.Size(322, 26);
             this.TxtCorreo.TabIndex = 16;
             // 
             // tableLayoutPanel6
@@ -271,29 +286,47 @@
             this.tableLayoutPanel6.Size = new System.Drawing.Size(322, 44);
             this.tableLayoutPanel6.TabIndex = 19;
             // 
-            // TxtPuesto
-            // 
-            this.TxtPuesto.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TxtPuesto.Location = new System.Drawing.Point(809, 95);
-            this.TxtPuesto.Name = "TxtPuesto";
-            this.TxtPuesto.Size = new System.Drawing.Size(322, 20);
-            this.TxtPuesto.TabIndex = 20;
-            // 
             // DataFecha
             // 
             this.DataFecha.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DataFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DataFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.DataFecha.Location = new System.Drawing.Point(283, 141);
             this.DataFecha.Name = "DataFecha";
-            this.DataFecha.Size = new System.Drawing.Size(274, 20);
+            this.DataFecha.Size = new System.Drawing.Size(274, 26);
             this.DataFecha.TabIndex = 21;
+            this.DataFecha.ValueChanged += new System.EventHandler(this.DataFecha_ValueChanged);
+            // 
+            // comboSexo
+            // 
+            this.comboSexo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboSexo.FormattingEnabled = true;
+            this.comboSexo.Items.AddRange(new object[] {
+            "Masculino",
+            "Femenino"});
+            this.comboSexo.Location = new System.Drawing.Point(283, 187);
+            this.comboSexo.Name = "comboSexo";
+            this.comboSexo.Size = new System.Drawing.Size(274, 28);
+            this.comboSexo.TabIndex = 22;
+            // 
+            // comboPuesto
+            // 
+            this.comboPuesto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboPuesto.FormattingEnabled = true;
+            this.comboPuesto.Items.AddRange(new object[] {
+            "Administrador",
+            "Operador"});
+            this.comboPuesto.Location = new System.Drawing.Point(809, 95);
+            this.comboPuesto.Name = "comboPuesto";
+            this.comboPuesto.Size = new System.Drawing.Size(322, 28);
+            this.comboPuesto.TabIndex = 23;
             // 
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.ColumnCount = 3;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 44.98911F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 55.01089F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 306F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 310F));
             this.tableLayoutPanel3.Controls.Add(this.pictureBox1, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel8, 2, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -309,49 +342,60 @@
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Location = new System.Drawing.Point(375, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(373, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(449, 137);
+            this.pictureBox1.Size = new System.Drawing.Size(447, 137);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // tableLayoutPanel8
             // 
             this.tableLayoutPanel8.ColumnCount = 2;
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 58.0756F));
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 41.9244F));
-            this.tableLayoutPanel8.Controls.Add(this.label11, 1, 0);
-            this.tableLayoutPanel8.Controls.Add(this.label12, 1, 1);
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 66.88742F));
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.11258F));
+            this.tableLayoutPanel8.Controls.Add(this.pictureBox2, 1, 0);
+            this.tableLayoutPanel8.Controls.Add(this.lbUser, 1, 1);
+            this.tableLayoutPanel8.Controls.Add(this.txtFaux, 0, 0);
             this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel8.Location = new System.Drawing.Point(830, 3);
+            this.tableLayoutPanel8.Location = new System.Drawing.Point(826, 3);
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
             this.tableLayoutPanel8.RowCount = 2;
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel8.Size = new System.Drawing.Size(301, 137);
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 61.31387F));
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 38.68613F));
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(305, 137);
             this.tableLayoutPanel8.TabIndex = 1;
+            this.tableLayoutPanel8.Paint += new System.Windows.Forms.PaintEventHandler(this.TableLayoutPanel8_Paint);
             // 
-            // label11
+            // pictureBox2
             // 
-            this.label11.AutoSize = true;
-            this.label11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label11.Location = new System.Drawing.Point(177, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(121, 68);
-            this.label11.TabIndex = 0;
-            this.label11.Text = "Usuario";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox2.Location = new System.Drawing.Point(207, 3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(95, 78);
+            this.pictureBox2.TabIndex = 6;
+            this.pictureBox2.TabStop = false;
             // 
-            // label12
+            // lbUser
             // 
-            this.label12.AutoSize = true;
-            this.label12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label12.Location = new System.Drawing.Point(177, 68);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(121, 69);
-            this.label12.TabIndex = 1;
-            this.label12.Text = "Usuario";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbUser.AutoSize = true;
+            this.lbUser.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbUser.Location = new System.Drawing.Point(207, 84);
+            this.lbUser.Name = "lbUser";
+            this.lbUser.Size = new System.Drawing.Size(95, 53);
+            this.lbUser.TabIndex = 5;
+            this.lbUser.Text = "Usuario";
+            this.lbUser.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txtFaux
+            // 
+            this.txtFaux.Location = new System.Drawing.Point(3, 3);
+            this.txtFaux.Name = "txtFaux";
+            this.txtFaux.Size = new System.Drawing.Size(122, 20);
+            this.txtFaux.TabIndex = 2;
+            this.txtFaux.Visible = false;
             // 
             // tableLayoutPanel4
             // 
@@ -402,6 +446,7 @@
             // button3
             // 
             this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Location = new System.Drawing.Point(903, 3);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(222, 55);
@@ -413,6 +458,7 @@
             // button4
             // 
             this.button4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.Location = new System.Drawing.Point(678, 3);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(219, 55);
@@ -424,6 +470,7 @@
             // button5
             // 
             this.button5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.Location = new System.Drawing.Point(453, 3);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(219, 55);
@@ -435,11 +482,12 @@
             // button7
             // 
             this.button7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.Location = new System.Drawing.Point(3, 3);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(219, 55);
             this.button7.TabIndex = 4;
-            this.button7.Text = "Menu";
+            this.button7.Text = "Cerrar";
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
@@ -450,6 +498,7 @@
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(1194, 718);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmEmpleado";
             this.Text = "Empleados";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmEmpleado_FormClosing);
@@ -461,6 +510,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tableLayoutPanel8.ResumeLayout(false);
             this.tableLayoutPanel8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.tableLayoutPanel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tableLayoutPanel7.ResumeLayout(false);
@@ -483,7 +533,6 @@
         private System.Windows.Forms.TextBox TxtNoEM;
         private System.Windows.Forms.TextBox TxtNombres;
         private System.Windows.Forms.TextBox TxtApellidos;
-        private System.Windows.Forms.TextBox TxtSexo;
         private System.Windows.Forms.TextBox TxtTelefono;
         private System.Windows.Forms.TextBox TxtCorreo;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
@@ -492,14 +541,16 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.TextBox TxtPuesto;
         private System.Windows.Forms.DateTimePicker DataFecha;
+        private System.Windows.Forms.TextBox txtFaux;
+        private System.Windows.Forms.ComboBox comboSexo;
+        private System.Windows.Forms.ComboBox comboPuesto;
+        private System.Windows.Forms.Label lbUser;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

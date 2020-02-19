@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LblCuipP));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
@@ -212,6 +213,7 @@
             // 
             this.LblNom.AutoSize = true;
             this.LblNom.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LblNom.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblNom.Location = new System.Drawing.Point(3, 0);
             this.LblNom.Name = "LblNom";
             this.LblNom.Size = new System.Drawing.Size(132, 53);
@@ -222,6 +224,7 @@
             // 
             this.LblNoDD.AutoSize = true;
             this.LblNoDD.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LblNoDD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblNoDD.Location = new System.Drawing.Point(3, 53);
             this.LblNoDD.Name = "LblNoDD";
             this.LblNoDD.Size = new System.Drawing.Size(132, 53);
@@ -232,6 +235,7 @@
             // 
             this.LblTramite.AutoSize = true;
             this.LblTramite.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LblTramite.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblTramite.Location = new System.Drawing.Point(3, 106);
             this.LblTramite.Name = "LblTramite";
             this.LblTramite.Size = new System.Drawing.Size(132, 53);
@@ -242,27 +246,30 @@
             // 
             this.TxtNombre.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TxtNombre.Enabled = false;
+            this.TxtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtNombre.Location = new System.Drawing.Point(141, 3);
             this.TxtNombre.Name = "TxtNombre";
-            this.TxtNombre.Size = new System.Drawing.Size(292, 20);
+            this.TxtNombre.Size = new System.Drawing.Size(292, 26);
             this.TxtNombre.TabIndex = 5;
             // 
             // TxtNoDD
             // 
             this.TxtNoDD.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TxtNoDD.Enabled = false;
+            this.TxtNoDD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtNoDD.Location = new System.Drawing.Point(141, 56);
             this.TxtNoDD.Name = "TxtNoDD";
-            this.TxtNoDD.Size = new System.Drawing.Size(292, 20);
+            this.TxtNoDD.Size = new System.Drawing.Size(292, 26);
             this.TxtNoDD.TabIndex = 6;
             // 
             // TxtTra
             // 
             this.TxtTra.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TxtTra.Enabled = false;
+            this.TxtTra.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtTra.Location = new System.Drawing.Point(141, 109);
             this.TxtTra.Name = "TxtTra";
-            this.TxtTra.Size = new System.Drawing.Size(292, 20);
+            this.TxtTra.Size = new System.Drawing.Size(292, 26);
             this.TxtTra.TabIndex = 7;
             // 
             // tableLayoutPanel5
@@ -299,6 +306,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(51, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(339, 44);
@@ -328,7 +336,7 @@
             this.tableLayoutPanel8.ColumnCount = 3;
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4.619565F));
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 95.38043F));
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 31F));
             this.tableLayoutPanel8.Controls.Add(this.dataGridView3, 1, 1);
             this.tableLayoutPanel8.Controls.Add(this.label7, 1, 0);
             this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -349,16 +357,17 @@
             this.dataGridView3.GridColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridView3.Location = new System.Drawing.Point(18, 45);
             this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.Size = new System.Drawing.Size(322, 72);
+            this.dataGridView3.Size = new System.Drawing.Size(321, 72);
             this.dataGridView3.TabIndex = 1;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(18, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(322, 42);
+            this.label7.Size = new System.Drawing.Size(321, 42);
             this.label7.TabIndex = 2;
             this.label7.Text = "Web S.  Municipalidad";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -390,44 +399,49 @@
             // 
             this.TxtMonto.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TxtMonto.Enabled = false;
+            this.TxtMonto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtMonto.Location = new System.Drawing.Point(132, 108);
             this.TxtMonto.Name = "TxtMonto";
-            this.TxtMonto.Size = new System.Drawing.Size(301, 20);
+            this.TxtMonto.Size = new System.Drawing.Size(301, 26);
             this.TxtMonto.TabIndex = 5;
             // 
             // TxtFechaP
             // 
             this.TxtFechaP.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TxtFechaP.Enabled = false;
+            this.TxtFechaP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtFechaP.Location = new System.Drawing.Point(132, 60);
             this.TxtFechaP.Name = "TxtFechaP";
-            this.TxtFechaP.Size = new System.Drawing.Size(301, 20);
+            this.TxtFechaP.Size = new System.Drawing.Size(301, 26);
             this.TxtFechaP.TabIndex = 4;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(92, 13);
+            this.label1.Size = new System.Drawing.Size(91, 40);
             this.label1.TabIndex = 0;
             this.label1.Text = "Referencia Boleto";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(3, 57);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(80, 13);
+            this.label2.Size = new System.Drawing.Size(117, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = "Fecha de Pago";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(3, 105);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(37, 13);
+            this.label3.Size = new System.Drawing.Size(54, 20);
             this.label3.TabIndex = 2;
             this.label3.Text = "Monto";
             // 
@@ -435,9 +449,10 @@
             // 
             this.TxtNoB.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TxtNoB.Enabled = false;
+            this.TxtNoB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtNoB.Location = new System.Drawing.Point(132, 3);
             this.TxtNoB.Name = "TxtNoB";
-            this.TxtNoB.Size = new System.Drawing.Size(301, 20);
+            this.TxtNoB.Size = new System.Drawing.Size(301, 26);
             this.TxtNoB.TabIndex = 3;
             // 
             // tableLayoutPanel9
@@ -466,27 +481,30 @@
             // LblNoB
             // 
             this.LblNoB.AutoSize = true;
+            this.LblNoB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblNoB.Location = new System.Drawing.Point(3, 0);
             this.LblNoB.Name = "LblNoB";
-            this.LblNoB.Size = new System.Drawing.Size(57, 13);
+            this.LblNoB.Size = new System.Drawing.Size(83, 20);
             this.LblNoB.TabIndex = 0;
             this.LblNoB.Text = "No. Boleto";
             // 
             // LblFechaE
             // 
             this.LblFechaE.AutoSize = true;
+            this.LblFechaE.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblFechaE.Location = new System.Drawing.Point(3, 53);
             this.LblFechaE.Name = "LblFechaE";
-            this.LblFechaE.Size = new System.Drawing.Size(91, 13);
+            this.LblFechaE.Size = new System.Drawing.Size(136, 20);
             this.LblFechaE.TabIndex = 1;
             this.LblFechaE.Text = "Fecha de Emisión";
             // 
             // LblMontoM
             // 
             this.LblMontoM.AutoSize = true;
+            this.LblMontoM.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblMontoM.Location = new System.Drawing.Point(3, 106);
             this.LblMontoM.Name = "LblMontoM";
-            this.LblMontoM.Size = new System.Drawing.Size(37, 13);
+            this.LblMontoM.Size = new System.Drawing.Size(54, 20);
             this.LblMontoM.TabIndex = 2;
             this.LblMontoM.Text = "Monto";
             // 
@@ -494,27 +512,30 @@
             // 
             this.TxtCoM.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TxtCoM.Enabled = false;
+            this.TxtCoM.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtCoM.Location = new System.Drawing.Point(153, 3);
             this.TxtCoM.Name = "TxtCoM";
-            this.TxtCoM.Size = new System.Drawing.Size(282, 20);
+            this.TxtCoM.Size = new System.Drawing.Size(282, 26);
             this.TxtCoM.TabIndex = 4;
             // 
             // TxtfechaEM
             // 
             this.TxtfechaEM.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TxtfechaEM.Enabled = false;
+            this.TxtfechaEM.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtfechaEM.Location = new System.Drawing.Point(153, 56);
             this.TxtfechaEM.Name = "TxtfechaEM";
-            this.TxtfechaEM.Size = new System.Drawing.Size(282, 20);
+            this.TxtfechaEM.Size = new System.Drawing.Size(282, 26);
             this.TxtfechaEM.TabIndex = 5;
             // 
             // TxtMontoB
             // 
             this.TxtMontoB.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TxtMontoB.Enabled = false;
+            this.TxtMontoB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtMontoB.Location = new System.Drawing.Point(153, 109);
             this.TxtMontoB.Name = "TxtMontoB";
-            this.TxtMontoB.Size = new System.Drawing.Size(282, 20);
+            this.TxtMontoB.Size = new System.Drawing.Size(282, 26);
             this.TxtMontoB.TabIndex = 6;
             // 
             // tableLayoutPanel10
@@ -556,7 +577,7 @@
             this.tableLayoutPanel13.ColumnCount = 3;
             this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.75309F));
             this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80.24691F));
-            this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 134F));
+            this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 135F));
             this.tableLayoutPanel13.Controls.Add(this.dataGridView4, 1, 0);
             this.tableLayoutPanel13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel13.Location = new System.Drawing.Point(3, 3);
@@ -572,7 +593,7 @@
             this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView4.GridColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dataGridView4.Location = new System.Drawing.Point(108, 3);
+            this.dataGridView4.Location = new System.Drawing.Point(107, 3);
             this.dataGridView4.Name = "dataGridView4";
             this.dataGridView4.Size = new System.Drawing.Size(420, 88);
             this.dataGridView4.TabIndex = 0;
@@ -605,36 +626,40 @@
             // LblCuiM
             // 
             this.LblCuiM.AutoSize = true;
+            this.LblCuiM.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblCuiM.Location = new System.Drawing.Point(3, 0);
             this.LblCuiM.Name = "LblCuiM";
-            this.LblCuiM.Size = new System.Drawing.Size(25, 13);
+            this.LblCuiM.Size = new System.Drawing.Size(37, 20);
             this.LblCuiM.TabIndex = 0;
             this.LblCuiM.Text = "CUI";
             // 
             // LblNombre
             // 
             this.LblNombre.AutoSize = true;
+            this.LblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblNombre.Location = new System.Drawing.Point(3, 38);
             this.LblNombre.Name = "LblNombre";
-            this.LblNombre.Size = new System.Drawing.Size(49, 13);
+            this.LblNombre.Size = new System.Drawing.Size(73, 20);
             this.LblNombre.TabIndex = 1;
             this.LblNombre.Text = "Nombres";
             // 
             // LblApellido
             // 
             this.LblApellido.AutoSize = true;
+            this.LblApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblApellido.Location = new System.Drawing.Point(3, 76);
             this.LblApellido.Name = "LblApellido";
-            this.LblApellido.Size = new System.Drawing.Size(49, 13);
+            this.LblApellido.Size = new System.Drawing.Size(73, 20);
             this.LblApellido.TabIndex = 2;
             this.LblApellido.Text = "Apellidos";
             // 
             // LblCuiP
             // 
             this.LblCuiP.AutoSize = true;
+            this.LblCuiP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblCuiP.Location = new System.Drawing.Point(3, 114);
             this.LblCuiP.Name = "LblCuiP";
-            this.LblCuiP.Size = new System.Drawing.Size(53, 13);
+            this.LblCuiP.Size = new System.Drawing.Size(78, 20);
             this.LblCuiP.TabIndex = 3;
             this.LblCuiP.Text = "Cui Padre";
             // 
@@ -642,36 +667,40 @@
             // 
             this.TxtCuiP.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TxtCuiP.Enabled = false;
+            this.TxtCuiP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtCuiP.Location = new System.Drawing.Point(212, 3);
             this.TxtCuiP.Name = "TxtCuiP";
-            this.TxtCuiP.Size = new System.Drawing.Size(451, 20);
+            this.TxtCuiP.Size = new System.Drawing.Size(451, 26);
             this.TxtCuiP.TabIndex = 4;
             // 
             // TxtNombreP
             // 
             this.TxtNombreP.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TxtNombreP.Enabled = false;
+            this.TxtNombreP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtNombreP.Location = new System.Drawing.Point(212, 41);
             this.TxtNombreP.Name = "TxtNombreP";
-            this.TxtNombreP.Size = new System.Drawing.Size(451, 20);
+            this.TxtNombreP.Size = new System.Drawing.Size(451, 26);
             this.TxtNombreP.TabIndex = 5;
             // 
             // TxtApellidoP
             // 
             this.TxtApellidoP.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TxtApellidoP.Enabled = false;
+            this.TxtApellidoP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtApellidoP.Location = new System.Drawing.Point(212, 79);
             this.TxtApellidoP.Name = "TxtApellidoP";
-            this.TxtApellidoP.Size = new System.Drawing.Size(451, 20);
+            this.TxtApellidoP.Size = new System.Drawing.Size(451, 26);
             this.TxtApellidoP.TabIndex = 6;
             // 
             // TxtCuiPA
             // 
             this.TxtCuiPA.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TxtCuiPA.Enabled = false;
+            this.TxtCuiPA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtCuiPA.Location = new System.Drawing.Point(212, 117);
             this.TxtCuiPA.Name = "TxtCuiPA";
-            this.TxtCuiPA.Size = new System.Drawing.Size(451, 20);
+            this.TxtCuiPA.Size = new System.Drawing.Size(451, 26);
             this.TxtCuiPA.TabIndex = 7;
             // 
             // tableLayoutPanel12
@@ -695,7 +724,7 @@
             this.tableLayoutPanel14.ColumnCount = 3;
             this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.96558F));
             this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80.03442F));
-            this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 114F));
+            this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 115F));
             this.tableLayoutPanel14.Controls.Add(this.dataGridView5, 1, 0);
             this.tableLayoutPanel14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel14.Location = new System.Drawing.Point(3, 3);
@@ -713,7 +742,7 @@
             this.dataGridView5.GridColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridView5.Location = new System.Drawing.Point(113, 3);
             this.dataGridView5.Name = "dataGridView5";
-            this.dataGridView5.Size = new System.Drawing.Size(435, 87);
+            this.dataGridView5.Size = new System.Drawing.Size(434, 87);
             this.dataGridView5.TabIndex = 0;
             // 
             // tableLayoutPanel17
@@ -743,36 +772,40 @@
             // label12
             // 
             this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(3, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(22, 13);
+            this.label12.Size = new System.Drawing.Size(32, 20);
             this.label12.TabIndex = 0;
             this.label12.Text = "Cui";
             // 
             // LblNombreP
             // 
             this.LblNombreP.AutoSize = true;
+            this.LblNombreP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblNombreP.Location = new System.Drawing.Point(3, 44);
             this.LblNombreP.Name = "LblNombreP";
-            this.LblNombreP.Size = new System.Drawing.Size(49, 13);
+            this.LblNombreP.Size = new System.Drawing.Size(73, 20);
             this.LblNombreP.TabIndex = 1;
             this.LblNombreP.Text = "Nombres";
             // 
             // LblApellidoP
             // 
             this.LblApellidoP.AutoSize = true;
+            this.LblApellidoP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblApellidoP.Location = new System.Drawing.Point(3, 88);
             this.LblApellidoP.Name = "LblApellidoP";
-            this.LblApellidoP.Size = new System.Drawing.Size(44, 13);
+            this.LblApellidoP.Size = new System.Drawing.Size(65, 20);
             this.LblApellidoP.TabIndex = 2;
             this.LblApellidoP.Text = "Apellido";
             // 
             // LblCuiMa
             // 
             this.LblCuiMa.AutoSize = true;
+            this.LblCuiMa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblCuiMa.Location = new System.Drawing.Point(3, 132);
             this.LblCuiMa.Name = "LblCuiMa";
-            this.LblCuiMa.Size = new System.Drawing.Size(58, 13);
+            this.LblCuiMa.Size = new System.Drawing.Size(86, 20);
             this.LblCuiMa.TabIndex = 3;
             this.LblCuiMa.Text = "CUI Madre";
             // 
@@ -780,36 +813,40 @@
             // 
             this.TxtCuiMA.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TxtCuiMA.Enabled = false;
+            this.TxtCuiMA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtCuiMA.Location = new System.Drawing.Point(214, 3);
             this.TxtCuiMA.Name = "TxtCuiMA";
-            this.TxtCuiMA.Size = new System.Drawing.Size(449, 20);
+            this.TxtCuiMA.Size = new System.Drawing.Size(449, 26);
             this.TxtCuiMA.TabIndex = 4;
             // 
             // TxtNombreMA
             // 
             this.TxtNombreMA.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TxtNombreMA.Enabled = false;
+            this.TxtNombreMA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtNombreMA.Location = new System.Drawing.Point(214, 47);
             this.TxtNombreMA.Name = "TxtNombreMA";
-            this.TxtNombreMA.Size = new System.Drawing.Size(449, 20);
+            this.TxtNombreMA.Size = new System.Drawing.Size(449, 26);
             this.TxtNombreMA.TabIndex = 5;
             // 
             // TxtApellidoMA
             // 
             this.TxtApellidoMA.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TxtApellidoMA.Enabled = false;
+            this.TxtApellidoMA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtApellidoMA.Location = new System.Drawing.Point(214, 91);
             this.TxtApellidoMA.Name = "TxtApellidoMA";
-            this.TxtApellidoMA.Size = new System.Drawing.Size(449, 20);
+            this.TxtApellidoMA.Size = new System.Drawing.Size(449, 26);
             this.TxtApellidoMA.TabIndex = 6;
             // 
             // TxtCuiMAA
             // 
             this.TxtCuiMAA.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TxtCuiMAA.Enabled = false;
+            this.TxtCuiMAA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtCuiMAA.Location = new System.Drawing.Point(214, 135);
             this.TxtCuiMAA.Name = "TxtCuiMAA";
-            this.TxtCuiMAA.Size = new System.Drawing.Size(449, 20);
+            this.TxtCuiMAA.Size = new System.Drawing.Size(449, 26);
             this.TxtCuiMAA.TabIndex = 7;
             // 
             // tableLayoutPanel15
@@ -831,6 +868,7 @@
             // BtnSig
             // 
             this.BtnSig.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BtnSig.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnSig.Location = new System.Drawing.Point(469, 3);
             this.BtnSig.Name = "BtnSig";
             this.BtnSig.Size = new System.Drawing.Size(200, 66);
@@ -858,6 +896,7 @@
             // 
             this.BtnRechazar.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BtnRechazar.Enabled = false;
+            this.BtnRechazar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnRechazar.Location = new System.Drawing.Point(233, 3);
             this.BtnRechazar.Name = "BtnRechazar";
             this.BtnRechazar.Size = new System.Drawing.Size(224, 60);
@@ -869,6 +908,7 @@
             // BtnCancelar
             // 
             this.BtnCancelar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BtnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnCancelar.Location = new System.Drawing.Point(3, 3);
             this.BtnCancelar.Name = "BtnCancelar";
             this.BtnCancelar.Size = new System.Drawing.Size(224, 60);
@@ -883,6 +923,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1362, 741);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "LblCuipP";
             this.Text = "Verificaciones";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.LblCuipP_FormClosing);

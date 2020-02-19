@@ -132,7 +132,7 @@
             // 
             this.LblContraseña.AutoSize = true;
             this.LblContraseña.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.LblContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblContraseña.Location = new System.Drawing.Point(6, 48);
             this.LblContraseña.Name = "LblContraseña";
             this.LblContraseña.Size = new System.Drawing.Size(123, 45);
@@ -154,7 +154,7 @@
             // 
             this.LblUsuario.AutoSize = true;
             this.LblUsuario.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.LblUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblUsuario.Location = new System.Drawing.Point(6, 8);
             this.LblUsuario.Name = "LblUsuario";
             this.LblUsuario.Size = new System.Drawing.Size(123, 37);
@@ -194,10 +194,10 @@
             // 
             // BtCalcelar
             // 
-            this.BtCalcelar.BackColor = System.Drawing.Color.White;
+            this.BtCalcelar.BackColor = System.Drawing.SystemColors.Highlight;
             this.BtCalcelar.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BtCalcelar.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtCalcelar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.BtCalcelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtCalcelar.ForeColor = System.Drawing.Color.White;
             this.BtCalcelar.Location = new System.Drawing.Point(23, 10);
             this.BtCalcelar.Name = "BtCalcelar";
             this.BtCalcelar.Size = new System.Drawing.Size(161, 52);
@@ -208,10 +208,10 @@
             // 
             // BtIngresar
             // 
-            this.BtIngresar.BackColor = System.Drawing.Color.White;
+            this.BtIngresar.BackColor = System.Drawing.SystemColors.Highlight;
             this.BtIngresar.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BtIngresar.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtIngresar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.BtIngresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtIngresar.ForeColor = System.Drawing.Color.White;
             this.BtIngresar.Location = new System.Drawing.Point(210, 10);
             this.BtIngresar.Name = "BtIngresar";
             this.BtIngresar.Size = new System.Drawing.Size(161, 52);
@@ -244,6 +244,7 @@
             this.pictureBox2.Size = new System.Drawing.Size(54, 47);
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Visible = false;
             // 
             // tableLayoutPanel5
             // 
@@ -290,7 +291,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(443, 71);
@@ -305,9 +306,10 @@
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(466, 570);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Login";
+            this.Text = "Inicio de Sesión";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmLogin_FormClosing);
             this.Load += new System.EventHandler(this.FrmLogin_Load);
             this.tableLayoutPanel1.ResumeLayout(false);

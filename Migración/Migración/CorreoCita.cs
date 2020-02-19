@@ -46,8 +46,6 @@ namespace Migración
                 + fecha + "\n\n Por Favor presentar las copias y Documentos requeridos y que sean necesarios\n\n" + TxtMensaje.Text+ "\n\n\n\nATT: Migracion";
            c.enviarCorreo(usu, pass, mensaje, TxtAsunto.Text, TxtReceptor.Text, TxtRutaArchivo.Text);
               this.Hide();
-            FrmMenuPrincipal nuevo = new FrmMenuPrincipal(user);
-            nuevo.Show();
         }
         //Bitacora
         void Bitacora()
@@ -90,9 +88,7 @@ namespace Migración
 
         private void FrmCorreoCita_FormClosing(object sender, FormClosingEventArgs e)
         {
-            FrmMenuPrincipal entrar = new FrmMenuPrincipal(user);
-            entrar.Visible = true;
-            Visible = false;
+            this.Hide();
         }
     }
 }

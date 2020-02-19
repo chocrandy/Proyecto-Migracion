@@ -212,6 +212,7 @@
             // button1
             // 
             this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(3, 3);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(135, 36);
@@ -223,6 +224,7 @@
             // button2
             // 
             this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(3, 45);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(135, 36);
@@ -234,6 +236,7 @@
             // button3
             // 
             this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Location = new System.Drawing.Point(3, 87);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(135, 37);
@@ -271,11 +274,12 @@
             // button4
             // 
             this.button4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.Location = new System.Drawing.Point(3, 3);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(109, 121);
             this.button4.TabIndex = 1;
-            this.button4.Text = "Menu";
+            this.button4.Text = "Cerrar";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.Button4_Click);
             // 
@@ -310,6 +314,7 @@
             // 
             // txtAux
             // 
+            this.txtAux.Enabled = false;
             this.txtAux.Location = new System.Drawing.Point(576, 24);
             this.txtAux.Name = "txtAux";
             this.txtAux.Size = new System.Drawing.Size(92, 20);
@@ -333,6 +338,7 @@
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(677, 358);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmUsuario";
             this.Text = "Usuarios";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmUsuario_FormClosing);

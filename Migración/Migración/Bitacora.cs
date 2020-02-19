@@ -19,8 +19,7 @@ namespace Migración
         string user;
         public FrmBitacora(string usuario)
         {
-            InitializeComponent();
-            this.WindowState = FormWindowState.Maximized;
+            InitializeComponent();            
             user = usuario;
             llenartbl();
             LblUsuario.Text = user;
@@ -57,16 +56,12 @@ namespace Migración
 
         private void button1_Click(object sender, EventArgs e)
         {
-           FrmMenuPrincipal entrar = new FrmMenuPrincipal(user);
-            entrar.Visible = true;
-            Visible = false;
+            this.Hide();
         }
 
         private void FrmBitacora_FormClosing(object sender, FormClosingEventArgs e)
         {
-            FrmMenuPrincipal entrar = new FrmMenuPrincipal(user);
-            entrar.Visible = true;
-            Visible = false;
+            this.Hide();
         }
     }
 }

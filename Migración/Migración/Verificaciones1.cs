@@ -21,5 +21,20 @@ namespace Migración
         {
 
         }
+
+        private void Verificaciones1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnCancelar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Verificaciones1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.Hide();
+        }
     }
 }

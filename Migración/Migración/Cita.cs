@@ -25,8 +25,7 @@ namespace Migración
         string Idveri;
         public FrmCita(string usuario, string numero,string cui,string email)
         {
-            InitializeComponent();
-            this.WindowState = FormWindowState.Maximized;
+            InitializeComponent();            
             user = usuario;
             solicitud = numero;
             TxtNumeroV.Text = solicitud;
@@ -104,9 +103,7 @@ namespace Migración
 
         private void button2_Click(object sender, EventArgs e)
         {          
-            this.Hide();
-            FrmMenuPrincipal nuevo = new FrmMenuPrincipal(user);         
-            nuevo.Show();
+            this.Hide();            
         }
 
         private void button2_Click_1(object sender, EventArgs e)
@@ -116,9 +113,7 @@ namespace Migración
 
         private void FrmCita_FormClosing(object sender, FormClosingEventArgs e)
         {
-            FrmMenuPrincipal entrar = new FrmMenuPrincipal(user);
-            entrar.Visible = true;
-            Visible = false;
+            this.Hide();
         }
 
         private void FrmCita_Load(object sender, EventArgs e)

@@ -291,9 +291,7 @@ namespace Migración
         }
         private void button3_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            FrmMenuPrincipal nuevo = new FrmMenuPrincipal(user);
-            nuevo.Show();
+            this.Hide();            
         }
         //Bitacora para control del sistema 
         void Bitacora()
@@ -385,9 +383,7 @@ namespace Migración
 
         private void LblCuipP_FormClosing(object sender, FormClosingEventArgs e)
         {
-            FrmMenuPrincipal  entrar = new FrmMenuPrincipal(user);
-            entrar.Visible = true;
-            Visible = false;
+            this.Hide();
         }
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)

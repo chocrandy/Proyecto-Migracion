@@ -107,7 +107,7 @@
             this.tableLayoutPanel8.ColumnCount = 3;
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32.15259F));
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 67.84741F));
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 98F));
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 101F));
             this.tableLayoutPanel8.Controls.Add(this.pictureBox1, 1, 0);
             this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel8.Location = new System.Drawing.Point(106, 3);
@@ -122,9 +122,9 @@
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Location = new System.Drawing.Point(80, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(79, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(158, 80);
+            this.pictureBox1.Size = new System.Drawing.Size(156, 80);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -172,6 +172,7 @@
             // 
             this.LblEST.AutoSize = true;
             this.LblEST.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LblEST.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblEST.Location = new System.Drawing.Point(3, 120);
             this.LblEST.Name = "LblEST";
             this.LblEST.Size = new System.Drawing.Size(217, 43);
@@ -182,6 +183,7 @@
             // 
             this.LblVerificacion.AutoSize = true;
             this.LblVerificacion.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LblVerificacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblVerificacion.Location = new System.Drawing.Point(3, 0);
             this.LblVerificacion.Name = "LblVerificacion";
             this.LblVerificacion.Size = new System.Drawing.Size(217, 40);
@@ -192,15 +194,17 @@
             // 
             this.TxtNumeroV.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TxtNumeroV.Enabled = false;
+            this.TxtNumeroV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtNumeroV.Location = new System.Drawing.Point(226, 3);
             this.TxtNumeroV.Name = "TxtNumeroV";
-            this.TxtNumeroV.Size = new System.Drawing.Size(275, 20);
+            this.TxtNumeroV.Size = new System.Drawing.Size(275, 26);
             this.TxtNumeroV.TabIndex = 5;
             // 
             // LblCui
             // 
             this.LblCui.AutoSize = true;
             this.LblCui.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LblCui.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblCui.Location = new System.Drawing.Point(3, 40);
             this.LblCui.Name = "LblCui";
             this.LblCui.Size = new System.Drawing.Size(217, 40);
@@ -211,15 +215,17 @@
             // 
             this.TxtCui.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TxtCui.Enabled = false;
+            this.TxtCui.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtCui.Location = new System.Drawing.Point(226, 43);
             this.TxtCui.Name = "TxtCui";
-            this.TxtCui.Size = new System.Drawing.Size(275, 20);
+            this.TxtCui.Size = new System.Drawing.Size(275, 26);
             this.TxtCui.TabIndex = 6;
             // 
             // LbLFecha
             // 
             this.LbLFecha.AutoSize = true;
             this.LbLFecha.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LbLFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LbLFecha.Location = new System.Drawing.Point(3, 80);
             this.LbLFecha.Name = "LbLFecha";
             this.LbLFecha.Size = new System.Drawing.Size(217, 40);
@@ -229,15 +235,17 @@
             // TxtFecha
             // 
             this.TxtFecha.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TxtFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtFecha.Location = new System.Drawing.Point(226, 83);
             this.TxtFecha.Name = "TxtFecha";
-            this.TxtFecha.Size = new System.Drawing.Size(275, 20);
+            this.TxtFecha.Size = new System.Drawing.Size(275, 26);
             this.TxtFecha.TabIndex = 7;
             // 
             // LblEstado
             // 
             this.LblEstado.AutoSize = true;
             this.LblEstado.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LblEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblEstado.Location = new System.Drawing.Point(226, 120);
             this.LblEstado.Name = "LblEstado";
             this.LblEstado.Size = new System.Drawing.Size(275, 43);
@@ -264,6 +272,7 @@
             // 
             this.BtnGenerar.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BtnGenerar.Enabled = false;
+            this.BtnGenerar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnGenerar.Location = new System.Drawing.Point(345, 3);
             this.BtnGenerar.Name = "BtnGenerar";
             this.BtnGenerar.Size = new System.Drawing.Size(156, 63);
@@ -275,6 +284,7 @@
             // BtnVerificar
             // 
             this.BtnVerificar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BtnVerificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnVerificar.Location = new System.Drawing.Point(214, 3);
             this.BtnVerificar.Name = "BtnVerificar";
             this.BtnVerificar.Size = new System.Drawing.Size(125, 63);
@@ -289,8 +299,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(570, 358);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmCita";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cita";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmCita_FormClosing);
             this.Load += new System.EventHandler(this.FrmCita_Load);
