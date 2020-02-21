@@ -106,5 +106,10 @@ namespace Migración
         {
             Application.ExitThread();
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, " Migracion ayuda/AyudaM.chm", "Login.html");
+        }
     }
 }

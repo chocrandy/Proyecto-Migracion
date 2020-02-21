@@ -41,16 +41,20 @@
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.TxtRutaArchivo = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.BtnEnviar = new System.Windows.Forms.Button();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.Piclogo = new System.Windows.Forms.PictureBox();
             this.LblTitulo = new System.Windows.Forms.Label();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.BtnEnviar = new System.Windows.Forms.Button();
+            this.Piclogo = new System.Windows.Forms.PictureBox();
+            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Piclogo)).BeginInit();
+            this.tableLayoutPanel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -91,6 +95,7 @@
             this.tableLayoutPanel2.Controls.Add(this.LblDetaller, 1, 6);
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel4, 3, 4);
             this.tableLayoutPanel2.Controls.Add(this.BtnEnviar, 3, 7);
+            this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel5, 0, 7);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(11, 175);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -192,7 +197,7 @@
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 54F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 56F));
             this.tableLayoutPanel4.Size = new System.Drawing.Size(650, 56);
             this.tableLayoutPanel4.TabIndex = 8;
             // 
@@ -219,22 +224,6 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // BtnEnviar
-            // 
-            this.BtnEnviar.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.BtnEnviar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnEnviar.BackgroundImage")));
-            this.BtnEnviar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.BtnEnviar.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BtnEnviar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnEnviar.Location = new System.Drawing.Point(332, 299);
-            this.BtnEnviar.Name = "BtnEnviar";
-            this.BtnEnviar.Size = new System.Drawing.Size(650, 87);
-            this.BtnEnviar.TabIndex = 9;
-            this.BtnEnviar.Text = "Enviar";
-            this.BtnEnviar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.BtnEnviar.UseVisualStyleBackColor = false;
-            this.BtnEnviar.Click += new System.EventHandler(this.button2_Click);
-            // 
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.ColumnCount = 2;
@@ -249,18 +238,6 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(985, 152);
             this.tableLayoutPanel3.TabIndex = 1;
-            // 
-            // Piclogo
-            // 
-            this.Piclogo.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Piclogo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Piclogo.BackgroundImage")));
-            this.Piclogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.Piclogo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Piclogo.Location = new System.Drawing.Point(3, 3);
-            this.Piclogo.Name = "Piclogo";
-            this.Piclogo.Size = new System.Drawing.Size(356, 146);
-            this.Piclogo.TabIndex = 1;
-            this.Piclogo.TabStop = false;
             // 
             // LblTitulo
             // 
@@ -277,6 +254,60 @@
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // BtnEnviar
+            // 
+            this.BtnEnviar.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.BtnEnviar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnEnviar.BackgroundImage")));
+            this.BtnEnviar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BtnEnviar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BtnEnviar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnEnviar.Location = new System.Drawing.Point(332, 299);
+            this.BtnEnviar.Name = "BtnEnviar";
+            this.BtnEnviar.Size = new System.Drawing.Size(650, 87);
+            this.BtnEnviar.TabIndex = 9;
+            this.BtnEnviar.Text = "Enviar";
+            this.BtnEnviar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnEnviar.UseVisualStyleBackColor = false;
+            this.BtnEnviar.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // Piclogo
+            // 
+            this.Piclogo.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Piclogo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Piclogo.BackgroundImage")));
+            this.Piclogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.Piclogo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Piclogo.Location = new System.Drawing.Point(3, 3);
+            this.Piclogo.Name = "Piclogo";
+            this.Piclogo.Size = new System.Drawing.Size(356, 146);
+            this.Piclogo.TabIndex = 1;
+            this.Piclogo.TabStop = false;
+            // 
+            // tableLayoutPanel5
+            // 
+            this.tableLayoutPanel5.ColumnCount = 2;
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.93443F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.06557F));
+            this.tableLayoutPanel5.Controls.Add(this.pictureBox7, 0, 1);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 299);
+            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
+            this.tableLayoutPanel5.RowCount = 2;
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.28736F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 74.71265F));
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(122, 87);
+            this.tableLayoutPanel5.TabIndex = 10;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox7.BackgroundImage")));
+            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox7.Location = new System.Drawing.Point(3, 24);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(71, 60);
+            this.pictureBox7.TabIndex = 5;
+            this.pictureBox7.TabStop = false;
+            this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
             // 
             // FrmCorreoCita
             // 
@@ -298,6 +329,8 @@
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Piclogo)).EndInit();
+            this.tableLayoutPanel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -321,5 +354,7 @@
         private System.Windows.Forms.PictureBox Piclogo;
         private System.Windows.Forms.Label LblTitulo;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
+        private System.Windows.Forms.PictureBox pictureBox7;
     }
 }

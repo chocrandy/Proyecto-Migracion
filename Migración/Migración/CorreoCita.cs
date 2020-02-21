@@ -90,5 +90,10 @@ namespace Migración
         {
             this.Hide();
         }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, " Migracion ayuda/AyudaM.chm", "Correos.html");
+        }
     }
 }

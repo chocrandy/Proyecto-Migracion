@@ -123,5 +123,12 @@ namespace Migración
             FrmLogin nuevo = new FrmLogin();
             nuevo.Show();
         }
+
+        private void solicitudesAprobadasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmVerificacionesA nuevo = new FrmVerificacionesA(user);
+            nuevo.MdiParent = this;
+            nuevo.Show();
+        }
     }
 }

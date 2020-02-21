@@ -27,7 +27,7 @@ namespace Migración
         public FrmCorreoRe(string dato ,string verifi , string usuario)
         {
             InitializeComponent();
-            this.WindowState = FormWindowState.Maximized;
+          
             correo = dato;
             solicitud = verifi;
             user = usuario;
@@ -104,6 +104,11 @@ namespace Migración
         private void FrmCorreoRe_FormClosing(object sender, FormClosingEventArgs e)
         {
             this.Hide();
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, " Migracion ayuda/AyudaM.chm", "Correos.html");
         }
     }
 }

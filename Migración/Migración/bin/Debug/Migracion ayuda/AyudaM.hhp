@@ -1,0 +1,23 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=AyudaM.chm
+Contents file=AyudaMigracion.hhc
+Default Window=Ayuda
+Display compile progress=No
+Language=0x100a Español (Guatemala)
+
+[WINDOWS]
+Ayuda=,"AyudaMigracion.hhc",,"menu.html","menu.html","Citas.html","Citas","Verificaciones.html","Verificación",0x23520,,0xc3066,,,,,,,,0
+
+
+[FILES]
+Bitacora.html
+Citas.html
+Correos.html
+Documentos.html
+Login.html
+menu.html
+Verificaciones.html
+
+[INFOTYPES]
+

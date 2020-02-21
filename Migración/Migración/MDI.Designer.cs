@@ -41,6 +41,7 @@
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLbUser = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.solicitudesAprobadasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -54,7 +55,7 @@
             this.cerrarSesiónToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 26);
+            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -62,18 +63,19 @@
             // 
             this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem2,
-            this.toolStripMenuItem3});
-            this.toolStripMenuItem1.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripMenuItem3,
+            this.solicitudesAprobadasToolStripMenuItem});
+            this.toolStripMenuItem1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripMenuItem1.Image = global::Migración.Properties.Resources.home;
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(71, 22);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(69, 20);
             this.toolStripMenuItem1.Text = "Menu";
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Image = global::Migración.Properties.Resources.folder;
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(140, 22);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(213, 22);
             this.toolStripMenuItem2.Text = "Solicitudes";
             this.toolStripMenuItem2.Click += new System.EventHandler(this.SolicitudesToolStripMenuItem_Click);
             // 
@@ -81,7 +83,7 @@
             // 
             this.toolStripMenuItem3.Image = global::Migración.Properties.Resources.blue_pin;
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(140, 22);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(213, 22);
             this.toolStripMenuItem3.Text = "Citas";
             this.toolStripMenuItem3.Click += new System.EventHandler(this.CitasToolStripMenuItem_Click);
             // 
@@ -90,17 +92,17 @@
             this.administraciónToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.personalToolStripMenuItem,
             this.usuariosToolStripMenuItem});
-            this.administraciónToolStripMenuItem.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.administraciónToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.administraciónToolStripMenuItem.Image = global::Migración.Properties.Resources.people;
             this.administraciónToolStripMenuItem.Name = "administraciónToolStripMenuItem";
-            this.administraciónToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.administraciónToolStripMenuItem.Size = new System.Drawing.Size(124, 20);
             this.administraciónToolStripMenuItem.Text = "Administración";
             // 
             // personalToolStripMenuItem
             // 
             this.personalToolStripMenuItem.Image = global::Migración.Properties.Resources.boss;
             this.personalToolStripMenuItem.Name = "personalToolStripMenuItem";
-            this.personalToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            this.personalToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.personalToolStripMenuItem.Text = "Personal";
             this.personalToolStripMenuItem.Click += new System.EventHandler(this.PersonalToolStripMenuItem_Click);
             // 
@@ -108,25 +110,25 @@
             // 
             this.usuariosToolStripMenuItem.Image = global::Migración.Properties.Resources.male;
             this.usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
-            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.usuariosToolStripMenuItem.Text = "Usuarios";
             this.usuariosToolStripMenuItem.Click += new System.EventHandler(this.UsuariosToolStripMenuItem_Click);
             // 
             // bitácoraToolStripMenuItem
             // 
-            this.bitácoraToolStripMenuItem.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bitácoraToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bitácoraToolStripMenuItem.Image = global::Migración.Properties.Resources.database;
             this.bitácoraToolStripMenuItem.Name = "bitácoraToolStripMenuItem";
-            this.bitácoraToolStripMenuItem.Size = new System.Drawing.Size(85, 22);
+            this.bitácoraToolStripMenuItem.Size = new System.Drawing.Size(86, 20);
             this.bitácoraToolStripMenuItem.Text = "Bitácora";
             this.bitácoraToolStripMenuItem.Click += new System.EventHandler(this.BitácoraToolStripMenuItem_Click);
             // 
             // cerrarSesiónToolStripMenuItem
             // 
-            this.cerrarSesiónToolStripMenuItem.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cerrarSesiónToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cerrarSesiónToolStripMenuItem.Image = global::Migración.Properties.Resources.exit;
             this.cerrarSesiónToolStripMenuItem.Name = "cerrarSesiónToolStripMenuItem";
-            this.cerrarSesiónToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
+            this.cerrarSesiónToolStripMenuItem.Size = new System.Drawing.Size(118, 20);
             this.cerrarSesiónToolStripMenuItem.Text = "Cerrar Sesión";
             this.cerrarSesiónToolStripMenuItem.Click += new System.EventHandler(this.CerrarSesiónToolStripMenuItem_Click);
             // 
@@ -163,12 +165,20 @@
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(74, 20);
             this.toolStripStatusLabel1.Text = "ACTIVO";
             // 
+            // solicitudesAprobadasToolStripMenuItem
+            // 
+            this.solicitudesAprobadasToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("solicitudesAprobadasToolStripMenuItem.Image")));
+            this.solicitudesAprobadasToolStripMenuItem.Name = "solicitudesAprobadasToolStripMenuItem";
+            this.solicitudesAprobadasToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
+            this.solicitudesAprobadasToolStripMenuItem.Text = "Solicitudes Aprobadas";
+            this.solicitudesAprobadasToolStripMenuItem.Click += new System.EventHandler(this.solicitudesAprobadasToolStripMenuItem_Click);
+            // 
             // MDI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.BackgroundImage = global::Migración.Properties.Resources.fondo;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.statusStrip1);
@@ -205,5 +215,6 @@
         private System.Windows.Forms.ToolStripMenuItem administraciónToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem personalToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem usuariosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem solicitudesAprobadasToolStripMenuItem;
     }
 }

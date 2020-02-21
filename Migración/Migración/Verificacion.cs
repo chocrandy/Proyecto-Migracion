@@ -327,7 +327,7 @@ namespace Migración
 
         private void LblCuipP_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void LblCuipP_FormClosing(object sender, FormClosingEventArgs e)
@@ -442,6 +442,16 @@ namespace Migración
             {
                 MessageBox.Show("No hay solicitudes");
             }
+        }
+
+        private void tableLayoutPanel18_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, " Migracion ayuda/AyudaM.chm", "Documentos.html");
         }
     }
 }

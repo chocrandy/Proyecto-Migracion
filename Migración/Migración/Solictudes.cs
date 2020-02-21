@@ -213,5 +213,15 @@ namespace Migración
         {
 
         }
+
+        private void tableLayoutPanel7_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, " Migracion ayuda/AyudaM.chm", "Verificaciones.html");
+        }
     }
 }
